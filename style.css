@@ -225,6 +225,10 @@ p {
   color: var(--muted);
 }
 
+.links a {
+  font-weight: 700;
+}
+
 article + article {
   margin-top: 40px;
   padding-top: 34px;
