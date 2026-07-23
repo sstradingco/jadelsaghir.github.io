@@ -200,6 +200,11 @@ p {
   margin-bottom: 0;
 }
 
+.links span {
+  margin: 0 6px;
+  color: var(--muted);
+}
+
 article + article {
   margin-top: 40px;
   padding-top: 34px;
