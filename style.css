@@ -226,7 +226,8 @@ p {
 }
 
 .links a {
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
 }
 
 article + article {
