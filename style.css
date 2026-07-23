@@ -87,13 +87,82 @@ p {
   transform: translateY(0);
 }
 
+.site-header {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  width: min(100% - 40px, 1040px);
+  margin: 24px auto 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.site-nav {
+  display: flex;
+  min-height: 58px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-name {
+  display: flex;
+  padding: 0 22px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-tabs {
+  display: flex;
+}
+
+.tab {
+  display: flex;
+  min-width: 118px;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tab-about {
+  background: var(--lavender);
+}
+
+.tab-experience {
+  background: var(--peach);
+}
+
+.tab-education {
+  background: var(--sage);
+}
+
+.tab-projects {
+  background: var(--blue);
+}
+
+.tab:hover,
+.tab:focus-visible {
+  filter: brightness(0.94);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .page {
   width: min(100% - 40px, 1040px);
-  margin: 24px auto;
+  margin: 0 auto 24px;
 }
 
 .panel {
   padding: clamp(32px, 5vw, 58px);
+  scroll-margin-top: 58px;
 }
 
 .intro {
@@ -205,13 +274,44 @@ footer p {
     font-size: 14px;
   }
 
+  .site-header,
   .page {
     width: 100%;
     margin: 0;
   }
 
+  .site-header {
+    position: static;
+  }
+
+  .site-nav {
+    display: block;
+  }
+
+  .nav-name {
+    min-height: 54px;
+  }
+
+  .nav-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tab {
+    min-width: 0;
+    min-height: 46px;
+    padding: 0 5px;
+    border-top: 1px solid var(--line);
+    font-size: 10px;
+  }
+
+  .tab:first-child {
+    border-left: 0;
+  }
+
   .panel {
     padding: 34px 22px 40px;
+    scroll-margin-top: 0;
   }
 
   .role-heading {
