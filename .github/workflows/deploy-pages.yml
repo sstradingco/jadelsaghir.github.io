@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - cursor/build-consulting-portfolio-53ea
   workflow_dispatch:
 
 permissions:
