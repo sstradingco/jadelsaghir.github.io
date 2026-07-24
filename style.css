@@ -438,9 +438,7 @@ footer p {
   }
 
   .panel::after {
-    top: 24px;
-    right: 18px;
-    font-size: 82px;
+    display: none;
   }
 
   .role-heading {
