@@ -499,6 +499,28 @@ li + li {
   text-underline-offset: 4px;
 }
 
+.project-cta {
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.project-cta a {
+  display: inline-block;
+  margin-top: 9px;
+  padding: 10px 13px;
+  border: 1px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.project-cta a:hover,
+.project-cta a:focus-visible {
+  background: var(--white);
+  color: var(--black);
+}
+
 .projects article p:last-child {
   margin-bottom: 0;
 }
@@ -616,7 +638,8 @@ footer p {
   .tab,
   .links a,
   .panel article,
-  .course-toggle {
+  .course-toggle,
+  .project-cta a {
     transition: none;
   }
 
