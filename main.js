@@ -7,7 +7,7 @@ const panels = [...document.querySelectorAll(".panel")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const revealTargets = document.querySelectorAll(
-  ".intro > h1, .intro > .lead, .intro > p:not(.overline), .panel > h2, .panel > article, .education > .course-title, .education > .coursework"
+  ".intro > h1, .intro > .lead, .intro > p:not(.overline), .panel > h2, .panel > article, .course-explorer > .section-intro, .course-explorer > .course-group"
 );
 
 revealTargets.forEach((element, index) => {
