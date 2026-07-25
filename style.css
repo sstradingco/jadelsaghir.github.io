@@ -499,26 +499,51 @@ li + li {
   text-underline-offset: 4px;
 }
 
-.project-cta {
-  margin-top: 24px;
+.project-inquiry {
+  display: grid;
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 36px;
+}
+
+.project-inquiry p {
+  margin-bottom: 0;
+}
+
+.project-inquiry .inquiry-label {
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 10px;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.project-cta a {
-  display: inline-block;
-  margin-top: 9px;
-  padding: 10px 13px;
-  border: 1px solid var(--black);
-  background: var(--black);
-  color: var(--white);
+.inquiry-copy {
+  max-width: 580px;
+}
+
+.project-inquiry a {
+  display: inline-flex;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--black);
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
   text-decoration: none;
-  transition: background 180ms ease, color 180ms ease;
+  white-space: nowrap;
 }
 
-.project-cta a:hover,
-.project-cta a:focus-visible {
-  background: var(--white);
-  color: var(--black);
+.project-inquiry a span {
+  transition: transform 180ms ease;
+}
+
+.project-inquiry a:hover span,
+.project-inquiry a:focus-visible span {
+  transform: translate(3px, -3px);
 }
 
 .projects article p:last-child {
@@ -624,6 +649,16 @@ footer p {
     padding: 0 0 22px;
   }
 
+  .project-inquiry {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 18px;
+  }
+
+  .project-inquiry a {
+    width: max-content;
+  }
+
   footer {
     padding: 22px;
     background: var(--paper);
@@ -639,7 +674,7 @@ footer p {
   .links a,
   .panel article,
   .course-toggle,
-  .project-cta a {
+  .project-inquiry a span {
     transition: none;
   }
 
