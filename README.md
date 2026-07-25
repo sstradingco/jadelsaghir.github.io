@@ -14,6 +14,6 @@ Then open `http://localhost:8000`.
 
 ## Deployment
 
-GitHub Actions deploys the static site to [sstradingco.github.io/jadelsaghir.github.io](https://sstradingco.github.io/jadelsaghir.github.io/) on pushes to `main`.
+GitHub Actions deploys the static site to [jadelsaghir.com](https://jadelsaghir.com/) on pushes to `main`.
 
 For the first deployment, enable GitHub Pages under **Settings → Pages** and choose **GitHub Actions** as the source. Every later push to `main` deploys automatically.
