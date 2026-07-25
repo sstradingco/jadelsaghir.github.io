@@ -92,6 +92,19 @@ p {
   transform: translateY(0);
 }
 
+.reading-progress {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--black);
+  transform: scaleX(0);
+  transform-origin: left;
+  will-change: transform;
+}
+
 .site-header {
   position: sticky;
   z-index: 5;
@@ -176,6 +189,10 @@ p {
   text-underline-offset: 4px;
 }
 
+.tab.is-active {
+  box-shadow: inset 0 -4px 0 currentColor;
+}
+
 .page {
   width: min(100% - 40px, 1040px);
   margin: 0 auto 24px;
@@ -208,6 +225,8 @@ p {
   line-height: 0.8;
   opacity: 0.035;
   pointer-events: none;
+  transform: translateY(var(--number-shift, 0));
+  will-change: transform;
 }
 
 .intro {
@@ -299,6 +318,20 @@ article + article {
   margin-top: 40px;
   padding-top: 34px;
   border-top: 1px solid var(--line);
+}
+
+.motion-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 620ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 620ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.motion-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .panel article {
@@ -468,6 +501,13 @@ footer p {
   .tab,
   .links a,
   .panel article {
+    transition: none;
+  }
+
+  .motion-item,
+  .motion-item.is-visible {
+    opacity: 1;
+    transform: none;
     transition: none;
   }
 }
