@@ -524,6 +524,7 @@ li + li {
 
 .inquiry-copy {
   max-width: 580px;
+  white-space: nowrap;
 }
 
 .project-inquiry a {
@@ -657,6 +658,10 @@ footer p {
 
   .project-inquiry a {
     width: max-content;
+  }
+
+  .inquiry-copy {
+    white-space: normal;
   }
 
   footer {
