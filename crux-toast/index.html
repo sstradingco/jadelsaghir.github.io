@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CruX · Toast Operations Intelligence</title>
+  <meta name="description" content="Upload Toast POS data to surface best sellers, slow movers, daypart trends, and ask natural-language questions about your restaurant operations.">
+  <meta name="theme-color" content="#e7ecef">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./">
+      <span class="brand-mark">CruX</span>
+      <span class="brand-sub">Toast Ops Intelligence</span>
+    </a>
+    <nav class="top-actions" aria-label="Data actions">
+      <label class="btn btn-secondary file-btn">
+        Upload Toast CSV
+        <input id="csv-input" type="file" accept=".csv,text/csv" hidden>
+      </label>
+      <button type="button" class="btn btn-secondary" id="demo-btn">Load demo data</button>
+      <button type="button" class="btn btn-ghost" id="clear-btn" hidden>Clear data</button>
+      <a class="back-link" href="../">← Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-panel" id="empty-state">
+      <div class="hero-copy">
+        <p class="eyebrow">Restaurant operations · Toast POS</p>
+        <h1>CruX</h1>
+        <p class="hero-lead">Turn Toast exports into clear operational answers.</p>
+        <p class="hero-support">
+          Upload an Item Selection or sales export, or load demo data.
+          CruX ranks sellers, maps dayparts, flags risks, and answers questions like
+          “what are my worst sellers?” in plain language.
+        </p>
+        <div class="hero-cta">
+          <label class="btn btn-primary file-btn">
+            Upload Toast CSV
+            <input id="csv-input-hero" type="file" accept=".csv,text/csv" hidden>
+          </label>
+          <button type="button" class="btn btn-secondary" id="demo-btn-hero">Explore with demo data</button>
+        </div>
+        <p class="hero-hint">
+          Tip: In Toast, export <strong>Item Selection Details</strong> or a sales CSV with
+          item, quantity, and price columns.
+          You can also try the
+          <a href="data/demo-toast-export.csv" download>sample Toast CSV</a>.
+        </p>
+      </div>
+      <aside class="hero-preview" aria-hidden="true">
+        <div class="preview-card">
+          <span>Net sales</span>
+          <strong>$48.2k</strong>
+        </div>
+        <div class="preview-card delay-1">
+          <span>Best seller</span>
+          <strong>Chicken Shawarma</strong>
+        </div>
+        <div class="preview-card delay-2">
+          <span>Slow mover</span>
+          <strong>Stuffed Grape Leaves</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="dashboard" id="dashboard" hidden>
+      <div class="dash-head">
+        <div>
+          <p class="eyebrow" id="data-source-label">Loaded data</p>
+          <h2 id="range-label">Operational snapshot</h2>
+        </div>
+        <div class="range-chips" id="range-chips" role="group" aria-label="Date range">
+          <button type="button" class="chip is-active" data-range="all">All dates</button>
+          <button type="button" class="chip" data-range="7">Last 7 days</button>
+          <button type="button" class="chip" data-range="14">Last 14 days</button>
+          <button type="button" class="chip" data-range="30">Last 30 days</button>
+        </div>
+      </div>
+
+      <div class="kpi-row" id="kpi-row" aria-live="polite"></div>
+
+      <div class="grid-main">
+        <section class="panel" aria-labelledby="revenue-heading">
+          <div class="panel-head">
+            <h3 id="revenue-heading">Revenue by day</h3>
+            <p>Net sales trend across the selected window.</p>
+          </div>
+          <canvas id="revenue-chart" height="220" aria-label="Revenue by day chart"></canvas>
+        </section>
+
+        <section class="panel" aria-labelledby="daypart-heading">
+          <div class="panel-head">
+            <h3 id="daypart-heading">Daypart mix</h3>
+            <p>When the restaurant makes money.</p>
+          </div>
+          <canvas id="daypart-chart" height="220" aria-label="Daypart mix chart"></canvas>
+        </section>
+
+        <section class="panel" aria-labelledby="best-heading">
+          <div class="panel-head">
+            <h3 id="best-heading">Best sellers</h3>
+            <p>Ranked by net sales.</p>
+          </div>
+          <div class="table-wrap" id="best-sellers"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="worst-heading">
+          <div class="panel-head">
+            <h3 id="worst-heading">Worst sellers</h3>
+            <p>Lowest net sales among items with activity.</p>
+          </div>
+          <div class="table-wrap" id="worst-sellers"></div>
+        </section>
+
+        <section class="panel panel-wide" aria-labelledby="category-heading">
+          <div class="panel-head">
+            <h3 id="category-heading">Menu group performance</h3>
+            <p>Sales concentration across categories.</p>
+          </div>
+          <div class="category-bars" id="category-bars"></div>
+        </section>
+
+        <section class="panel panel-wide" aria-labelledby="insights-heading">
+          <div class="panel-head">
+            <h3 id="insights-heading">Operational insights</h3>
+            <p>Auto-sifted signals from the Toast data.</p>
+          </div>
+          <ul class="insight-list" id="insight-list"></ul>
+        </section>
+      </div>
+
+      <section class="panel qa-panel" aria-labelledby="qa-heading">
+        <div class="panel-head">
+          <h3 id="qa-heading">Ask about the business</h3>
+          <p>Questions about sellers, dayparts, revenue, and categories.</p>
+        </div>
+
+        <div class="qa-suggestions" id="qa-suggestions">
+          <button type="button" class="suggest" data-q="What are my best sellers?">Best sellers</button>
+          <button type="button" class="suggest" data-q="What are my worst sellers?">Worst sellers</button>
+          <button type="button" class="suggest" data-q="What is my average order value?">Average order value</button>
+          <button type="button" class="suggest" data-q="Which daypart is strongest?">Strongest daypart</button>
+          <button type="button" class="suggest" data-q="What is my busiest day of the week?">Busiest day</button>
+          <button type="button" class="suggest" data-q="Which menu group underperforms?">Weak menu group</button>
+        </div>
+
+        <div class="qa-thread" id="qa-thread" aria-live="polite"></div>
+
+        <form class="qa-form" id="qa-form">
+          <label class="sr-only" for="qa-input">Ask a question</label>
+          <input id="qa-input" type="text" autocomplete="off" placeholder="e.g. Which items sell poorly at dinner?">
+          <button type="submit" class="btn btn-primary">Ask</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <div class="toast-note" id="status-toast" hidden role="status"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

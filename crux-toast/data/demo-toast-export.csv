@@ -1,0 +1,2076 @@
+Order Date,Order Time,Order #,Menu Item,Menu Group,Qty,Net Price,Dining Option,Server
+6/28/2026,12:10 PM,T-1001,"Hummus",Starters,1,6.60,Takeout,Omar
+6/28/2026,12:10 PM,T-1001,"Fresh Lemonade",Drinks,1,3.46,Takeout,Omar
+6/28/2026,12:10 PM,T-1001,"Hummus",Starters,1,6.53,Takeout,Omar
+6/28/2026,12:03 PM,T-1002,"Mixed Grill",Plates,1,18.92,Takeout,Amina
+6/28/2026,12:29 PM,T-1003,"Chicken Shawarma Plate",Plates,1,14.56,Delivery,Omar
+6/28/2026,12:29 PM,T-1003,"Falafel Wrap",Wraps,1,9.39,Delivery,Omar
+6/28/2026,12:30 PM,T-1004,"Lentil Soup",Starters,1,5.54,Dine In,Omar
+6/28/2026,10:56 PM,T-1005,"Chicken Shawarma Plate",Plates,1,14.49,Dine In,Noor
+6/28/2026,06:04 PM,T-1006,"Mixed Grill",Plates,1,19.14,Takeout,Noor
+6/28/2026,06:04 PM,T-1006,"Beef Shawarma Plate",Plates,2,31.08,Takeout,Noor
+6/28/2026,12:20 PM,T-1007,"Hummus",Starters,1,6.55,Takeout,Omar
+6/28/2026,12:20 PM,T-1007,"Side Fries",Sides,2,6.98,Takeout,Omar
+6/28/2026,12:20 PM,T-1007,"Stuffed Grape Leaves",Starters,1,7.06,Takeout,Omar
+6/28/2026,12:05 PM,T-1008,"Beef Shawarma Plate",Plates,1,15.62,Takeout,Noor
+6/28/2026,12:05 PM,T-1008,"Mixed Grill",Plates,1,18.65,Takeout,Noor
+6/28/2026,07:12 PM,T-1009,"Chicken Wrap",Wraps,1,10.65,Takeout,Noor
+6/28/2026,07:12 PM,T-1009,"Chicken Wrap",Wraps,1,10.60,Takeout,Noor
+6/28/2026,06:54 PM,T-1010,"Chicken Shawarma Plate",Plates,1,14.62,Dine In,Chris
+6/28/2026,06:54 PM,T-1010,"Falafel Wrap",Wraps,1,9.44,Dine In,Chris
+6/28/2026,12:34 PM,T-1011,"Falafel Wrap",Wraps,1,9.48,Delivery,Amina
+6/28/2026,07:20 PM,T-1012,"Falafel Wrap",Wraps,1,9.42,Delivery,Omar
+6/28/2026,07:10 PM,T-1013,"Chicken Shawarma Plate",Plates,1,14.33,Takeout,Omar
+6/28/2026,04:42 PM,T-1014,"Baklava",Desserts,2,8.98,Delivery,Noor
+6/28/2026,12:48 PM,T-1015,"Hummus",Starters,2,13.18,Dine In,Omar
+6/28/2026,12:48 PM,T-1015,"Fresh Lemonade",Drinks,1,3.44,Dine In,Omar
+6/28/2026,12:48 PM,T-1015,"Beef Shawarma Plate",Plates,1,15.61,Dine In,Omar
+6/28/2026,12:37 PM,T-1016,"Hummus",Starters,2,13.09,Delivery,Noor
+6/28/2026,12:37 PM,T-1016,"Chicken Wrap",Wraps,2,21.11,Delivery,Noor
+6/28/2026,07:21 PM,T-1017,"Side Fries",Sides,2,6.99,Dine In,Amina
+6/28/2026,07:21 PM,T-1017,"Fresh Lemonade",Drinks,1,3.47,Dine In,Amina
+6/28/2026,07:21 PM,T-1017,"Beef Shawarma Plate",Plates,1,15.37,Dine In,Amina
+6/28/2026,12:47 PM,T-1018,"Lamb Wrap",Wraps,1,11.48,Delivery,Amina
+6/28/2026,12:47 PM,T-1018,"Lamb Wrap",Wraps,1,11.41,Delivery,Amina
+6/28/2026,12:16 PM,T-1019,"Beef Shawarma Plate",Plates,1,15.28,Takeout,Layla
+6/28/2026,12:16 PM,T-1019,"Side Fries",Sides,1,3.55,Takeout,Layla
+6/28/2026,07:49 PM,T-1020,"Fattoush Salad",Salads,1,8.66,Dine In,Omar
+6/28/2026,07:49 PM,T-1020,"Mint Tea",Drinks,1,2.78,Dine In,Omar
+6/28/2026,05:31 PM,T-1021,"Falafel Wrap",Wraps,1,9.56,Dine In,Amina
+6/28/2026,07:23 PM,T-1022,"Mixed Grill",Plates,2,38.48,Dine In,Omar
+6/28/2026,07:23 PM,T-1022,"Falafel Wrap",Wraps,1,9.64,Dine In,Omar
+6/28/2026,07:23 PM,T-1022,"Side Rice",Sides,1,3.01,Dine In,Omar
+6/28/2026,09:29 PM,T-1023,"Side Fries",Sides,1,3.47,Takeout,Layla
+6/28/2026,09:29 PM,T-1023,"Greek Salad",Salads,1,9.13,Takeout,Layla
+6/28/2026,07:52 PM,T-1024,"Greek Salad",Salads,2,18.14,Dine In,Omar
+6/28/2026,07:52 PM,T-1024,"Beef Shawarma Plate",Plates,1,15.79,Dine In,Omar
+6/28/2026,07:52 PM,T-1024,"Hummus",Starters,1,6.53,Dine In,Omar
+6/28/2026,08:42 PM,T-1025,"Hummus",Starters,1,6.50,Dine In,Noor
+6/28/2026,08:42 PM,T-1025,"Side Rice",Sides,1,2.99,Dine In,Noor
+6/28/2026,08:42 PM,T-1025,"Lamb Wrap",Wraps,1,11.60,Dine In,Noor
+6/28/2026,05:10 PM,T-1026,"Baklava",Desserts,1,4.43,Dine In,Amina
+6/28/2026,05:10 PM,T-1026,"Chicken Shawarma Plate",Plates,1,14.62,Dine In,Amina
+6/28/2026,05:10 PM,T-1026,"Falafel Wrap",Wraps,2,19.10,Dine In,Amina
+6/28/2026,07:05 PM,T-1027,"Falafel Wrap",Wraps,1,9.51,Takeout,Omar
+6/28/2026,07:05 PM,T-1027,"Hummus",Starters,1,6.40,Takeout,Omar
+6/28/2026,08:55 PM,T-1028,"Falafel Wrap",Wraps,1,9.69,Dine In,Amina
+6/28/2026,06:20 PM,T-1029,"Chicken Wrap",Wraps,1,10.62,Takeout,Amina
+6/28/2026,06:20 PM,T-1029,"Hummus",Starters,1,6.39,Takeout,Amina
+6/28/2026,06:20 PM,T-1029,"Mint Tea",Drinks,1,2.79,Takeout,Amina
+6/28/2026,06:20 PM,T-1029,"Mint Tea",Drinks,1,2.80,Takeout,Amina
+6/28/2026,12:33 PM,T-1030,"Beef Shawarma Plate",Plates,1,15.56,Takeout,Omar
+6/28/2026,12:33 PM,T-1030,"Stuffed Grape Leaves",Starters,2,14.01,Takeout,Omar
+6/28/2026,12:33 PM,T-1030,"Fresh Lemonade",Drinks,1,3.56,Takeout,Omar
+6/29/2026,01:19 PM,T-1031,"Hummus",Starters,1,6.54,Takeout,Chris
+6/29/2026,01:19 PM,T-1031,"Hummus",Starters,1,6.59,Takeout,Chris
+6/29/2026,11:59 AM,T-1032,"Hummus",Starters,1,6.41,Dine In,Layla
+6/29/2026,11:59 AM,T-1032,"Side Fries",Sides,1,3.48,Dine In,Layla
+6/29/2026,12:45 PM,T-1033,"Chicken Shawarma Plate",Plates,2,28.84,Takeout,Layla
+6/29/2026,03:30 PM,T-1034,"Mint Tea",Drinks,1,2.78,Dine In,Chris
+6/29/2026,03:30 PM,T-1034,"Chicken Shawarma Plate",Plates,1,14.53,Dine In,Chris
+6/29/2026,12:27 PM,T-1035,"Fresh Lemonade",Drinks,1,3.48,Takeout,Amina
+6/29/2026,12:27 PM,T-1035,"Fresh Lemonade",Drinks,2,6.94,Takeout,Amina
+6/29/2026,12:27 PM,T-1035,"Greek Salad",Salads,2,17.97,Takeout,Amina
+6/29/2026,12:26 PM,T-1036,"Fattoush Salad",Salads,2,17.23,Takeout,Chris
+6/29/2026,12:26 PM,T-1036,"Hummus",Starters,1,6.61,Takeout,Chris
+6/29/2026,12:40 PM,T-1037,"Side Fries",Sides,2,7.13,Takeout,Chris
+6/29/2026,12:40 PM,T-1037,"Turkish Coffee",Drinks,2,6.58,Takeout,Chris
+6/29/2026,12:40 PM,T-1037,"Beef Shawarma Plate",Plates,1,15.81,Takeout,Chris
+6/29/2026,12:40 PM,T-1038,"Side Rice",Sides,1,2.97,Takeout,Omar
+6/29/2026,12:40 PM,T-1038,"Beef Shawarma Plate",Plates,1,15.64,Takeout,Omar
+6/29/2026,12:40 PM,T-1038,"Chicken Shawarma Plate",Plates,1,14.35,Takeout,Omar
+6/29/2026,06:38 PM,T-1039,"Chicken Shawarma Plate",Plates,1,14.72,Delivery,Layla
+6/29/2026,06:38 PM,T-1039,"Falafel Wrap",Wraps,1,9.65,Delivery,Layla
+6/29/2026,06:38 PM,T-1039,"Hummus",Starters,1,6.59,Delivery,Layla
+6/29/2026,06:38 PM,T-1039,"Greek Salad",Salads,1,8.99,Delivery,Layla
+6/29/2026,07:35 PM,T-1040,"Fattoush Salad",Salads,1,8.46,Dine In,Chris
+6/29/2026,07:35 PM,T-1040,"Fattoush Salad",Salads,1,8.66,Dine In,Chris
+6/29/2026,07:35 PM,T-1040,"Mixed Grill",Plates,1,19.06,Dine In,Chris
+6/29/2026,05:37 PM,T-1041,"Chicken Shawarma Plate",Plates,2,28.42,Delivery,Chris
+6/29/2026,07:44 PM,T-1042,"Chicken Wrap",Wraps,1,10.60,Takeout,Amina
+6/29/2026,07:44 PM,T-1042,"Lentil Soup",Starters,1,5.53,Takeout,Amina
+6/29/2026,07:44 PM,T-1042,"Fattoush Salad",Salads,2,17.05,Takeout,Amina
+6/29/2026,07:35 PM,T-1043,"Falafel Wrap",Wraps,2,19.34,Dine In,Amina
+6/29/2026,07:35 PM,T-1043,"Lamb Wrap",Wraps,1,11.43,Dine In,Amina
+6/29/2026,07:35 PM,T-1043,"Lentil Soup",Starters,2,11.17,Dine In,Amina
+6/29/2026,07:35 PM,T-1043,"Fresh Lemonade",Drinks,1,3.56,Dine In,Amina
+6/29/2026,05:13 PM,T-1044,"Side Fries",Sides,1,3.52,Dine In,Omar
+6/29/2026,05:13 PM,T-1044,"Fattoush Salad",Salads,2,16.83,Dine In,Omar
+6/29/2026,05:13 PM,T-1044,"Side Fries",Sides,1,3.56,Dine In,Omar
+6/29/2026,07:13 PM,T-1045,"Baba Ganoush",Starters,1,6.49,Dine In,Noor
+6/29/2026,07:13 PM,T-1045,"Beef Shawarma Plate",Plates,1,15.75,Dine In,Noor
+6/29/2026,07:53 PM,T-1046,"Hummus",Starters,1,6.54,Takeout,Noor
+6/29/2026,07:53 PM,T-1046,"Greek Salad",Salads,1,8.88,Takeout,Noor
+6/29/2026,07:19 PM,T-1047,"Chicken Shawarma Plate",Plates,1,14.62,Dine In,Amina
+6/29/2026,07:19 PM,T-1047,"Beef Shawarma Plate",Plates,1,15.32,Dine In,Amina
+6/29/2026,01:20 PM,T-1048,"Chicken Shawarma Plate",Plates,1,14.41,Dine In,Chris
+6/29/2026,01:20 PM,T-1048,"Kids Nuggets",Kids,2,15.27,Dine In,Chris
+6/29/2026,01:20 PM,T-1048,"Hummus",Starters,1,6.54,Dine In,Chris
+6/29/2026,06:56 PM,T-1049,"Fattoush Salad",Salads,1,8.34,Dine In,Omar
+6/29/2026,06:56 PM,T-1049,"Knafeh",Desserts,1,6.01,Dine In,Omar
+6/29/2026,12:40 PM,T-1050,"Mixed Grill",Plates,2,37.63,Takeout,Noor
+6/29/2026,12:40 PM,T-1050,"Fresh Lemonade",Drinks,1,3.49,Takeout,Noor
+6/29/2026,12:40 PM,T-1050,"Chicken Wrap",Wraps,1,10.43,Takeout,Noor
+6/29/2026,07:52 PM,T-1051,"Fresh Lemonade",Drinks,1,3.49,Dine In,Layla
+6/29/2026,07:52 PM,T-1051,"Side Fries",Sides,1,3.49,Dine In,Layla
+6/29/2026,07:07 PM,T-1052,"Chicken Wrap",Wraps,2,21.19,Dine In,Chris
+6/29/2026,07:07 PM,T-1052,"Lamb Wrap",Wraps,1,11.61,Dine In,Chris
+6/29/2026,07:06 PM,T-1053,"Chicken Shawarma Plate",Plates,1,14.54,Delivery,Omar
+6/29/2026,07:06 PM,T-1053,"Chicken Shawarma Plate",Plates,1,14.72,Delivery,Omar
+6/29/2026,07:58 PM,T-1054,"Chicken Shawarma Plate",Plates,1,14.49,Takeout,Layla
+6/29/2026,03:57 PM,T-1055,"Fresh Lemonade",Drinks,1,3.57,Takeout,Omar
+6/30/2026,10:42 PM,T-1056,"Baklava",Desserts,2,9.16,Takeout,Noor
+6/30/2026,01:00 PM,T-1057,"Greek Salad",Salads,1,9.11,Delivery,Chris
+6/30/2026,01:00 PM,T-1057,"Chicken Shawarma Plate",Plates,1,14.34,Delivery,Chris
+6/30/2026,05:04 PM,T-1058,"Mixed Grill",Plates,1,19.13,Dine In,Noor
+6/30/2026,05:04 PM,T-1058,"Chicken Shawarma Plate",Plates,2,28.81,Dine In,Noor
+6/30/2026,05:04 PM,T-1058,"Side Fries",Sides,2,7.08,Dine In,Noor
+6/30/2026,12:16 PM,T-1059,"Lentil Soup",Starters,1,5.40,Dine In,Chris
+6/30/2026,12:16 PM,T-1059,"Kids Nuggets",Kids,1,7.54,Dine In,Chris
+6/30/2026,07:25 PM,T-1060,"Fattoush Salad",Salads,1,8.52,Dine In,Noor
+6/30/2026,03:21 PM,T-1061,"Greek Salad",Salads,1,9.14,Dine In,Chris
+6/30/2026,12:08 PM,T-1062,"Side Fries",Sides,2,6.98,Takeout,Chris
+6/30/2026,12:08 PM,T-1062,"Side Rice",Sides,2,5.90,Takeout,Chris
+6/30/2026,07:29 PM,T-1063,"Side Fries",Sides,1,3.56,Delivery,Omar
+6/30/2026,07:29 PM,T-1063,"Fresh Lemonade",Drinks,1,3.47,Delivery,Omar
+6/30/2026,07:29 PM,T-1063,"Falafel Wrap",Wraps,1,9.41,Delivery,Omar
+6/30/2026,12:42 PM,T-1064,"Chicken Shawarma Plate",Plates,1,14.53,Dine In,Omar
+6/30/2026,12:42 PM,T-1064,"Hummus",Starters,1,6.54,Dine In,Omar
+6/30/2026,06:46 PM,T-1065,"Chicken Wrap",Wraps,1,10.70,Delivery,Chris
+6/30/2026,06:46 PM,T-1065,"Falafel Wrap",Wraps,1,9.47,Delivery,Chris
+6/30/2026,07:11 PM,T-1066,"Fattoush Salad",Salads,1,8.46,Takeout,Chris
+6/30/2026,07:11 PM,T-1066,"Baklava",Desserts,1,4.42,Takeout,Chris
+6/30/2026,06:07 PM,T-1067,"Chicken Wrap",Wraps,2,20.98,Takeout,Amina
+6/30/2026,08:48 PM,T-1068,"Chicken Shawarma Plate",Plates,1,14.65,Dine In,Noor
+6/30/2026,08:48 PM,T-1068,"Kids Nuggets",Kids,1,7.43,Dine In,Noor
+6/30/2026,06:16 PM,T-1069,"Baba Ganoush",Starters,2,12.95,Delivery,Chris
+6/30/2026,06:16 PM,T-1069,"Side Fries",Sides,1,3.44,Delivery,Chris
+6/30/2026,12:14 PM,T-1070,"Chicken Wrap",Wraps,1,10.31,Dine In,Noor
+6/30/2026,12:34 PM,T-1071,"Falafel Wrap",Wraps,1,9.69,Takeout,Amina
+6/30/2026,12:34 PM,T-1071,"Lentil Soup",Starters,1,5.46,Takeout,Amina
+6/30/2026,12:53 PM,T-1072,"Beef Shawarma Plate",Plates,1,15.48,Delivery,Chris
+6/30/2026,12:53 PM,T-1072,"Fattoush Salad",Salads,1,8.50,Delivery,Chris
+6/30/2026,12:53 PM,T-1072,"Hummus",Starters,1,6.54,Delivery,Chris
+6/30/2026,01:48 PM,T-1073,"Knafeh",Desserts,1,6.06,Takeout,Amina
+6/30/2026,01:29 PM,T-1074,"Greek Salad",Salads,1,9.01,Dine In,Chris
+6/30/2026,01:29 PM,T-1074,"Baklava",Desserts,2,8.88,Dine In,Chris
+6/30/2026,12:31 PM,T-1075,"Hummus",Starters,1,6.44,Dine In,Omar
+6/30/2026,12:31 PM,T-1075,"Greek Salad",Salads,1,9.08,Dine In,Omar
+6/30/2026,12:54 PM,T-1076,"Chicken Shawarma Plate",Plates,1,14.57,Takeout,Noor
+6/30/2026,12:54 PM,T-1076,"Falafel Wrap",Wraps,2,19.36,Takeout,Noor
+6/30/2026,07:47 PM,T-1077,"Side Fries",Sides,1,3.53,Dine In,Omar
+6/30/2026,07:47 PM,T-1077,"Turkish Coffee",Drinks,2,6.58,Dine In,Omar
+6/30/2026,12:22 PM,T-1078,"Fresh Lemonade",Drinks,1,3.52,Takeout,Amina
+6/30/2026,12:22 PM,T-1078,"Mixed Grill",Plates,1,18.75,Takeout,Amina
+6/30/2026,07:56 PM,T-1079,"Fresh Lemonade",Drinks,1,3.48,Delivery,Omar
+6/30/2026,07:56 PM,T-1079,"Beef Shawarma Plate",Plates,1,15.75,Delivery,Omar
+6/30/2026,07:50 PM,T-1080,"Lamb Wrap",Wraps,1,11.71,Takeout,Chris
+6/30/2026,12:49 PM,T-1081,"Mixed Grill",Plates,1,18.91,Dine In,Noor
+6/30/2026,12:49 PM,T-1081,"Kids Nuggets",Kids,1,7.60,Dine In,Noor
+6/30/2026,12:49 PM,T-1081,"Chicken Shawarma Plate",Plates,1,14.57,Dine In,Noor
+6/30/2026,12:49 PM,T-1081,"Chicken Wrap",Wraps,1,10.55,Dine In,Noor
+6/30/2026,10:04 PM,T-1082,"Side Rice",Sides,1,3.00,Dine In,Amina
+6/30/2026,10:04 PM,T-1082,"Chicken Wrap",Wraps,1,10.39,Dine In,Amina
+6/30/2026,01:28 PM,T-1083,"Side Rice",Sides,1,3.02,Takeout,Noor
+6/30/2026,01:28 PM,T-1083,"Beef Shawarma Plate",Plates,1,15.53,Takeout,Noor
+6/30/2026,07:13 PM,T-1084,"Hummus",Starters,1,6.50,Takeout,Layla
+6/30/2026,07:13 PM,T-1084,"Fresh Lemonade",Drinks,1,3.43,Takeout,Layla
+6/30/2026,01:26 PM,T-1085,"Greek Salad",Salads,1,9.15,Delivery,Noor
+6/30/2026,01:26 PM,T-1085,"Mixed Grill",Plates,1,19.15,Delivery,Noor
+7/1/2026,06:39 PM,T-1086,"Chicken Wrap",Wraps,1,10.35,Takeout,Omar
+7/1/2026,06:39 PM,T-1086,"Hummus",Starters,1,6.43,Takeout,Omar
+7/1/2026,03:14 PM,T-1087,"Lentil Soup",Starters,1,5.41,Takeout,Amina
+7/1/2026,03:14 PM,T-1087,"Fattoush Salad",Salads,1,8.39,Takeout,Amina
+7/1/2026,03:14 PM,T-1087,"Baklava",Desserts,1,4.51,Takeout,Amina
+7/1/2026,12:29 PM,T-1088,"Fresh Lemonade",Drinks,2,7.12,Delivery,Chris
+7/1/2026,12:29 PM,T-1088,"Mint Tea",Drinks,1,2.77,Delivery,Chris
+7/1/2026,12:07 PM,T-1089,"Falafel Wrap",Wraps,1,9.64,Delivery,Chris
+7/1/2026,12:07 PM,T-1089,"Chicken Wrap",Wraps,1,10.71,Delivery,Chris
+7/1/2026,07:31 PM,T-1090,"Lamb Wrap",Wraps,1,11.65,Delivery,Omar
+7/1/2026,07:56 PM,T-1091,"Turkish Coffee",Drinks,1,3.30,Dine In,Chris
+7/1/2026,02:06 PM,T-1092,"Fattoush Salad",Salads,2,17.09,Takeout,Omar
+7/1/2026,02:06 PM,T-1092,"Fresh Lemonade",Drinks,1,3.45,Takeout,Omar
+7/1/2026,02:06 PM,T-1092,"Chicken Shawarma Plate",Plates,1,14.66,Takeout,Omar
+7/1/2026,10:04 AM,T-1093,"Fresh Lemonade",Drinks,2,6.99,Dine In,Layla
+7/1/2026,10:04 AM,T-1093,"Hummus",Starters,1,6.39,Dine In,Layla
+7/1/2026,07:09 PM,T-1094,"Fresh Lemonade",Drinks,1,3.46,Dine In,Amina
+7/1/2026,07:09 PM,T-1094,"Lamb Wrap",Wraps,1,11.32,Dine In,Amina
+7/1/2026,12:56 PM,T-1095,"Fattoush Salad",Salads,2,16.97,Dine In,Amina
+7/1/2026,12:56 PM,T-1095,"Lamb Wrap",Wraps,1,11.32,Dine In,Amina
+7/1/2026,07:54 PM,T-1096,"Fresh Lemonade",Drinks,1,3.46,Delivery,Chris
+7/1/2026,07:54 PM,T-1096,"Lentil Soup",Starters,2,10.95,Delivery,Chris
+7/1/2026,12:21 PM,T-1097,"Side Fries",Sides,1,3.49,Dine In,Omar
+7/1/2026,12:21 PM,T-1097,"Chicken Shawarma Plate",Plates,1,14.26,Dine In,Omar
+7/1/2026,07:45 PM,T-1098,"Fresh Lemonade",Drinks,2,6.91,Takeout,Chris
+7/1/2026,07:45 PM,T-1098,"Turkish Coffee",Drinks,1,3.25,Takeout,Chris
+7/1/2026,12:11 PM,T-1099,"Fattoush Salad",Salads,2,16.84,Takeout,Amina
+7/1/2026,12:11 PM,T-1099,"Beef Shawarma Plate",Plates,1,15.54,Takeout,Amina
+7/1/2026,12:11 PM,T-1099,"Chicken Shawarma Plate",Plates,1,14.52,Takeout,Amina
+7/1/2026,12:11 PM,T-1099,"Beef Shawarma Plate",Plates,2,31.57,Takeout,Amina
+7/1/2026,05:27 PM,T-1100,"Chicken Shawarma Plate",Plates,2,28.58,Takeout,Omar
+7/1/2026,04:10 PM,T-1101,"Side Fries",Sides,1,3.53,Delivery,Layla
+7/1/2026,07:55 PM,T-1102,"Falafel Wrap",Wraps,1,9.59,Takeout,Chris
+7/1/2026,07:55 PM,T-1102,"Mixed Grill",Plates,2,38.46,Takeout,Chris
+7/1/2026,12:32 PM,T-1103,"Mint Tea",Drinks,1,2.73,Dine In,Amina
+7/1/2026,12:32 PM,T-1103,"Chicken Wrap",Wraps,1,10.40,Dine In,Amina
+7/1/2026,12:32 PM,T-1103,"Side Fries",Sides,1,3.48,Dine In,Amina
+7/1/2026,12:32 PM,T-1103,"Beef Shawarma Plate",Plates,1,15.31,Dine In,Amina
+7/1/2026,07:19 PM,T-1104,"Fresh Lemonade",Drinks,1,3.55,Takeout,Omar
+7/1/2026,07:19 PM,T-1104,"Hummus",Starters,1,6.58,Takeout,Omar
+7/1/2026,07:19 PM,T-1104,"Lentil Soup",Starters,1,5.41,Takeout,Omar
+7/1/2026,12:22 PM,T-1105,"Baklava",Desserts,1,4.46,Takeout,Amina
+7/1/2026,07:20 PM,T-1106,"Fresh Lemonade",Drinks,1,3.47,Dine In,Chris
+7/1/2026,07:20 PM,T-1106,"Hummus",Starters,1,6.39,Dine In,Chris
+7/1/2026,07:20 PM,T-1106,"Kids Nuggets",Kids,1,7.58,Dine In,Chris
+7/1/2026,06:56 PM,T-1107,"Side Fries",Sides,2,7.00,Dine In,Amina
+7/1/2026,06:56 PM,T-1107,"Chicken Shawarma Plate",Plates,2,29.41,Dine In,Amina
+7/1/2026,06:56 PM,T-1107,"Mixed Grill",Plates,1,19.23,Dine In,Amina
+7/1/2026,03:39 PM,T-1108,"Side Rice",Sides,1,3.05,Dine In,Omar
+7/1/2026,03:39 PM,T-1108,"Chicken Wrap",Wraps,1,10.61,Dine In,Omar
+7/1/2026,12:10 PM,T-1109,"Turkish Coffee",Drinks,2,6.50,Delivery,Noor
+7/1/2026,12:10 PM,T-1109,"Stuffed Grape Leaves",Starters,1,7.09,Delivery,Noor
+7/1/2026,12:10 PM,T-1109,"Side Fries",Sides,1,3.53,Delivery,Noor
+7/1/2026,06:40 PM,T-1110,"Beef Shawarma Plate",Plates,1,15.24,Dine In,Chris
+7/1/2026,06:40 PM,T-1110,"Hummus",Starters,1,6.46,Dine In,Chris
+7/1/2026,09:38 PM,T-1111,"Mint Tea",Drinks,1,2.72,Dine In,Amina
+7/1/2026,09:38 PM,T-1111,"Falafel Wrap",Wraps,1,9.52,Dine In,Amina
+7/1/2026,09:38 PM,T-1111,"Side Fries",Sides,1,3.53,Dine In,Amina
+7/1/2026,12:04 PM,T-1112,"Side Rice",Sides,1,2.97,Takeout,Noor
+7/1/2026,12:29 PM,T-1113,"Beef Shawarma Plate",Plates,2,31.61,Delivery,Amina
+7/1/2026,12:29 PM,T-1113,"Fresh Lemonade",Drinks,1,3.52,Delivery,Amina
+7/1/2026,12:29 PM,T-1113,"Lamb Wrap",Wraps,1,11.40,Delivery,Amina
+7/2/2026,01:43 PM,T-1114,"Turkish Coffee",Drinks,1,3.22,Takeout,Amina
+7/2/2026,01:43 PM,T-1114,"Chicken Shawarma Plate",Plates,1,14.58,Takeout,Amina
+7/2/2026,10:33 PM,T-1115,"Baba Ganoush",Starters,1,6.40,Dine In,Chris
+7/2/2026,07:10 PM,T-1116,"Fattoush Salad",Salads,1,8.58,Takeout,Layla
+7/2/2026,11:48 AM,T-1117,"Chicken Wrap",Wraps,1,10.42,Dine In,Chris
+7/2/2026,07:43 PM,T-1118,"Baba Ganoush",Starters,2,13.07,Takeout,Noor
+7/2/2026,07:43 PM,T-1118,"Beef Shawarma Plate",Plates,2,31.50,Takeout,Noor
+7/2/2026,07:43 PM,T-1118,"Chicken Shawarma Plate",Plates,1,14.76,Takeout,Noor
+7/2/2026,12:16 PM,T-1119,"Falafel Wrap",Wraps,1,9.51,Takeout,Omar
+7/2/2026,12:16 PM,T-1119,"Mixed Grill",Plates,1,18.77,Takeout,Omar
+7/2/2026,12:16 PM,T-1119,"Lentil Soup",Starters,1,5.59,Takeout,Omar
+7/2/2026,03:21 PM,T-1120,"Kids Nuggets",Kids,1,7.36,Dine In,Chris
+7/2/2026,03:21 PM,T-1120,"Fattoush Salad",Salads,2,17.02,Dine In,Chris
+7/2/2026,03:21 PM,T-1120,"Lentil Soup",Starters,1,5.53,Dine In,Chris
+7/2/2026,07:23 PM,T-1121,"Fresh Lemonade",Drinks,1,3.54,Dine In,Noor
+7/2/2026,07:29 PM,T-1122,"Side Fries",Sides,1,3.54,Dine In,Omar
+7/2/2026,07:29 PM,T-1122,"Chicken Shawarma Plate",Plates,2,29.26,Dine In,Omar
+7/2/2026,07:57 PM,T-1123,"Side Fries",Sides,2,6.93,Dine In,Amina
+7/2/2026,10:59 AM,T-1124,"Lentil Soup",Starters,1,5.56,Takeout,Noor
+7/2/2026,10:59 AM,T-1124,"Chicken Shawarma Plate",Plates,1,14.53,Takeout,Noor
+7/2/2026,07:24 PM,T-1125,"Fresh Lemonade",Drinks,1,3.52,Dine In,Chris
+7/2/2026,07:24 PM,T-1125,"Chicken Shawarma Plate",Plates,1,14.28,Dine In,Chris
+7/2/2026,02:14 PM,T-1126,"Fresh Lemonade",Drinks,1,3.55,Dine In,Noor
+7/2/2026,02:14 PM,T-1126,"Knafeh",Desserts,2,12.21,Dine In,Noor
+7/2/2026,09:29 PM,T-1127,"Falafel Wrap",Wraps,1,9.46,Dine In,Layla
+7/2/2026,09:29 PM,T-1127,"Hummus",Starters,1,6.39,Dine In,Layla
+7/2/2026,09:29 PM,T-1127,"Mixed Grill",Plates,1,18.61,Dine In,Layla
+7/2/2026,07:34 PM,T-1128,"Falafel Wrap",Wraps,1,9.56,Dine In,Chris
+7/2/2026,07:29 PM,T-1129,"Beef Shawarma Plate",Plates,1,15.37,Dine In,Noor
+7/2/2026,05:13 PM,T-1130,"Chicken Wrap",Wraps,1,10.37,Dine In,Omar
+7/2/2026,05:13 PM,T-1130,"Mixed Grill",Plates,1,18.75,Dine In,Omar
+7/2/2026,07:50 PM,T-1131,"Chicken Shawarma Plate",Plates,1,14.56,Takeout,Chris
+7/2/2026,07:50 PM,T-1131,"Fresh Lemonade",Drinks,2,7.11,Takeout,Chris
+7/2/2026,07:50 PM,T-1131,"Side Rice",Sides,1,3.06,Takeout,Chris
+7/2/2026,02:13 PM,T-1132,"Fresh Lemonade",Drinks,1,3.46,Dine In,Noor
+7/2/2026,02:13 PM,T-1132,"Baklava",Desserts,1,4.44,Dine In,Noor
+7/2/2026,12:33 PM,T-1133,"Chicken Shawarma Plate",Plates,1,14.54,Dine In,Amina
+7/2/2026,07:07 PM,T-1134,"Falafel Wrap",Wraps,1,9.32,Delivery,Amina
+7/2/2026,07:57 PM,T-1135,"Stuffed Grape Leaves",Starters,1,6.97,Takeout,Omar
+7/2/2026,07:57 PM,T-1135,"Fresh Lemonade",Drinks,2,6.87,Takeout,Omar
+7/2/2026,06:05 PM,T-1136,"Fresh Lemonade",Drinks,1,3.50,Takeout,Amina
+7/2/2026,06:05 PM,T-1136,"Side Fries",Sides,2,7.07,Takeout,Amina
+7/2/2026,05:52 PM,T-1137,"Chicken Wrap",Wraps,1,10.49,Delivery,Omar
+7/2/2026,05:52 PM,T-1137,"Side Fries",Sides,2,7.00,Delivery,Omar
+7/2/2026,05:52 PM,T-1137,"Baba Ganoush",Starters,1,6.37,Delivery,Omar
+7/2/2026,11:08 AM,T-1138,"Mixed Grill",Plates,1,18.53,Delivery,Layla
+7/2/2026,11:08 AM,T-1138,"Lamb Wrap",Wraps,1,11.64,Delivery,Layla
+7/2/2026,11:08 AM,T-1138,"Hummus",Starters,1,6.53,Delivery,Layla
+7/2/2026,04:08 PM,T-1139,"Chicken Wrap",Wraps,1,10.29,Delivery,Layla
+7/2/2026,04:08 PM,T-1139,"Fresh Lemonade",Drinks,1,3.56,Delivery,Layla
+7/2/2026,04:08 PM,T-1139,"Falafel Wrap",Wraps,1,9.60,Delivery,Layla
+7/2/2026,04:08 PM,T-1139,"Stuffed Grape Leaves",Starters,2,14.24,Delivery,Layla
+7/2/2026,06:31 PM,T-1140,"Chicken Wrap",Wraps,1,10.58,Takeout,Chris
+7/2/2026,11:13 PM,T-1141,"Chicken Wrap",Wraps,1,10.70,Takeout,Amina
+7/2/2026,11:13 PM,T-1141,"Chicken Wrap",Wraps,2,20.61,Takeout,Amina
+7/2/2026,11:13 PM,T-1141,"Chicken Wrap",Wraps,1,10.55,Takeout,Amina
+7/2/2026,11:13 PM,T-1141,"Chicken Shawarma Plate",Plates,2,29.06,Takeout,Amina
+7/2/2026,05:38 PM,T-1142,"Hummus",Starters,1,6.39,Takeout,Noor
+7/2/2026,05:38 PM,T-1142,"Hummus",Starters,1,6.51,Takeout,Noor
+7/2/2026,05:38 PM,T-1142,"Side Fries",Sides,1,3.51,Takeout,Noor
+7/2/2026,12:03 PM,T-1143,"Hummus",Starters,2,12.98,Dine In,Chris
+7/2/2026,12:03 PM,T-1143,"Mixed Grill",Plates,1,18.67,Dine In,Chris
+7/2/2026,11:38 PM,T-1144,"Falafel Wrap",Wraps,1,9.33,Takeout,Chris
+7/2/2026,11:38 PM,T-1144,"Baba Ganoush",Starters,1,6.38,Takeout,Chris
+7/2/2026,11:38 PM,T-1144,"Baklava",Desserts,1,4.48,Takeout,Chris
+7/2/2026,04:06 PM,T-1145,"Beef Shawarma Plate",Plates,1,15.28,Takeout,Amina
+7/2/2026,10:52 PM,T-1147,"Beef Shawarma Plate",Plates,2,30.45,Delivery,Omar
+7/2/2026,01:32 PM,T-1148,"Chicken Shawarma Plate",Plates,2,28.44,Delivery,Noor
+7/3/2026,12:33 PM,T-1149,"Beef Shawarma Plate",Plates,1,15.31,Dine In,Noor
+7/3/2026,12:33 PM,T-1149,"Chicken Wrap",Wraps,1,10.56,Dine In,Noor
+7/3/2026,12:08 PM,T-1150,"Mint Tea",Drinks,2,5.49,Dine In,Noor
+7/3/2026,12:08 PM,T-1150,"Greek Salad",Salads,1,9.03,Dine In,Noor
+7/3/2026,12:08 PM,T-1150,"Mixed Grill",Plates,1,19.15,Dine In,Noor
+7/3/2026,12:58 PM,T-1151,"Fattoush Salad",Salads,1,8.48,Takeout,Amina
+7/3/2026,12:58 PM,T-1151,"Mixed Grill",Plates,2,37.64,Takeout,Amina
+7/3/2026,12:58 PM,T-1151,"Side Fries",Sides,2,7.08,Takeout,Amina
+7/3/2026,11:29 PM,T-1152,"Baklava",Desserts,1,4.52,Dine In,Noor
+7/3/2026,11:29 PM,T-1152,"Chicken Wrap",Wraps,1,10.68,Dine In,Noor
+7/3/2026,11:29 PM,T-1152,"Baklava",Desserts,1,4.53,Dine In,Noor
+7/3/2026,07:38 PM,T-1153,"Fresh Lemonade",Drinks,1,3.48,Takeout,Noor
+7/3/2026,07:03 PM,T-1154,"Chicken Shawarma Plate",Plates,1,14.74,Dine In,Noor
+7/3/2026,05:34 PM,T-1155,"Side Fries",Sides,2,7.05,Dine In,Chris
+7/3/2026,05:34 PM,T-1155,"Beef Shawarma Plate",Plates,1,15.69,Dine In,Chris
+7/3/2026,05:34 PM,T-1155,"Lamb Wrap",Wraps,1,11.65,Dine In,Chris
+7/3/2026,05:34 PM,T-1155,"Chicken Wrap",Wraps,1,10.40,Dine In,Chris
+7/3/2026,07:04 PM,T-1156,"Turkish Coffee",Drinks,1,3.27,Takeout,Layla
+7/3/2026,07:04 PM,T-1156,"Fresh Lemonade",Drinks,1,3.47,Takeout,Layla
+7/3/2026,02:50 PM,T-1157,"Chicken Shawarma Plate",Plates,1,14.26,Takeout,Amina
+7/3/2026,02:50 PM,T-1157,"Chicken Wrap",Wraps,1,10.32,Takeout,Amina
+7/3/2026,02:50 PM,T-1157,"Lamb Wrap",Wraps,1,11.31,Takeout,Amina
+7/3/2026,12:05 PM,T-1158,"Fattoush Salad",Salads,1,8.53,Dine In,Omar
+7/3/2026,12:05 PM,T-1158,"Fresh Lemonade",Drinks,1,3.55,Dine In,Omar
+7/3/2026,12:05 PM,T-1158,"Chicken Wrap",Wraps,1,10.42,Dine In,Omar
+7/3/2026,12:05 PM,T-1158,"Side Fries",Sides,1,3.56,Dine In,Omar
+7/3/2026,07:01 PM,T-1159,"Beef Shawarma Plate",Plates,2,31.24,Takeout,Noor
+7/3/2026,03:40 PM,T-1160,"Lamb Wrap",Wraps,1,11.64,Delivery,Layla
+7/3/2026,03:40 PM,T-1160,"Hummus",Starters,1,6.55,Delivery,Layla
+7/3/2026,03:40 PM,T-1160,"Chicken Shawarma Plate",Plates,1,14.70,Delivery,Layla
+7/3/2026,07:07 PM,T-1161,"Hummus",Starters,1,6.62,Dine In,Omar
+7/3/2026,07:25 PM,T-1163,"Beef Shawarma Plate",Plates,1,15.37,Takeout,Amina
+7/3/2026,07:25 PM,T-1163,"Mixed Grill",Plates,1,19.10,Takeout,Amina
+7/3/2026,12:17 PM,T-1164,"Mixed Grill",Plates,1,18.71,Dine In,Noor
+7/3/2026,12:17 PM,T-1164,"Falafel Wrap",Wraps,1,9.47,Dine In,Noor
+7/3/2026,12:03 PM,T-1165,"Mixed Grill",Plates,1,19.20,Dine In,Noor
+7/3/2026,12:03 PM,T-1165,"Lamb Wrap",Wraps,2,22.81,Dine In,Noor
+7/3/2026,12:03 PM,T-1165,"Mixed Grill",Plates,1,18.92,Dine In,Noor
+7/3/2026,12:03 PM,T-1165,"Chicken Shawarma Plate",Plates,1,14.71,Dine In,Noor
+7/3/2026,09:35 PM,T-1166,"Turkish Coffee",Drinks,1,3.20,Delivery,Omar
+7/3/2026,12:59 PM,T-1167,"Chicken Wrap",Wraps,1,10.34,Takeout,Amina
+7/3/2026,12:59 PM,T-1167,"Chicken Wrap",Wraps,1,10.32,Takeout,Amina
+7/3/2026,07:39 PM,T-1168,"Chicken Shawarma Plate",Plates,1,14.35,Dine In,Chris
+7/3/2026,07:39 PM,T-1168,"Side Rice",Sides,1,2.95,Dine In,Chris
+7/3/2026,08:26 PM,T-1169,"Chicken Shawarma Plate",Plates,2,29.24,Delivery,Amina
+7/3/2026,08:26 PM,T-1169,"Chicken Wrap",Wraps,1,10.70,Delivery,Amina
+7/3/2026,11:18 AM,T-1170,"Hummus",Starters,1,6.42,Dine In,Chris
+7/3/2026,11:18 AM,T-1170,"Turkish Coffee",Drinks,1,3.30,Dine In,Chris
+7/3/2026,07:16 PM,T-1171,"Hummus",Starters,1,6.52,Takeout,Layla
+7/3/2026,12:35 PM,T-1172,"Fattoush Salad",Salads,1,8.39,Dine In,Omar
+7/3/2026,07:00 PM,T-1173,"Fresh Lemonade",Drinks,1,3.56,Takeout,Noor
+7/3/2026,01:04 PM,T-1174,"Falafel Wrap",Wraps,1,9.65,Takeout,Chris
+7/3/2026,01:04 PM,T-1174,"Fresh Lemonade",Drinks,1,3.54,Takeout,Chris
+7/3/2026,01:04 PM,T-1174,"Fattoush Salad",Salads,2,17.27,Takeout,Chris
+7/3/2026,09:13 PM,T-1175,"Side Fries",Sides,1,3.49,Delivery,Omar
+7/3/2026,09:13 PM,T-1175,"Mixed Grill",Plates,1,18.74,Delivery,Omar
+7/3/2026,07:18 PM,T-1176,"Mint Tea",Drinks,1,2.79,Takeout,Chris
+7/3/2026,07:18 PM,T-1176,"Baba Ganoush",Starters,1,6.59,Takeout,Chris
+7/3/2026,07:18 PM,T-1176,"Mint Tea",Drinks,1,2.70,Takeout,Chris
+7/3/2026,01:21 PM,T-1177,"Chicken Wrap",Wraps,1,10.41,Takeout,Noor
+7/3/2026,09:04 PM,T-1178,"Turkish Coffee",Drinks,1,3.25,Takeout,Noor
+7/3/2026,11:16 PM,T-1179,"Baklava",Desserts,1,4.55,Dine In,Omar
+7/3/2026,11:16 PM,T-1179,"Chicken Shawarma Plate",Plates,1,14.43,Dine In,Omar
+7/3/2026,11:16 PM,T-1179,"Mixed Grill",Plates,2,38.13,Dine In,Omar
+7/3/2026,11:16 PM,T-1179,"Chicken Shawarma Plate",Plates,1,14.52,Dine In,Omar
+7/3/2026,01:11 PM,T-1180,"Chicken Shawarma Plate",Plates,1,14.59,Takeout,Layla
+7/3/2026,01:11 PM,T-1180,"Beef Shawarma Plate",Plates,1,15.73,Takeout,Layla
+7/3/2026,01:11 PM,T-1180,"Turkish Coffee",Drinks,1,3.19,Takeout,Layla
+7/3/2026,07:56 PM,T-1181,"Lamb Wrap",Wraps,1,11.49,Dine In,Omar
+7/3/2026,07:56 PM,T-1181,"Mixed Grill",Plates,1,18.66,Dine In,Omar
+7/3/2026,07:56 PM,T-1181,"Kids Nuggets",Kids,1,7.45,Dine In,Omar
+7/3/2026,12:08 PM,T-1182,"Greek Salad",Salads,1,9.10,Takeout,Noor
+7/3/2026,09:19 PM,T-1183,"Falafel Wrap",Wraps,2,19.20,Delivery,Omar
+7/3/2026,09:19 PM,T-1183,"Falafel Wrap",Wraps,1,9.38,Delivery,Omar
+7/3/2026,09:19 PM,T-1183,"Chicken Shawarma Plate",Plates,1,14.27,Delivery,Omar
+7/3/2026,09:19 PM,T-1183,"Side Fries",Sides,1,3.48,Delivery,Omar
+7/3/2026,12:31 PM,T-1184,"Stuffed Grape Leaves",Starters,1,6.88,Dine In,Chris
+7/3/2026,12:31 PM,T-1184,"Fattoush Salad",Salads,1,8.44,Dine In,Chris
+7/3/2026,12:31 PM,T-1184,"Fresh Lemonade",Drinks,1,3.45,Dine In,Chris
+7/3/2026,10:58 PM,T-1185,"Chicken Shawarma Plate",Plates,1,14.38,Dine In,Chris
+7/3/2026,12:36 PM,T-1186,"Falafel Wrap",Wraps,1,9.62,Takeout,Chris
+7/3/2026,07:12 PM,T-1187,"Mint Tea",Drinks,2,5.41,Takeout,Layla
+7/3/2026,07:12 PM,T-1187,"Beef Shawarma Plate",Plates,1,15.81,Takeout,Layla
+7/3/2026,07:12 PM,T-1187,"Chicken Wrap",Wraps,1,10.61,Takeout,Layla
+7/3/2026,11:12 AM,T-1188,"Hummus",Starters,1,6.51,Dine In,Chris
+7/3/2026,08:40 PM,T-1189,"Chicken Wrap",Wraps,1,10.56,Delivery,Omar
+7/3/2026,08:40 PM,T-1189,"Chicken Shawarma Plate",Plates,2,28.77,Delivery,Omar
+7/3/2026,08:40 PM,T-1189,"Fresh Lemonade",Drinks,2,6.99,Delivery,Omar
+7/3/2026,05:58 PM,T-1190,"Chicken Wrap",Wraps,1,10.59,Dine In,Omar
+7/3/2026,05:58 PM,T-1190,"Falafel Wrap",Wraps,2,19.09,Dine In,Omar
+7/3/2026,05:58 PM,T-1190,"Fresh Lemonade",Drinks,1,3.51,Dine In,Omar
+7/4/2026,03:02 PM,T-1191,"Mixed Grill",Plates,1,19.17,Takeout,Omar
+7/4/2026,03:02 PM,T-1191,"Kids Nuggets",Kids,1,7.42,Takeout,Omar
+7/4/2026,03:02 PM,T-1191,"Baklava",Desserts,1,4.53,Takeout,Omar
+7/4/2026,12:26 PM,T-1192,"Fattoush Salad",Salads,1,8.33,Takeout,Noor
+7/4/2026,07:36 PM,T-1193,"Mixed Grill",Plates,1,18.89,Dine In,Omar
+7/4/2026,07:36 PM,T-1193,"Knafeh",Desserts,1,5.95,Dine In,Omar
+7/4/2026,07:36 PM,T-1193,"Falafel Wrap",Wraps,1,9.53,Dine In,Omar
+7/4/2026,06:00 PM,T-1194,"Mint Tea",Drinks,1,2.78,Delivery,Omar
+7/4/2026,01:53 PM,T-1195,"Turkish Coffee",Drinks,1,3.31,Takeout,Noor
+7/4/2026,01:53 PM,T-1195,"Beef Shawarma Plate",Plates,1,15.24,Takeout,Noor
+7/4/2026,05:22 PM,T-1196,"Chicken Shawarma Plate",Plates,1,14.42,Delivery,Noor
+7/4/2026,12:50 PM,T-1197,"Turkish Coffee",Drinks,1,3.29,Takeout,Omar
+7/4/2026,12:50 PM,T-1197,"Fresh Lemonade",Drinks,1,3.50,Takeout,Omar
+7/4/2026,12:50 PM,T-1197,"Falafel Wrap",Wraps,1,9.59,Takeout,Omar
+7/4/2026,12:33 PM,T-1198,"Falafel Wrap",Wraps,1,9.54,Delivery,Chris
+7/4/2026,12:33 PM,T-1198,"Fattoush Salad",Salads,1,8.58,Delivery,Chris
+7/4/2026,02:23 PM,T-1199,"Beef Shawarma Plate",Plates,2,31.03,Dine In,Layla
+7/4/2026,02:23 PM,T-1199,"Hummus",Starters,1,6.37,Dine In,Layla
+7/4/2026,08:51 PM,T-1200,"Lentil Soup",Starters,1,5.52,Takeout,Noor
+7/4/2026,08:51 PM,T-1200,"Chicken Wrap",Wraps,1,10.49,Takeout,Noor
+7/4/2026,08:51 PM,T-1200,"Hummus",Starters,2,13.24,Takeout,Noor
+7/4/2026,07:49 PM,T-1201,"Fresh Lemonade",Drinks,1,3.56,Delivery,Amina
+7/4/2026,07:49 PM,T-1201,"Falafel Wrap",Wraps,2,18.76,Delivery,Amina
+7/4/2026,07:29 PM,T-1202,"Mixed Grill",Plates,1,19.12,Dine In,Layla
+7/4/2026,07:29 PM,T-1202,"Chicken Shawarma Plate",Plates,1,14.57,Dine In,Layla
+7/4/2026,12:24 PM,T-1203,"Mint Tea",Drinks,2,5.42,Dine In,Amina
+7/4/2026,12:24 PM,T-1203,"Fattoush Salad",Salads,2,17.31,Dine In,Amina
+7/4/2026,05:51 PM,T-1204,"Fattoush Salad",Salads,2,16.89,Delivery,Layla
+7/4/2026,05:51 PM,T-1204,"Side Fries",Sides,1,3.44,Delivery,Layla
+7/4/2026,05:51 PM,T-1204,"Falafel Wrap",Wraps,1,9.66,Delivery,Layla
+7/4/2026,09:27 PM,T-1205,"Hummus",Starters,1,6.57,Delivery,Amina
+7/4/2026,09:27 PM,T-1205,"Falafel Wrap",Wraps,1,9.67,Delivery,Amina
+7/4/2026,09:27 PM,T-1205,"Lentil Soup",Starters,1,5.48,Delivery,Amina
+7/4/2026,09:27 PM,T-1205,"Chicken Wrap",Wraps,1,10.55,Delivery,Amina
+7/4/2026,06:22 PM,T-1206,"Side Fries",Sides,1,3.47,Dine In,Omar
+7/4/2026,06:22 PM,T-1206,"Turkish Coffee",Drinks,2,6.40,Dine In,Omar
+7/4/2026,01:47 PM,T-1207,"Chicken Wrap",Wraps,1,10.63,Takeout,Layla
+7/4/2026,12:29 PM,T-1208,"Falafel Wrap",Wraps,1,9.53,Takeout,Chris
+7/4/2026,12:29 PM,T-1208,"Side Rice",Sides,1,2.99,Takeout,Chris
+7/4/2026,12:38 PM,T-1209,"Baba Ganoush",Starters,1,6.47,Dine In,Omar
+7/4/2026,12:38 PM,T-1209,"Lamb Wrap",Wraps,1,11.63,Dine In,Omar
+7/4/2026,11:11 AM,T-1210,"Side Fries",Sides,2,7.06,Dine In,Amina
+7/4/2026,11:11 AM,T-1210,"Side Fries",Sides,1,3.47,Dine In,Amina
+7/4/2026,11:11 AM,T-1210,"Chicken Wrap",Wraps,1,10.62,Dine In,Amina
+7/4/2026,07:09 PM,T-1211,"Greek Salad",Salads,1,9.05,Takeout,Omar
+7/4/2026,07:09 PM,T-1211,"Chicken Wrap",Wraps,2,20.72,Takeout,Omar
+7/4/2026,07:09 PM,T-1211,"Hummus",Starters,1,6.38,Takeout,Omar
+7/4/2026,07:58 PM,T-1212,"Greek Salad",Salads,2,17.70,Dine In,Noor
+7/4/2026,07:58 PM,T-1212,"Lentil Soup",Starters,1,5.51,Dine In,Noor
+7/4/2026,12:15 PM,T-1213,"Chicken Wrap",Wraps,1,10.61,Delivery,Amina
+7/4/2026,12:15 PM,T-1213,"Falafel Wrap",Wraps,1,9.40,Delivery,Amina
+7/4/2026,12:15 PM,T-1213,"Lamb Wrap",Wraps,1,11.52,Delivery,Amina
+7/4/2026,12:08 PM,T-1214,"Fresh Lemonade",Drinks,1,3.52,Dine In,Amina
+7/4/2026,12:10 PM,T-1215,"Fattoush Salad",Salads,1,8.57,Takeout,Omar
+7/4/2026,11:14 AM,T-1216,"Turkish Coffee",Drinks,1,3.19,Dine In,Noor
+7/4/2026,11:14 AM,T-1216,"Kids Nuggets",Kids,1,7.48,Dine In,Noor
+7/4/2026,11:14 AM,T-1216,"Fresh Lemonade",Drinks,1,3.48,Dine In,Noor
+7/4/2026,05:16 PM,T-1217,"Chicken Wrap",Wraps,1,10.54,Dine In,Chris
+7/4/2026,05:16 PM,T-1217,"Chicken Wrap",Wraps,1,10.48,Dine In,Chris
+7/4/2026,05:16 PM,T-1217,"Side Fries",Sides,1,3.50,Dine In,Chris
+7/4/2026,07:01 PM,T-1218,"Fresh Lemonade",Drinks,1,3.44,Takeout,Noor
+7/4/2026,07:54 PM,T-1219,"Chicken Wrap",Wraps,1,10.66,Dine In,Amina
+7/4/2026,07:03 PM,T-1220,"Falafel Wrap",Wraps,1,9.57,Delivery,Layla
+7/4/2026,07:03 PM,T-1220,"Baklava",Desserts,1,4.58,Delivery,Layla
+7/4/2026,12:23 PM,T-1221,"Chicken Shawarma Plate",Plates,1,14.36,Dine In,Noor
+7/4/2026,12:23 PM,T-1221,"Beef Shawarma Plate",Plates,1,15.33,Dine In,Noor
+7/4/2026,12:23 PM,T-1221,"Baba Ganoush",Starters,1,6.47,Dine In,Noor
+7/4/2026,12:44 PM,T-1222,"Fresh Lemonade",Drinks,2,6.88,Takeout,Layla
+7/4/2026,12:50 PM,T-1223,"Hummus",Starters,1,6.43,Takeout,Noor
+7/4/2026,12:50 PM,T-1223,"Side Fries",Sides,1,3.50,Takeout,Noor
+7/4/2026,12:50 PM,T-1223,"Side Rice",Sides,1,3.01,Takeout,Noor
+7/4/2026,07:05 PM,T-1224,"Hummus",Starters,1,6.39,Dine In,Noor
+7/4/2026,07:05 PM,T-1224,"Turkish Coffee",Drinks,1,3.27,Dine In,Noor
+7/4/2026,07:21 PM,T-1225,"Hummus",Starters,1,6.44,Delivery,Amina
+7/4/2026,07:21 PM,T-1225,"Beef Shawarma Plate",Plates,1,15.53,Delivery,Amina
+7/4/2026,06:33 PM,T-1226,"Chicken Wrap",Wraps,2,21.38,Dine In,Noor
+7/4/2026,06:16 PM,T-1227,"Chicken Wrap",Wraps,1,10.37,Takeout,Omar
+7/4/2026,06:16 PM,T-1227,"Fattoush Salad",Salads,1,8.48,Takeout,Omar
+7/4/2026,06:16 PM,T-1227,"Hummus",Starters,1,6.50,Takeout,Omar
+7/4/2026,12:02 PM,T-1228,"Hummus",Starters,1,6.50,Dine In,Omar
+7/4/2026,12:02 PM,T-1228,"Fresh Lemonade",Drinks,1,3.48,Dine In,Omar
+7/5/2026,12:56 PM,T-1229,"Mixed Grill",Plates,2,37.95,Dine In,Chris
+7/5/2026,12:56 PM,T-1229,"Mixed Grill",Plates,1,18.84,Dine In,Chris
+7/5/2026,12:56 PM,T-1229,"Fresh Lemonade",Drinks,1,3.48,Dine In,Chris
+7/5/2026,08:24 PM,T-1230,"Chicken Shawarma Plate",Plates,1,14.72,Dine In,Noor
+7/5/2026,10:50 PM,T-1231,"Falafel Wrap",Wraps,1,9.42,Takeout,Noor
+7/5/2026,10:50 PM,T-1231,"Chicken Shawarma Plate",Plates,1,14.40,Takeout,Noor
+7/5/2026,10:50 PM,T-1231,"Baba Ganoush",Starters,1,6.62,Takeout,Noor
+7/5/2026,07:20 PM,T-1232,"Chicken Wrap",Wraps,2,21.14,Takeout,Layla
+7/5/2026,11:51 AM,T-1233,"Beef Shawarma Plate",Plates,1,15.61,Dine In,Noor
+7/5/2026,11:51 AM,T-1233,"Chicken Shawarma Plate",Plates,1,14.33,Dine In,Noor
+7/5/2026,12:40 PM,T-1234,"Fattoush Salad",Salads,1,8.41,Dine In,Omar
+7/5/2026,05:49 PM,T-1235,"Fattoush Salad",Salads,1,8.55,Dine In,Amina
+7/5/2026,05:49 PM,T-1235,"Side Rice",Sides,1,3.04,Dine In,Amina
+7/5/2026,05:49 PM,T-1235,"Fattoush Salad",Salads,1,8.59,Dine In,Amina
+7/5/2026,12:14 PM,T-1236,"Beef Shawarma Plate",Plates,1,15.37,Takeout,Amina
+7/5/2026,12:14 PM,T-1236,"Mixed Grill",Plates,2,38.05,Takeout,Amina
+7/5/2026,12:14 PM,T-1236,"Chicken Shawarma Plate",Plates,2,28.84,Takeout,Amina
+7/5/2026,12:54 PM,T-1237,"Fresh Lemonade",Drinks,1,3.50,Delivery,Layla
+7/5/2026,07:04 PM,T-1238,"Side Rice",Sides,2,6.03,Dine In,Omar
+7/5/2026,07:04 PM,T-1238,"Baklava",Desserts,1,4.44,Dine In,Omar
+7/5/2026,07:04 PM,T-1238,"Chicken Shawarma Plate",Plates,1,14.74,Dine In,Omar
+7/5/2026,08:45 PM,T-1239,"Baba Ganoush",Starters,1,6.49,Delivery,Amina
+7/5/2026,12:08 PM,T-1240,"Fattoush Salad",Salads,1,8.40,Dine In,Omar
+7/5/2026,12:55 PM,T-1241,"Falafel Wrap",Wraps,2,19.08,Delivery,Noor
+7/5/2026,12:55 PM,T-1241,"Fattoush Salad",Salads,1,8.52,Delivery,Noor
+7/5/2026,12:55 PM,T-1241,"Kids Nuggets",Kids,1,7.61,Delivery,Noor
+7/5/2026,05:56 PM,T-1242,"Greek Salad",Salads,1,9.13,Dine In,Amina
+7/5/2026,05:56 PM,T-1242,"Chicken Shawarma Plate",Plates,1,14.58,Dine In,Amina
+7/5/2026,05:56 PM,T-1242,"Fattoush Salad",Salads,1,8.40,Dine In,Amina
+7/5/2026,05:56 PM,T-1242,"Falafel Wrap",Wraps,1,9.57,Dine In,Amina
+7/5/2026,07:32 PM,T-1243,"Beef Shawarma Plate",Plates,1,15.31,Takeout,Noor
+7/5/2026,07:32 PM,T-1243,"Chicken Shawarma Plate",Plates,1,14.36,Takeout,Noor
+7/5/2026,12:40 PM,T-1244,"Hummus",Starters,1,6.61,Takeout,Layla
+7/5/2026,12:40 PM,T-1244,"Fresh Lemonade",Drinks,1,3.50,Takeout,Layla
+7/5/2026,12:40 PM,T-1244,"Baba Ganoush",Starters,1,6.57,Takeout,Layla
+7/5/2026,03:12 PM,T-1245,"Greek Salad",Salads,1,9.04,Dine In,Noor
+7/5/2026,07:54 PM,T-1246,"Beef Shawarma Plate",Plates,1,15.30,Takeout,Omar
+7/5/2026,07:54 PM,T-1246,"Fattoush Salad",Salads,1,8.62,Takeout,Omar
+7/5/2026,07:54 PM,T-1246,"Chicken Wrap",Wraps,1,10.42,Takeout,Omar
+7/5/2026,07:54 PM,T-1246,"Side Rice",Sides,1,3.00,Takeout,Omar
+7/5/2026,12:46 PM,T-1247,"Turkish Coffee",Drinks,1,3.28,Dine In,Omar
+7/5/2026,12:21 PM,T-1248,"Lentil Soup",Starters,1,5.57,Dine In,Noor
+7/5/2026,10:16 PM,T-1249,"Mixed Grill",Plates,1,19.18,Dine In,Chris
+7/5/2026,10:16 PM,T-1249,"Greek Salad",Salads,2,17.81,Dine In,Chris
+7/5/2026,10:16 PM,T-1249,"Chicken Wrap",Wraps,1,10.30,Dine In,Chris
+7/5/2026,10:16 PM,T-1249,"Fattoush Salad",Salads,1,8.43,Dine In,Chris
+7/5/2026,12:21 PM,T-1250,"Fattoush Salad",Salads,1,8.57,Takeout,Omar
+7/5/2026,12:10 PM,T-1251,"Fattoush Salad",Salads,1,8.44,Dine In,Layla
+7/5/2026,12:10 PM,T-1251,"Mint Tea",Drinks,1,2.76,Dine In,Layla
+7/5/2026,12:08 PM,T-1252,"Hummus",Starters,1,6.60,Delivery,Chris
+7/6/2026,07:36 PM,T-1253,"Side Rice",Sides,1,2.97,Takeout,Amina
+7/6/2026,07:36 PM,T-1253,"Falafel Wrap",Wraps,2,18.76,Takeout,Amina
+7/6/2026,07:36 PM,T-1253,"Turkish Coffee",Drinks,1,3.31,Takeout,Amina
+7/6/2026,05:44 PM,T-1254,"Lentil Soup",Starters,1,5.44,Delivery,Omar
+7/6/2026,07:58 PM,T-1255,"Chicken Wrap",Wraps,1,10.45,Delivery,Omar
+7/6/2026,07:58 PM,T-1255,"Baba Ganoush",Starters,1,6.49,Delivery,Omar
+7/6/2026,08:22 PM,T-1256,"Chicken Wrap",Wraps,1,10.57,Takeout,Chris
+7/6/2026,08:22 PM,T-1256,"Hummus",Starters,2,13.00,Takeout,Chris
+7/6/2026,08:22 PM,T-1256,"Fattoush Salad",Salads,1,8.65,Takeout,Chris
+7/6/2026,08:22 PM,T-1256,"Beef Shawarma Plate",Plates,1,15.78,Takeout,Chris
+7/6/2026,12:44 PM,T-1257,"Lamb Wrap",Wraps,1,11.65,Dine In,Amina
+7/6/2026,07:43 PM,T-1258,"Lentil Soup",Starters,2,10.82,Delivery,Layla
+7/6/2026,07:43 PM,T-1258,"Fresh Lemonade",Drinks,2,7.06,Delivery,Layla
+7/6/2026,08:06 PM,T-1259,"Fattoush Salad",Salads,1,8.49,Takeout,Amina
+7/6/2026,08:06 PM,T-1259,"Side Fries",Sides,1,3.47,Takeout,Amina
+7/6/2026,08:06 PM,T-1259,"Fattoush Salad",Salads,1,8.55,Takeout,Amina
+7/6/2026,08:06 PM,T-1259,"Mixed Grill",Plates,1,18.72,Takeout,Amina
+7/6/2026,03:59 PM,T-1260,"Baba Ganoush",Starters,1,6.62,Takeout,Amina
+7/6/2026,03:59 PM,T-1260,"Kids Nuggets",Kids,2,14.75,Takeout,Amina
+7/6/2026,11:35 AM,T-1261,"Beef Shawarma Plate",Plates,2,30.63,Takeout,Omar
+7/6/2026,11:35 AM,T-1261,"Baba Ganoush",Starters,1,6.59,Takeout,Omar
+7/6/2026,12:12 PM,T-1262,"Hummus",Starters,1,6.40,Delivery,Omar
+7/6/2026,12:12 PM,T-1262,"Fattoush Salad",Salads,1,8.37,Delivery,Omar
+7/6/2026,12:05 PM,T-1263,"Hummus",Starters,1,6.61,Takeout,Noor
+7/6/2026,12:05 PM,T-1263,"Mixed Grill",Plates,1,18.60,Takeout,Noor
+7/6/2026,07:59 PM,T-1264,"Hummus",Starters,1,6.50,Delivery,Omar
+7/6/2026,07:59 PM,T-1264,"Lamb Wrap",Wraps,1,11.55,Delivery,Omar
+7/6/2026,07:59 PM,T-1264,"Fattoush Salad",Salads,2,17.26,Delivery,Omar
+7/6/2026,12:43 PM,T-1265,"Hummus",Starters,2,13.02,Takeout,Omar
+7/6/2026,12:43 PM,T-1265,"Mint Tea",Drinks,1,2.71,Takeout,Omar
+7/6/2026,12:43 PM,T-1265,"Lentil Soup",Starters,1,5.40,Takeout,Omar
+7/6/2026,12:43 PM,T-1265,"Mint Tea",Drinks,1,2.72,Takeout,Omar
+7/6/2026,12:25 PM,T-1266,"Fattoush Salad",Salads,1,8.38,Dine In,Noor
+7/6/2026,12:25 PM,T-1266,"Beef Shawarma Plate",Plates,1,15.43,Dine In,Noor
+7/6/2026,12:25 PM,T-1266,"Mixed Grill",Plates,1,18.90,Dine In,Noor
+7/6/2026,12:09 PM,T-1267,"Lamb Wrap",Wraps,1,11.56,Dine In,Omar
+7/6/2026,07:08 PM,T-1268,"Side Rice",Sides,1,3.04,Delivery,Chris
+7/6/2026,07:08 PM,T-1268,"Chicken Shawarma Plate",Plates,1,14.74,Delivery,Chris
+7/6/2026,05:25 PM,T-1269,"Chicken Shawarma Plate",Plates,1,14.58,Dine In,Amina
+7/6/2026,05:25 PM,T-1269,"Chicken Shawarma Plate",Plates,1,14.35,Dine In,Amina
+7/6/2026,05:25 PM,T-1269,"Kids Nuggets",Kids,1,7.50,Dine In,Amina
+7/6/2026,05:25 PM,T-1269,"Chicken Wrap",Wraps,1,10.50,Dine In,Amina
+7/6/2026,11:23 AM,T-1270,"Side Fries",Sides,1,3.48,Dine In,Layla
+7/6/2026,11:23 AM,T-1270,"Hummus",Starters,1,6.43,Dine In,Layla
+7/6/2026,11:23 AM,T-1270,"Chicken Shawarma Plate",Plates,1,14.75,Dine In,Layla
+7/6/2026,01:04 PM,T-1271,"Falafel Wrap",Wraps,1,9.42,Dine In,Omar
+7/6/2026,01:04 PM,T-1271,"Lentil Soup",Starters,1,5.42,Dine In,Omar
+7/6/2026,01:04 PM,T-1271,"Falafel Wrap",Wraps,1,9.68,Dine In,Omar
+7/6/2026,11:41 AM,T-1272,"Lentil Soup",Starters,1,5.56,Takeout,Omar
+7/6/2026,06:21 PM,T-1273,"Lentil Soup",Starters,1,5.48,Delivery,Omar
+7/6/2026,05:42 PM,T-1274,"Lamb Wrap",Wraps,1,11.58,Delivery,Noor
+7/6/2026,05:42 PM,T-1274,"Falafel Wrap",Wraps,1,9.32,Delivery,Noor
+7/6/2026,05:42 PM,T-1274,"Side Rice",Sides,1,2.94,Delivery,Noor
+7/6/2026,08:50 PM,T-1275,"Chicken Wrap",Wraps,1,10.66,Takeout,Omar
+7/6/2026,07:45 PM,T-1276,"Lentil Soup",Starters,1,5.43,Dine In,Chris
+7/6/2026,07:45 PM,T-1276,"Fattoush Salad",Salads,1,8.54,Dine In,Chris
+7/6/2026,07:01 PM,T-1277,"Baklava",Desserts,1,4.45,Dine In,Layla
+7/6/2026,07:01 PM,T-1277,"Baba Ganoush",Starters,2,13.00,Dine In,Layla
+7/6/2026,09:57 PM,T-1278,"Mixed Grill",Plates,1,19.27,Takeout,Noor
+7/6/2026,09:57 PM,T-1278,"Stuffed Grape Leaves",Starters,1,7.01,Takeout,Noor
+7/6/2026,09:57 PM,T-1278,"Hummus",Starters,1,6.44,Takeout,Noor
+7/6/2026,12:00 PM,T-1279,"Kids Nuggets",Kids,1,7.52,Dine In,Layla
+7/6/2026,12:00 PM,T-1279,"Lamb Wrap",Wraps,1,11.37,Dine In,Layla
+7/6/2026,03:57 PM,T-1280,"Falafel Wrap",Wraps,1,9.35,Delivery,Layla
+7/6/2026,03:57 PM,T-1280,"Chicken Wrap",Wraps,1,10.58,Delivery,Layla
+7/6/2026,12:10 PM,T-1281,"Baklava",Desserts,1,4.49,Dine In,Amina
+7/7/2026,11:03 AM,T-1282,"Knafeh",Desserts,1,6.09,Takeout,Chris
+7/7/2026,11:03 AM,T-1282,"Greek Salad",Salads,1,9.06,Takeout,Chris
+7/7/2026,11:03 AM,T-1282,"Hummus",Starters,1,6.63,Takeout,Chris
+7/7/2026,07:34 PM,T-1283,"Side Fries",Sides,1,3.52,Delivery,Noor
+7/7/2026,12:31 PM,T-1284,"Fresh Lemonade",Drinks,1,3.45,Dine In,Noor
+7/7/2026,12:31 PM,T-1284,"Side Rice",Sides,1,3.03,Dine In,Noor
+7/7/2026,01:13 PM,T-1285,"Baklava",Desserts,1,4.44,Dine In,Chris
+7/7/2026,01:13 PM,T-1285,"Baba Ganoush",Starters,1,6.52,Dine In,Chris
+7/7/2026,01:13 PM,T-1285,"Falafel Wrap",Wraps,1,9.44,Dine In,Chris
+7/7/2026,08:12 PM,T-1286,"Falafel Wrap",Wraps,1,9.60,Dine In,Noor
+7/7/2026,08:12 PM,T-1286,"Fresh Lemonade",Drinks,1,3.50,Dine In,Noor
+7/7/2026,08:12 PM,T-1286,"Fresh Lemonade",Drinks,1,3.52,Dine In,Noor
+7/7/2026,02:04 PM,T-1287,"Side Fries",Sides,2,7.00,Takeout,Noor
+7/7/2026,10:54 PM,T-1288,"Chicken Wrap",Wraps,2,21.12,Dine In,Amina
+7/7/2026,10:54 PM,T-1288,"Baba Ganoush",Starters,2,13.06,Dine In,Amina
+7/7/2026,10:54 PM,T-1288,"Baba Ganoush",Starters,1,6.48,Dine In,Amina
+7/7/2026,07:38 PM,T-1289,"Falafel Wrap",Wraps,1,9.50,Dine In,Noor
+7/7/2026,07:38 PM,T-1289,"Chicken Shawarma Plate",Plates,2,28.56,Dine In,Noor
+7/7/2026,07:58 PM,T-1290,"Lamb Wrap",Wraps,1,11.39,Dine In,Noor
+7/7/2026,07:58 PM,T-1290,"Chicken Shawarma Plate",Plates,1,14.65,Dine In,Noor
+7/7/2026,07:37 PM,T-1291,"Hummus",Starters,2,12.77,Dine In,Omar
+7/7/2026,07:37 PM,T-1291,"Falafel Wrap",Wraps,2,18.77,Dine In,Omar
+7/7/2026,12:41 PM,T-1292,"Kids Nuggets",Kids,2,15.02,Delivery,Layla
+7/7/2026,12:41 PM,T-1292,"Mixed Grill",Plates,1,19.26,Delivery,Layla
+7/7/2026,12:55 PM,T-1293,"Chicken Shawarma Plate",Plates,1,14.22,Dine In,Amina
+7/7/2026,12:55 PM,T-1293,"Falafel Wrap",Wraps,1,9.37,Dine In,Amina
+7/7/2026,12:55 PM,T-1293,"Chicken Wrap",Wraps,1,10.37,Dine In,Amina
+7/7/2026,12:13 PM,T-1294,"Falafel Wrap",Wraps,1,9.68,Takeout,Chris
+7/7/2026,12:13 PM,T-1294,"Chicken Wrap",Wraps,1,10.60,Takeout,Chris
+7/7/2026,12:13 PM,T-1294,"Falafel Wrap",Wraps,1,9.69,Takeout,Chris
+7/7/2026,05:47 PM,T-1295,"Fresh Lemonade",Drinks,2,6.94,Delivery,Amina
+7/7/2026,07:20 PM,T-1296,"Lentil Soup",Starters,1,5.50,Takeout,Chris
+7/7/2026,07:07 PM,T-1297,"Turkish Coffee",Drinks,1,3.27,Delivery,Omar
+7/7/2026,07:07 PM,T-1297,"Chicken Wrap",Wraps,1,10.35,Delivery,Omar
+7/7/2026,07:07 PM,T-1297,"Side Fries",Sides,1,3.44,Delivery,Omar
+7/7/2026,07:13 PM,T-1298,"Baklava",Desserts,2,9.03,Takeout,Amina
+7/7/2026,07:13 PM,T-1298,"Kids Nuggets",Kids,1,7.47,Takeout,Amina
+7/7/2026,07:25 PM,T-1299,"Chicken Shawarma Plate",Plates,1,14.69,Takeout,Noor
+7/7/2026,07:25 PM,T-1299,"Fresh Lemonade",Drinks,1,3.52,Takeout,Noor
+7/7/2026,04:30 PM,T-1300,"Falafel Wrap",Wraps,1,9.63,Dine In,Noor
+7/7/2026,07:21 PM,T-1301,"Falafel Wrap",Wraps,1,9.62,Takeout,Amina
+7/7/2026,07:21 PM,T-1301,"Chicken Shawarma Plate",Plates,1,14.50,Takeout,Amina
+7/7/2026,12:48 PM,T-1302,"Beef Shawarma Plate",Plates,1,15.37,Takeout,Omar
+7/7/2026,07:59 PM,T-1303,"Falafel Wrap",Wraps,2,19.37,Delivery,Omar
+7/7/2026,07:59 PM,T-1303,"Baba Ganoush",Starters,1,6.45,Delivery,Omar
+7/7/2026,12:41 PM,T-1304,"Hummus",Starters,1,6.42,Dine In,Chris
+7/7/2026,12:57 PM,T-1305,"Side Rice",Sides,1,2.97,Delivery,Omar
+7/7/2026,12:57 PM,T-1305,"Fresh Lemonade",Drinks,1,3.49,Delivery,Omar
+7/7/2026,12:57 PM,T-1305,"Lamb Wrap",Wraps,1,11.53,Delivery,Omar
+7/7/2026,05:23 PM,T-1306,"Fresh Lemonade",Drinks,2,7.11,Takeout,Layla
+7/7/2026,05:23 PM,T-1306,"Chicken Wrap",Wraps,2,20.87,Takeout,Layla
+7/7/2026,07:51 PM,T-1307,"Greek Salad",Salads,1,9.11,Takeout,Amina
+7/7/2026,07:51 PM,T-1307,"Lentil Soup",Starters,1,5.58,Takeout,Amina
+7/7/2026,12:41 PM,T-1308,"Beef Shawarma Plate",Plates,1,15.41,Dine In,Omar
+7/7/2026,12:41 PM,T-1308,"Lamb Wrap",Wraps,2,22.77,Dine In,Omar
+7/7/2026,12:41 PM,T-1308,"Mint Tea",Drinks,1,2.71,Dine In,Omar
+7/7/2026,07:44 PM,T-1309,"Lamb Wrap",Wraps,1,11.43,Takeout,Omar
+7/7/2026,07:44 PM,T-1309,"Chicken Shawarma Plate",Plates,1,14.56,Takeout,Omar
+7/7/2026,10:01 PM,T-1310,"Lentil Soup",Starters,1,5.56,Delivery,Noor
+7/7/2026,10:01 PM,T-1310,"Chicken Shawarma Plate",Plates,1,14.69,Delivery,Noor
+7/7/2026,10:01 PM,T-1310,"Mixed Grill",Plates,1,18.87,Delivery,Noor
+7/8/2026,10:47 AM,T-1311,"Chicken Wrap",Wraps,2,20.61,Dine In,Noor
+7/8/2026,07:53 PM,T-1312,"Lentil Soup",Starters,1,5.56,Dine In,Omar
+7/8/2026,07:53 PM,T-1312,"Fattoush Salad",Salads,1,8.35,Dine In,Omar
+7/8/2026,07:53 PM,T-1312,"Chicken Shawarma Plate",Plates,1,14.21,Dine In,Omar
+7/8/2026,08:35 PM,T-1313,"Side Fries",Sides,1,3.51,Takeout,Noor
+7/8/2026,08:35 PM,T-1313,"Kids Nuggets",Kids,2,14.75,Takeout,Noor
+7/8/2026,08:35 PM,T-1313,"Chicken Wrap",Wraps,1,10.62,Takeout,Noor
+7/8/2026,12:29 PM,T-1314,"Falafel Wrap",Wraps,2,19.09,Takeout,Layla
+7/8/2026,06:04 PM,T-1315,"Hummus",Starters,1,6.60,Delivery,Omar
+7/8/2026,06:04 PM,T-1315,"Side Fries",Sides,1,3.53,Delivery,Omar
+7/8/2026,06:04 PM,T-1315,"Mint Tea",Drinks,1,2.80,Delivery,Omar
+7/8/2026,01:56 PM,T-1316,"Beef Shawarma Plate",Plates,1,15.23,Takeout,Noor
+7/8/2026,01:56 PM,T-1316,"Side Rice",Sides,2,6.09,Takeout,Noor
+7/8/2026,07:09 PM,T-1317,"Baklava",Desserts,2,9.15,Dine In,Chris
+7/8/2026,07:09 PM,T-1317,"Side Fries",Sides,1,3.50,Dine In,Chris
+7/8/2026,12:07 PM,T-1318,"Hummus",Starters,1,6.55,Takeout,Omar
+7/8/2026,12:07 PM,T-1318,"Side Fries",Sides,2,7.10,Takeout,Omar
+7/8/2026,12:45 PM,T-1319,"Falafel Wrap",Wraps,1,9.39,Dine In,Chris
+7/8/2026,12:45 PM,T-1319,"Falafel Wrap",Wraps,2,18.78,Dine In,Chris
+7/8/2026,12:45 PM,T-1319,"Fresh Lemonade",Drinks,1,3.46,Dine In,Chris
+7/8/2026,09:20 PM,T-1320,"Hummus",Starters,1,6.41,Dine In,Layla
+7/8/2026,12:08 PM,T-1321,"Chicken Shawarma Plate",Plates,1,14.68,Dine In,Amina
+7/8/2026,12:08 PM,T-1321,"Fattoush Salad",Salads,2,17.24,Dine In,Amina
+7/8/2026,12:08 PM,T-1321,"Baba Ganoush",Starters,1,6.43,Dine In,Amina
+7/8/2026,06:17 PM,T-1322,"Fresh Lemonade",Drinks,1,3.46,Dine In,Layla
+7/8/2026,06:17 PM,T-1322,"Hummus",Starters,1,6.58,Dine In,Layla
+7/8/2026,11:53 PM,T-1323,"Chicken Wrap",Wraps,1,10.31,Takeout,Amina
+7/8/2026,11:53 PM,T-1323,"Baba Ganoush",Starters,1,6.43,Takeout,Amina
+7/8/2026,11:53 PM,T-1323,"Fattoush Salad",Salads,1,8.51,Takeout,Amina
+7/8/2026,12:58 PM,T-1324,"Fresh Lemonade",Drinks,1,3.52,Takeout,Layla
+7/8/2026,12:32 PM,T-1325,"Lamb Wrap",Wraps,1,11.28,Takeout,Chris
+7/8/2026,12:26 PM,T-1326,"Greek Salad",Salads,1,9.05,Delivery,Amina
+7/8/2026,12:26 PM,T-1326,"Lamb Wrap",Wraps,1,11.46,Delivery,Amina
+7/8/2026,12:26 PM,T-1326,"Chicken Shawarma Plate",Plates,1,14.71,Delivery,Amina
+7/8/2026,12:35 PM,T-1327,"Chicken Shawarma Plate",Plates,2,29.22,Dine In,Amina
+7/8/2026,01:20 PM,T-1328,"Side Fries",Sides,1,3.57,Dine In,Noor
+7/8/2026,07:43 PM,T-1329,"Chicken Wrap",Wraps,1,10.50,Takeout,Amina
+7/8/2026,07:43 PM,T-1329,"Mixed Grill",Plates,1,18.96,Takeout,Amina
+7/8/2026,03:33 PM,T-1330,"Mixed Grill",Plates,1,18.92,Takeout,Amina
+7/8/2026,03:33 PM,T-1330,"Turkish Coffee",Drinks,1,3.20,Takeout,Amina
+7/8/2026,03:33 PM,T-1330,"Greek Salad",Salads,2,17.68,Takeout,Amina
+7/8/2026,11:50 AM,T-1331,"Beef Shawarma Plate",Plates,2,30.88,Takeout,Chris
+7/8/2026,07:12 PM,T-1332,"Baklava",Desserts,2,8.96,Delivery,Omar
+7/8/2026,07:12 PM,T-1332,"Fresh Lemonade",Drinks,1,3.53,Delivery,Omar
+7/8/2026,07:12 PM,T-1332,"Fattoush Salad",Salads,1,8.60,Delivery,Omar
+7/8/2026,12:09 PM,T-1333,"Mixed Grill",Plates,1,18.92,Takeout,Amina
+7/8/2026,01:12 PM,T-1334,"Chicken Shawarma Plate",Plates,1,14.40,Takeout,Layla
+7/8/2026,12:09 PM,T-1335,"Side Rice",Sides,1,3.04,Dine In,Omar
+7/8/2026,12:09 PM,T-1335,"Kids Nuggets",Kids,1,7.49,Dine In,Omar
+7/8/2026,12:09 PM,T-1335,"Falafel Wrap",Wraps,2,19.35,Dine In,Omar
+7/8/2026,02:56 PM,T-1336,"Chicken Wrap",Wraps,2,21.15,Dine In,Amina
+7/8/2026,02:56 PM,T-1336,"Chicken Shawarma Plate",Plates,1,14.61,Dine In,Amina
+7/8/2026,02:56 PM,T-1336,"Side Fries",Sides,1,3.48,Dine In,Amina
+7/8/2026,12:37 PM,T-1337,"Mint Tea",Drinks,1,2.78,Dine In,Noor
+7/8/2026,12:37 PM,T-1337,"Mixed Grill",Plates,1,18.82,Dine In,Noor
+7/8/2026,12:37 PM,T-1337,"Lamb Wrap",Wraps,1,11.62,Dine In,Noor
+7/8/2026,07:25 PM,T-1338,"Chicken Shawarma Plate",Plates,1,14.75,Takeout,Layla
+7/9/2026,12:21 PM,T-1339,"Lamb Wrap",Wraps,1,11.35,Delivery,Layla
+7/9/2026,07:21 PM,T-1340,"Stuffed Grape Leaves",Starters,2,14.26,Takeout,Omar
+7/9/2026,07:21 PM,T-1340,"Baba Ganoush",Starters,1,6.63,Takeout,Omar
+7/9/2026,01:58 PM,T-1341,"Baklava",Desserts,1,4.54,Dine In,Layla
+7/9/2026,01:58 PM,T-1341,"Falafel Wrap",Wraps,1,9.59,Dine In,Layla
+7/9/2026,01:58 PM,T-1341,"Lamb Wrap",Wraps,2,22.96,Dine In,Layla
+7/9/2026,05:32 PM,T-1342,"Side Fries",Sides,1,3.55,Dine In,Amina
+7/9/2026,12:23 PM,T-1343,"Baba Ganoush",Starters,1,6.44,Delivery,Noor
+7/9/2026,12:23 PM,T-1343,"Chicken Shawarma Plate",Plates,1,14.54,Delivery,Noor
+7/9/2026,12:57 PM,T-1344,"Beef Shawarma Plate",Plates,1,15.74,Takeout,Amina
+7/9/2026,07:45 PM,T-1345,"Mint Tea",Drinks,2,5.55,Delivery,Noor
+7/9/2026,07:45 PM,T-1345,"Fresh Lemonade",Drinks,2,6.94,Delivery,Noor
+7/9/2026,07:45 PM,T-1345,"Greek Salad",Salads,2,18.14,Delivery,Noor
+7/9/2026,07:01 PM,T-1346,"Baba Ganoush",Starters,1,6.51,Delivery,Noor
+7/9/2026,10:21 PM,T-1347,"Side Fries",Sides,2,7.01,Delivery,Chris
+7/9/2026,10:21 PM,T-1347,"Side Fries",Sides,1,3.56,Delivery,Chris
+7/9/2026,07:17 PM,T-1348,"Falafel Wrap",Wraps,1,9.52,Takeout,Amina
+7/9/2026,07:17 PM,T-1348,"Turkish Coffee",Drinks,1,3.31,Takeout,Amina
+7/9/2026,05:59 PM,T-1349,"Mixed Grill",Plates,1,18.99,Delivery,Amina
+7/9/2026,11:47 AM,T-1350,"Falafel Wrap",Wraps,1,9.43,Dine In,Layla
+7/9/2026,07:04 PM,T-1351,"Fattoush Salad",Salads,1,8.56,Delivery,Chris
+7/9/2026,07:51 PM,T-1352,"Baklava",Desserts,1,4.49,Delivery,Amina
+7/9/2026,07:51 PM,T-1352,"Mint Tea",Drinks,1,2.72,Delivery,Amina
+7/9/2026,07:51 PM,T-1352,"Fattoush Salad",Salads,1,8.64,Delivery,Amina
+7/9/2026,07:25 PM,T-1353,"Falafel Wrap",Wraps,1,9.31,Delivery,Omar
+7/9/2026,07:25 PM,T-1353,"Falafel Wrap",Wraps,1,9.59,Delivery,Omar
+7/9/2026,08:58 PM,T-1354,"Chicken Shawarma Plate",Plates,1,14.78,Takeout,Chris
+7/9/2026,08:58 PM,T-1354,"Beef Shawarma Plate",Plates,1,15.73,Takeout,Chris
+7/9/2026,08:04 PM,T-1355,"Falafel Wrap",Wraps,2,18.63,Dine In,Amina
+7/9/2026,07:26 PM,T-1356,"Chicken Wrap",Wraps,1,10.45,Dine In,Noor
+7/9/2026,07:26 PM,T-1356,"Mixed Grill",Plates,1,18.96,Dine In,Noor
+7/9/2026,07:26 PM,T-1356,"Baba Ganoush",Starters,1,6.44,Dine In,Noor
+7/9/2026,12:06 PM,T-1357,"Chicken Shawarma Plate",Plates,2,28.78,Dine In,Noor
+7/9/2026,12:06 PM,T-1357,"Chicken Shawarma Plate",Plates,1,14.65,Dine In,Noor
+7/9/2026,12:06 PM,T-1357,"Falafel Wrap",Wraps,2,19.23,Dine In,Noor
+7/9/2026,09:02 PM,T-1358,"Fresh Lemonade",Drinks,1,3.53,Takeout,Chris
+7/9/2026,08:32 PM,T-1359,"Falafel Wrap",Wraps,1,9.38,Dine In,Amina
+7/9/2026,08:32 PM,T-1359,"Hummus",Starters,1,6.49,Dine In,Amina
+7/9/2026,08:32 PM,T-1359,"Baba Ganoush",Starters,2,13.08,Dine In,Amina
+7/9/2026,05:52 PM,T-1360,"Mint Tea",Drinks,1,2.77,Dine In,Omar
+7/9/2026,05:52 PM,T-1360,"Falafel Wrap",Wraps,1,9.33,Dine In,Omar
+7/9/2026,10:10 PM,T-1361,"Chicken Shawarma Plate",Plates,1,14.77,Takeout,Layla
+7/9/2026,10:10 PM,T-1361,"Chicken Wrap",Wraps,1,10.44,Takeout,Layla
+7/9/2026,10:10 PM,T-1361,"Chicken Wrap",Wraps,1,10.34,Takeout,Layla
+7/9/2026,06:42 PM,T-1362,"Kids Nuggets",Kids,1,7.60,Takeout,Layla
+7/9/2026,10:10 PM,T-1363,"Mixed Grill",Plates,1,18.82,Takeout,Amina
+7/9/2026,10:10 PM,T-1363,"Greek Salad",Salads,1,8.96,Takeout,Amina
+7/9/2026,10:10 PM,T-1363,"Falafel Wrap",Wraps,1,9.62,Takeout,Amina
+7/9/2026,01:12 PM,T-1364,"Lamb Wrap",Wraps,1,11.54,Takeout,Chris
+7/9/2026,01:12 PM,T-1364,"Side Rice",Sides,1,3.04,Takeout,Chris
+7/9/2026,06:58 PM,T-1365,"Chicken Shawarma Plate",Plates,1,14.38,Delivery,Layla
+7/9/2026,06:58 PM,T-1365,"Mint Tea",Drinks,1,2.80,Delivery,Layla
+7/9/2026,06:58 PM,T-1365,"Mixed Grill",Plates,2,37.53,Delivery,Layla
+7/9/2026,12:54 PM,T-1366,"Chicken Shawarma Plate",Plates,1,14.77,Dine In,Amina
+7/9/2026,12:54 PM,T-1366,"Mint Tea",Drinks,1,2.79,Dine In,Amina
+7/9/2026,12:54 PM,T-1366,"Chicken Wrap",Wraps,1,10.58,Dine In,Amina
+7/9/2026,12:54 PM,T-1366,"Lentil Soup",Starters,1,5.60,Dine In,Amina
+7/9/2026,12:04 PM,T-1367,"Side Fries",Sides,1,3.47,Dine In,Omar
+7/9/2026,12:04 PM,T-1367,"Fresh Lemonade",Drinks,1,3.56,Dine In,Omar
+7/9/2026,04:38 PM,T-1368,"Chicken Shawarma Plate",Plates,1,14.68,Delivery,Chris
+7/9/2026,04:38 PM,T-1368,"Fattoush Salad",Salads,1,8.63,Delivery,Chris
+7/9/2026,07:16 PM,T-1369,"Lamb Wrap",Wraps,1,11.43,Dine In,Layla
+7/9/2026,07:16 PM,T-1369,"Falafel Wrap",Wraps,1,9.48,Dine In,Layla
+7/9/2026,07:34 PM,T-1370,"Baba Ganoush",Starters,1,6.52,Dine In,Chris
+7/9/2026,07:34 PM,T-1370,"Beef Shawarma Plate",Plates,1,15.49,Dine In,Chris
+7/9/2026,07:34 PM,T-1370,"Baba Ganoush",Starters,1,6.50,Dine In,Chris
+7/9/2026,07:34 PM,T-1370,"Hummus",Starters,2,13.00,Dine In,Chris
+7/10/2026,11:52 AM,T-1371,"Mint Tea",Drinks,1,2.72,Takeout,Noor
+7/10/2026,11:52 AM,T-1371,"Fresh Lemonade",Drinks,1,3.49,Takeout,Noor
+7/10/2026,11:52 AM,T-1371,"Beef Shawarma Plate",Plates,1,15.20,Takeout,Noor
+7/10/2026,12:50 PM,T-1372,"Fresh Lemonade",Drinks,1,3.43,Takeout,Chris
+7/10/2026,12:50 PM,T-1372,"Lentil Soup",Starters,1,5.52,Takeout,Chris
+7/10/2026,07:44 PM,T-1373,"Beef Shawarma Plate",Plates,1,15.81,Takeout,Noor
+7/10/2026,07:23 PM,T-1374,"Turkish Coffee",Drinks,1,3.26,Dine In,Noor
+7/10/2026,07:23 PM,T-1374,"Lamb Wrap",Wraps,1,11.67,Dine In,Noor
+7/10/2026,06:54 PM,T-1375,"Baba Ganoush",Starters,1,6.46,Dine In,Chris
+7/10/2026,07:33 PM,T-1376,"Fattoush Salad",Salads,1,8.50,Dine In,Noor
+7/10/2026,12:06 PM,T-1377,"Greek Salad",Salads,2,17.70,Takeout,Amina
+7/10/2026,12:06 PM,T-1377,"Fattoush Salad",Salads,1,8.67,Takeout,Amina
+7/10/2026,12:06 PM,T-1377,"Fresh Lemonade",Drinks,1,3.51,Takeout,Amina
+7/10/2026,10:26 AM,T-1378,"Fattoush Salad",Salads,1,8.43,Delivery,Omar
+7/10/2026,10:26 AM,T-1378,"Fattoush Salad",Salads,1,8.62,Delivery,Omar
+7/10/2026,12:11 PM,T-1379,"Fresh Lemonade",Drinks,2,6.98,Delivery,Layla
+7/10/2026,12:11 PM,T-1379,"Mint Tea",Drinks,2,5.52,Delivery,Layla
+7/10/2026,12:11 PM,T-1379,"Chicken Wrap",Wraps,1,10.34,Delivery,Layla
+7/10/2026,07:19 PM,T-1380,"Hummus",Starters,1,6.54,Dine In,Chris
+7/10/2026,07:14 PM,T-1381,"Lentil Soup",Starters,1,5.51,Dine In,Layla
+7/10/2026,07:14 PM,T-1381,"Hummus",Starters,1,6.48,Dine In,Layla
+7/10/2026,10:14 PM,T-1382,"Mixed Grill",Plates,1,18.88,Dine In,Layla
+7/10/2026,08:38 PM,T-1383,"Falafel Wrap",Wraps,1,9.34,Dine In,Omar
+7/10/2026,11:39 AM,T-1384,"Hummus",Starters,1,6.48,Dine In,Omar
+7/10/2026,11:39 AM,T-1384,"Fresh Lemonade",Drinks,1,3.54,Dine In,Omar
+7/10/2026,11:39 AM,T-1384,"Lamb Wrap",Wraps,1,11.62,Dine In,Omar
+7/10/2026,07:32 PM,T-1385,"Falafel Wrap",Wraps,2,18.86,Dine In,Omar
+7/10/2026,07:32 PM,T-1385,"Greek Salad",Salads,1,9.09,Dine In,Omar
+7/10/2026,07:14 PM,T-1386,"Mint Tea",Drinks,1,2.78,Takeout,Noor
+7/10/2026,07:14 PM,T-1386,"Side Fries",Sides,1,3.47,Takeout,Noor
+7/10/2026,07:14 PM,T-1386,"Chicken Wrap",Wraps,1,10.51,Takeout,Noor
+7/10/2026,07:14 PM,T-1386,"Chicken Shawarma Plate",Plates,1,14.35,Takeout,Noor
+7/10/2026,01:07 PM,T-1387,"Fattoush Salad",Salads,1,8.61,Delivery,Layla
+7/10/2026,01:07 PM,T-1387,"Fattoush Salad",Salads,2,17.00,Delivery,Layla
+7/10/2026,12:33 PM,T-1388,"Chicken Shawarma Plate",Plates,1,14.78,Delivery,Noor
+7/10/2026,12:33 PM,T-1388,"Beef Shawarma Plate",Plates,1,15.26,Delivery,Noor
+7/10/2026,12:33 PM,T-1388,"Baklava",Desserts,1,4.52,Delivery,Noor
+7/10/2026,12:38 PM,T-1389,"Turkish Coffee",Drinks,1,3.27,Dine In,Noor
+7/10/2026,12:38 PM,T-1389,"Lentil Soup",Starters,1,5.40,Dine In,Noor
+7/10/2026,12:38 PM,T-1389,"Chicken Shawarma Plate",Plates,1,14.53,Dine In,Noor
+7/10/2026,12:06 PM,T-1390,"Kids Nuggets",Kids,2,14.78,Delivery,Layla
+7/10/2026,12:06 PM,T-1390,"Side Rice",Sides,1,2.96,Delivery,Layla
+7/10/2026,07:13 PM,T-1391,"Fresh Lemonade",Drinks,1,3.56,Takeout,Noor
+7/10/2026,05:40 PM,T-1392,"Baba Ganoush",Starters,2,12.88,Delivery,Chris
+7/10/2026,05:40 PM,T-1392,"Lentil Soup",Starters,1,5.53,Delivery,Chris
+7/10/2026,05:40 PM,T-1392,"Baklava",Desserts,1,4.59,Delivery,Chris
+7/10/2026,07:12 PM,T-1393,"Mint Tea",Drinks,2,5.58,Delivery,Chris
+7/10/2026,07:12 PM,T-1393,"Mint Tea",Drinks,1,2.73,Delivery,Chris
+7/10/2026,06:46 PM,T-1394,"Lentil Soup",Starters,1,5.47,Delivery,Omar
+7/10/2026,06:46 PM,T-1394,"Mixed Grill",Plates,1,19.03,Delivery,Omar
+7/10/2026,06:46 PM,T-1394,"Chicken Wrap",Wraps,1,10.66,Delivery,Omar
+7/10/2026,12:23 PM,T-1395,"Chicken Wrap",Wraps,1,10.45,Takeout,Amina
+7/10/2026,06:49 PM,T-1396,"Chicken Shawarma Plate",Plates,1,14.37,Takeout,Layla
+7/10/2026,06:49 PM,T-1396,"Stuffed Grape Leaves",Starters,1,7.13,Takeout,Layla
+7/10/2026,06:49 PM,T-1396,"Stuffed Grape Leaves",Starters,1,6.86,Takeout,Layla
+7/10/2026,08:04 PM,T-1397,"Falafel Wrap",Wraps,2,18.76,Dine In,Chris
+7/10/2026,08:04 PM,T-1397,"Fresh Lemonade",Drinks,1,3.56,Dine In,Chris
+7/10/2026,08:04 PM,T-1397,"Baba Ganoush",Starters,1,6.42,Dine In,Chris
+7/10/2026,12:21 PM,T-1398,"Chicken Shawarma Plate",Plates,1,14.61,Dine In,Chris
+7/10/2026,12:21 PM,T-1398,"Beef Shawarma Plate",Plates,1,15.25,Dine In,Chris
+7/10/2026,08:44 PM,T-1399,"Falafel Wrap",Wraps,1,9.38,Delivery,Layla
+7/10/2026,08:44 PM,T-1399,"Side Fries",Sides,1,3.55,Delivery,Layla
+7/10/2026,08:44 PM,T-1399,"Chicken Shawarma Plate",Plates,1,14.41,Delivery,Layla
+7/10/2026,07:16 PM,T-1400,"Beef Shawarma Plate",Plates,1,15.26,Takeout,Chris
+7/10/2026,11:44 AM,T-1401,"Mixed Grill",Plates,1,18.80,Dine In,Omar
+7/10/2026,11:44 AM,T-1401,"Fresh Lemonade",Drinks,1,3.55,Dine In,Omar
+7/10/2026,11:44 AM,T-1401,"Chicken Shawarma Plate",Plates,1,14.25,Dine In,Omar
+7/10/2026,07:45 PM,T-1403,"Beef Shawarma Plate",Plates,1,15.47,Takeout,Chris
+7/10/2026,07:45 PM,T-1403,"Fresh Lemonade",Drinks,1,3.47,Takeout,Chris
+7/10/2026,05:49 PM,T-1404,"Chicken Shawarma Plate",Plates,2,28.49,Dine In,Omar
+7/10/2026,05:49 PM,T-1404,"Hummus",Starters,1,6.47,Dine In,Omar
+7/10/2026,05:49 PM,T-1404,"Hummus",Starters,2,13.11,Dine In,Omar
+7/10/2026,09:56 PM,T-1405,"Baba Ganoush",Starters,1,6.45,Dine In,Chris
+7/10/2026,06:23 PM,T-1406,"Chicken Wrap",Wraps,1,10.49,Dine In,Amina
+7/10/2026,06:23 PM,T-1406,"Side Fries",Sides,1,3.57,Dine In,Amina
+7/10/2026,06:23 PM,T-1406,"Baba Ganoush",Starters,1,6.58,Dine In,Amina
+7/10/2026,10:51 AM,T-1407,"Mint Tea",Drinks,1,2.77,Takeout,Chris
+7/10/2026,10:51 AM,T-1407,"Chicken Shawarma Plate",Plates,1,14.39,Takeout,Chris
+7/10/2026,07:28 PM,T-1408,"Falafel Wrap",Wraps,1,9.62,Dine In,Layla
+7/10/2026,07:28 PM,T-1408,"Lentil Soup",Starters,1,5.52,Dine In,Layla
+7/10/2026,07:28 PM,T-1408,"Greek Salad",Salads,1,9.17,Dine In,Layla
+7/10/2026,01:07 PM,T-1409,"Falafel Wrap",Wraps,1,9.49,Dine In,Chris
+7/10/2026,01:07 PM,T-1409,"Lamb Wrap",Wraps,1,11.63,Dine In,Chris
+7/10/2026,01:07 PM,T-1409,"Chicken Wrap",Wraps,2,20.87,Dine In,Chris
+7/10/2026,07:08 PM,T-1410,"Mixed Grill",Plates,2,38.00,Takeout,Layla
+7/10/2026,12:54 PM,T-1411,"Chicken Shawarma Plate",Plates,1,14.42,Dine In,Omar
+7/10/2026,12:54 PM,T-1411,"Side Fries",Sides,1,3.50,Dine In,Omar
+7/10/2026,12:10 PM,T-1412,"Beef Shawarma Plate",Plates,1,15.24,Dine In,Layla
+7/10/2026,12:10 PM,T-1412,"Fattoush Salad",Salads,1,8.64,Dine In,Layla
+7/11/2026,12:23 PM,T-1413,"Greek Salad",Salads,1,8.99,Delivery,Chris
+7/11/2026,12:23 PM,T-1413,"Chicken Shawarma Plate",Plates,1,14.21,Delivery,Chris
+7/11/2026,12:23 PM,T-1413,"Greek Salad",Salads,2,17.67,Delivery,Chris
+7/11/2026,12:47 PM,T-1414,"Chicken Wrap",Wraps,1,10.57,Takeout,Layla
+7/11/2026,12:47 PM,T-1414,"Beef Shawarma Plate",Plates,1,15.30,Takeout,Layla
+7/11/2026,12:47 PM,T-1414,"Side Fries",Sides,2,6.99,Takeout,Layla
+7/11/2026,01:15 PM,T-1415,"Falafel Wrap",Wraps,1,9.44,Dine In,Omar
+7/11/2026,01:15 PM,T-1415,"Lentil Soup",Starters,1,5.50,Dine In,Omar
+7/11/2026,01:15 PM,T-1415,"Side Fries",Sides,1,3.54,Dine In,Omar
+7/11/2026,12:01 PM,T-1416,"Chicken Wrap",Wraps,1,10.38,Dine In,Chris
+7/11/2026,12:01 PM,T-1416,"Side Fries",Sides,1,3.46,Dine In,Chris
+7/11/2026,12:31 PM,T-1417,"Chicken Shawarma Plate",Plates,1,14.28,Dine In,Amina
+7/11/2026,12:31 PM,T-1417,"Beef Shawarma Plate",Plates,1,15.75,Dine In,Amina
+7/11/2026,12:31 PM,T-1417,"Falafel Wrap",Wraps,2,18.95,Dine In,Amina
+7/11/2026,06:43 PM,T-1418,"Mixed Grill",Plates,1,18.76,Dine In,Layla
+7/11/2026,06:43 PM,T-1418,"Kids Nuggets",Kids,1,7.55,Dine In,Layla
+7/11/2026,12:02 PM,T-1419,"Falafel Wrap",Wraps,1,9.47,Takeout,Omar
+7/11/2026,07:32 PM,T-1420,"Lamb Wrap",Wraps,1,11.34,Dine In,Noor
+7/11/2026,07:32 PM,T-1420,"Chicken Shawarma Plate",Plates,1,14.46,Dine In,Noor
+7/11/2026,12:37 PM,T-1421,"Chicken Wrap",Wraps,1,10.59,Delivery,Noor
+7/11/2026,12:37 PM,T-1421,"Falafel Wrap",Wraps,1,9.54,Delivery,Noor
+7/11/2026,06:04 PM,T-1422,"Mint Tea",Drinks,1,2.70,Dine In,Chris
+7/11/2026,04:00 PM,T-1423,"Greek Salad",Salads,1,8.87,Dine In,Noor
+7/11/2026,04:00 PM,T-1423,"Greek Salad",Salads,2,17.65,Dine In,Noor
+7/11/2026,11:54 AM,T-1424,"Chicken Wrap",Wraps,1,10.53,Dine In,Omar
+7/11/2026,07:20 PM,T-1425,"Side Fries",Sides,2,7.00,Takeout,Amina
+7/11/2026,07:20 PM,T-1425,"Baklava",Desserts,1,4.56,Takeout,Amina
+7/11/2026,12:47 PM,T-1426,"Baba Ganoush",Starters,1,6.44,Dine In,Layla
+7/11/2026,12:47 PM,T-1426,"Chicken Wrap",Wraps,1,10.57,Dine In,Layla
+7/11/2026,12:47 PM,T-1426,"Baklava",Desserts,1,4.53,Dine In,Layla
+7/11/2026,07:40 PM,T-1427,"Chicken Wrap",Wraps,1,10.59,Takeout,Noor
+7/11/2026,07:40 PM,T-1427,"Lentil Soup",Starters,1,5.50,Takeout,Noor
+7/11/2026,03:22 PM,T-1428,"Fresh Lemonade",Drinks,1,3.49,Delivery,Noor
+7/11/2026,06:12 PM,T-1429,"Baklava",Desserts,1,4.47,Takeout,Layla
+7/11/2026,06:14 PM,T-1430,"Fattoush Salad",Salads,1,8.65,Dine In,Chris
+7/11/2026,07:39 PM,T-1431,"Baklava",Desserts,1,4.52,Dine In,Chris
+7/11/2026,07:39 PM,T-1431,"Lamb Wrap",Wraps,1,11.42,Dine In,Chris
+7/11/2026,07:39 PM,T-1431,"Mixed Grill",Plates,1,19.25,Dine In,Chris
+7/11/2026,06:06 PM,T-1432,"Hummus",Starters,1,6.48,Takeout,Amina
+7/11/2026,06:06 PM,T-1432,"Mixed Grill",Plates,1,18.66,Takeout,Amina
+7/11/2026,06:06 PM,T-1432,"Greek Salad",Salads,1,9.03,Takeout,Amina
+7/11/2026,07:03 PM,T-1433,"Fresh Lemonade",Drinks,1,3.51,Takeout,Noor
+7/11/2026,07:03 PM,T-1433,"Chicken Wrap",Wraps,2,20.72,Takeout,Noor
+7/11/2026,07:03 PM,T-1433,"Falafel Wrap",Wraps,1,9.34,Takeout,Noor
+7/11/2026,07:03 PM,T-1433,"Chicken Shawarma Plate",Plates,2,29.19,Takeout,Noor
+7/11/2026,12:56 PM,T-1434,"Side Rice",Sides,1,2.97,Delivery,Chris
+7/11/2026,12:56 PM,T-1434,"Baba Ganoush",Starters,1,6.53,Delivery,Chris
+7/11/2026,12:56 PM,T-1434,"Mint Tea",Drinks,1,2.72,Delivery,Chris
+7/11/2026,06:58 PM,T-1435,"Chicken Wrap",Wraps,1,10.41,Takeout,Omar
+7/11/2026,11:03 AM,T-1436,"Baba Ganoush",Starters,1,6.56,Takeout,Chris
+7/11/2026,11:03 AM,T-1436,"Baba Ganoush",Starters,1,6.56,Takeout,Chris
+7/11/2026,02:56 PM,T-1437,"Chicken Wrap",Wraps,2,20.83,Delivery,Layla
+7/11/2026,02:56 PM,T-1437,"Beef Shawarma Plate",Plates,1,15.33,Delivery,Layla
+7/11/2026,09:12 PM,T-1438,"Hummus",Starters,1,6.37,Takeout,Noor
+7/11/2026,07:40 PM,T-1439,"Chicken Shawarma Plate",Plates,1,14.38,Takeout,Noor
+7/11/2026,07:40 PM,T-1439,"Baba Ganoush",Starters,1,6.63,Takeout,Noor
+7/11/2026,07:40 PM,T-1439,"Chicken Shawarma Plate",Plates,1,14.59,Takeout,Noor
+7/11/2026,02:02 PM,T-1440,"Chicken Wrap",Wraps,2,21.33,Dine In,Layla
+7/11/2026,02:02 PM,T-1440,"Side Fries",Sides,1,3.49,Dine In,Layla
+7/11/2026,12:31 PM,T-1441,"Hummus",Starters,1,6.42,Delivery,Layla
+7/11/2026,12:31 PM,T-1441,"Falafel Wrap",Wraps,1,9.38,Delivery,Layla
+7/11/2026,07:05 PM,T-1442,"Side Fries",Sides,1,3.49,Delivery,Amina
+7/11/2026,07:05 PM,T-1442,"Greek Salad",Salads,1,9.01,Delivery,Amina
+7/11/2026,12:03 PM,T-1443,"Fattoush Salad",Salads,2,16.95,Takeout,Chris
+7/11/2026,12:03 PM,T-1443,"Chicken Shawarma Plate",Plates,1,14.27,Takeout,Chris
+7/11/2026,07:34 PM,T-1444,"Side Rice",Sides,1,2.99,Dine In,Omar
+7/11/2026,07:34 PM,T-1444,"Chicken Wrap",Wraps,1,10.71,Dine In,Omar
+7/11/2026,07:34 PM,T-1444,"Hummus",Starters,1,6.43,Dine In,Omar
+7/11/2026,02:39 PM,T-1445,"Mixed Grill",Plates,2,37.19,Takeout,Omar
+7/11/2026,02:39 PM,T-1445,"Fresh Lemonade",Drinks,1,3.51,Takeout,Omar
+7/11/2026,02:39 PM,T-1445,"Side Rice",Sides,1,2.99,Takeout,Omar
+7/11/2026,05:04 PM,T-1446,"Fattoush Salad",Salads,1,8.62,Dine In,Layla
+7/11/2026,05:04 PM,T-1446,"Chicken Wrap",Wraps,1,10.60,Dine In,Layla
+7/11/2026,05:24 PM,T-1447,"Hummus",Starters,1,6.54,Dine In,Noor
+7/11/2026,05:45 PM,T-1448,"Mixed Grill",Plates,1,18.69,Dine In,Noor
+7/11/2026,05:45 PM,T-1448,"Chicken Shawarma Plate",Plates,1,14.28,Dine In,Noor
+7/11/2026,06:58 PM,T-1449,"Fattoush Salad",Salads,1,8.39,Dine In,Noor
+7/11/2026,06:58 PM,T-1449,"Chicken Wrap",Wraps,1,10.36,Dine In,Noor
+7/11/2026,08:36 PM,T-1450,"Side Rice",Sides,2,6.08,Takeout,Omar
+7/11/2026,07:06 PM,T-1451,"Mixed Grill",Plates,1,18.97,Dine In,Chris
+7/11/2026,07:06 PM,T-1451,"Baba Ganoush",Starters,2,12.78,Dine In,Chris
+7/11/2026,02:36 PM,T-1452,"Greek Salad",Salads,1,9.16,Takeout,Chris
+7/11/2026,02:36 PM,T-1452,"Chicken Wrap",Wraps,1,10.33,Takeout,Chris
+7/11/2026,02:36 PM,T-1452,"Hummus",Starters,1,6.57,Takeout,Chris
+7/11/2026,02:36 PM,T-1452,"Mixed Grill",Plates,1,18.83,Takeout,Chris
+7/11/2026,12:24 PM,T-1453,"Beef Shawarma Plate",Plates,1,15.27,Dine In,Chris
+7/11/2026,04:07 PM,T-1454,"Fattoush Salad",Salads,1,8.54,Takeout,Amina
+7/11/2026,04:07 PM,T-1454,"Side Rice",Sides,1,3.04,Takeout,Amina
+7/11/2026,07:45 PM,T-1455,"Fresh Lemonade",Drinks,2,7.00,Takeout,Noor
+7/11/2026,07:45 PM,T-1455,"Mint Tea",Drinks,2,5.60,Takeout,Noor
+7/11/2026,07:45 PM,T-1455,"Hummus",Starters,1,6.55,Takeout,Noor
+7/11/2026,07:45 PM,T-1455,"Lamb Wrap",Wraps,2,23.43,Takeout,Noor
+7/11/2026,06:29 PM,T-1456,"Chicken Wrap",Wraps,1,10.37,Delivery,Omar
+7/11/2026,11:04 AM,T-1457,"Fresh Lemonade",Drinks,1,3.53,Delivery,Omar
+7/11/2026,11:04 AM,T-1457,"Beef Shawarma Plate",Plates,2,30.95,Delivery,Omar
+7/11/2026,11:04 AM,T-1457,"Lamb Wrap",Wraps,1,11.43,Delivery,Omar
+7/11/2026,12:13 PM,T-1458,"Baklava",Desserts,1,4.50,Delivery,Layla
+7/11/2026,12:13 PM,T-1458,"Falafel Wrap",Wraps,1,9.38,Delivery,Layla
+7/11/2026,07:44 PM,T-1459,"Falafel Wrap",Wraps,2,19.37,Delivery,Layla
+7/11/2026,07:44 PM,T-1459,"Mint Tea",Drinks,1,2.76,Delivery,Layla
+7/11/2026,07:08 PM,T-1460,"Side Rice",Sides,1,3.00,Delivery,Layla
+7/12/2026,07:08 PM,T-1461,"Falafel Wrap",Wraps,1,9.43,Dine In,Amina
+7/12/2026,07:08 PM,T-1461,"Hummus",Starters,1,6.62,Dine In,Amina
+7/12/2026,01:02 PM,T-1462,"Side Fries",Sides,1,3.45,Delivery,Layla
+7/12/2026,01:02 PM,T-1462,"Chicken Shawarma Plate",Plates,2,28.65,Delivery,Layla
+7/12/2026,01:02 PM,T-1462,"Falafel Wrap",Wraps,1,9.44,Delivery,Layla
+7/12/2026,04:58 PM,T-1463,"Fresh Lemonade",Drinks,1,3.48,Takeout,Amina
+7/12/2026,08:20 PM,T-1464,"Fresh Lemonade",Drinks,1,3.49,Dine In,Noor
+7/12/2026,08:20 PM,T-1464,"Greek Salad",Salads,1,8.92,Dine In,Noor
+7/12/2026,08:20 PM,T-1464,"Side Rice",Sides,1,3.01,Dine In,Noor
+7/12/2026,08:20 PM,T-1464,"Kids Nuggets",Kids,1,7.64,Dine In,Noor
+7/12/2026,12:15 PM,T-1465,"Fresh Lemonade",Drinks,1,3.48,Takeout,Omar
+7/12/2026,12:15 PM,T-1465,"Falafel Wrap",Wraps,1,9.44,Takeout,Omar
+7/12/2026,12:15 PM,T-1465,"Chicken Shawarma Plate",Plates,1,14.54,Takeout,Omar
+7/12/2026,12:15 PM,T-1465,"Fattoush Salad",Salads,1,8.54,Takeout,Omar
+7/12/2026,03:37 PM,T-1466,"Lamb Wrap",Wraps,1,11.56,Takeout,Omar
+7/12/2026,07:24 PM,T-1467,"Mixed Grill",Plates,1,19.19,Takeout,Omar
+7/12/2026,07:24 PM,T-1467,"Mint Tea",Drinks,1,2.76,Takeout,Omar
+7/12/2026,05:38 PM,T-1468,"Chicken Shawarma Plate",Plates,1,14.56,Dine In,Layla
+7/12/2026,05:38 PM,T-1468,"Kids Nuggets",Kids,1,7.37,Dine In,Layla
+7/12/2026,09:05 PM,T-1469,"Mixed Grill",Plates,1,18.89,Dine In,Amina
+7/12/2026,09:05 PM,T-1469,"Mint Tea",Drinks,1,2.75,Dine In,Amina
+7/12/2026,09:05 PM,T-1469,"Lamb Wrap",Wraps,1,11.72,Dine In,Amina
+7/12/2026,07:31 PM,T-1470,"Fattoush Salad",Salads,1,8.51,Takeout,Omar
+7/12/2026,07:31 PM,T-1470,"Baklava",Desserts,1,4.43,Takeout,Omar
+7/12/2026,01:05 PM,T-1471,"Chicken Shawarma Plate",Plates,1,14.56,Dine In,Omar
+7/12/2026,01:05 PM,T-1471,"Chicken Shawarma Plate",Plates,1,14.23,Dine In,Omar
+7/12/2026,07:53 PM,T-1472,"Beef Shawarma Plate",Plates,1,15.77,Delivery,Chris
+7/12/2026,06:09 PM,T-1473,"Greek Salad",Salads,1,9.15,Takeout,Omar
+7/12/2026,06:09 PM,T-1473,"Beef Shawarma Plate",Plates,1,15.54,Takeout,Omar
+7/12/2026,05:07 PM,T-1474,"Side Rice",Sides,1,2.95,Dine In,Amina
+7/12/2026,05:07 PM,T-1474,"Side Fries",Sides,1,3.49,Dine In,Amina
+7/12/2026,12:09 PM,T-1475,"Chicken Shawarma Plate",Plates,2,28.84,Delivery,Noor
+7/12/2026,12:09 PM,T-1475,"Lamb Wrap",Wraps,1,11.55,Delivery,Noor
+7/12/2026,12:09 PM,T-1475,"Fresh Lemonade",Drinks,1,3.52,Delivery,Noor
+7/12/2026,12:09 PM,T-1475,"Hummus",Starters,1,6.54,Delivery,Noor
+7/12/2026,10:03 AM,T-1476,"Chicken Wrap",Wraps,2,21.27,Takeout,Chris
+7/12/2026,10:03 AM,T-1476,"Chicken Shawarma Plate",Plates,1,14.71,Takeout,Chris
+7/12/2026,07:37 PM,T-1478,"Lamb Wrap",Wraps,1,11.68,Delivery,Omar
+7/12/2026,12:19 PM,T-1479,"Lentil Soup",Starters,1,5.41,Takeout,Omar
+7/12/2026,12:19 PM,T-1479,"Chicken Shawarma Plate",Plates,2,28.69,Takeout,Omar
+7/12/2026,12:19 PM,T-1479,"Side Fries",Sides,2,6.96,Takeout,Omar
+7/12/2026,12:13 PM,T-1480,"Mint Tea",Drinks,1,2.71,Dine In,Omar
+7/12/2026,12:41 PM,T-1481,"Chicken Wrap",Wraps,1,10.56,Takeout,Layla
+7/12/2026,03:41 PM,T-1482,"Hummus",Starters,1,6.41,Dine In,Noor
+7/12/2026,03:41 PM,T-1482,"Hummus",Starters,1,6.39,Dine In,Noor
+7/12/2026,01:23 PM,T-1483,"Greek Salad",Salads,2,18.15,Takeout,Noor
+7/12/2026,01:23 PM,T-1483,"Beef Shawarma Plate",Plates,1,15.29,Takeout,Noor
+7/12/2026,08:37 PM,T-1484,"Chicken Wrap",Wraps,1,10.43,Takeout,Amina
+7/12/2026,08:37 PM,T-1484,"Chicken Wrap",Wraps,1,10.69,Takeout,Amina
+7/12/2026,08:15 PM,T-1485,"Beef Shawarma Plate",Plates,1,15.53,Dine In,Noor
+7/12/2026,10:49 PM,T-1486,"Lamb Wrap",Wraps,2,23.16,Dine In,Chris
+7/12/2026,10:49 PM,T-1486,"Chicken Wrap",Wraps,1,10.40,Dine In,Chris
+7/12/2026,10:49 PM,T-1486,"Lamb Wrap",Wraps,1,11.72,Dine In,Chris
+7/12/2026,04:00 PM,T-1487,"Chicken Wrap",Wraps,2,20.63,Dine In,Chris
+7/12/2026,04:00 PM,T-1487,"Lamb Wrap",Wraps,2,23.22,Dine In,Chris
+7/12/2026,04:00 PM,T-1487,"Fattoush Salad",Salads,1,8.52,Dine In,Chris
+7/12/2026,12:16 PM,T-1488,"Chicken Wrap",Wraps,1,10.48,Takeout,Amina
+7/13/2026,05:39 PM,T-1489,"Falafel Wrap",Wraps,2,19.08,Dine In,Omar
+7/13/2026,05:39 PM,T-1489,"Chicken Shawarma Plate",Plates,1,14.42,Dine In,Omar
+7/13/2026,08:38 PM,T-1490,"Falafel Wrap",Wraps,1,9.32,Delivery,Chris
+7/13/2026,08:38 PM,T-1490,"Chicken Wrap",Wraps,1,10.48,Delivery,Chris
+7/13/2026,08:38 PM,T-1490,"Chicken Wrap",Wraps,1,10.61,Delivery,Chris
+7/13/2026,05:31 PM,T-1491,"Mixed Grill",Plates,1,19.08,Dine In,Chris
+7/13/2026,05:31 PM,T-1491,"Baba Ganoush",Starters,1,6.59,Dine In,Chris
+7/13/2026,12:36 PM,T-1492,"Hummus",Starters,1,6.53,Dine In,Chris
+7/13/2026,12:37 PM,T-1493,"Chicken Wrap",Wraps,1,10.53,Dine In,Chris
+7/13/2026,12:37 PM,T-1493,"Beef Shawarma Plate",Plates,1,15.26,Dine In,Chris
+7/13/2026,12:37 PM,T-1493,"Greek Salad",Salads,1,9.06,Dine In,Chris
+7/13/2026,07:32 PM,T-1494,"Beef Shawarma Plate",Plates,1,15.44,Dine In,Chris
+7/13/2026,07:32 PM,T-1494,"Hummus",Starters,1,6.43,Dine In,Chris
+7/13/2026,07:32 PM,T-1494,"Chicken Shawarma Plate",Plates,1,14.40,Dine In,Chris
+7/13/2026,04:54 PM,T-1495,"Falafel Wrap",Wraps,1,9.54,Dine In,Noor
+7/13/2026,10:52 PM,T-1496,"Hummus",Starters,2,12.89,Takeout,Omar
+7/13/2026,10:52 PM,T-1496,"Chicken Shawarma Plate",Plates,2,28.56,Takeout,Omar
+7/13/2026,10:52 PM,T-1496,"Mint Tea",Drinks,1,2.75,Takeout,Omar
+7/13/2026,05:43 PM,T-1497,"Lentil Soup",Starters,1,5.52,Dine In,Noor
+7/13/2026,05:43 PM,T-1497,"Lentil Soup",Starters,1,5.53,Dine In,Noor
+7/13/2026,05:43 PM,T-1497,"Baklava",Desserts,2,8.96,Dine In,Noor
+7/13/2026,01:46 PM,T-1498,"Falafel Wrap",Wraps,2,18.87,Takeout,Amina
+7/13/2026,01:46 PM,T-1498,"Turkish Coffee",Drinks,2,6.57,Takeout,Amina
+7/13/2026,07:49 PM,T-1499,"Stuffed Grape Leaves",Starters,1,6.89,Dine In,Chris
+7/13/2026,06:58 PM,T-1500,"Chicken Wrap",Wraps,1,10.54,Takeout,Chris
+7/13/2026,07:39 PM,T-1501,"Mixed Grill",Plates,1,18.65,Takeout,Layla
+7/13/2026,07:39 PM,T-1501,"Knafeh",Desserts,1,6.05,Takeout,Layla
+7/13/2026,04:00 PM,T-1502,"Falafel Wrap",Wraps,1,9.42,Dine In,Layla
+7/13/2026,04:00 PM,T-1502,"Side Rice",Sides,1,2.95,Dine In,Layla
+7/13/2026,04:00 PM,T-1502,"Hummus",Starters,1,6.51,Dine In,Layla
+7/13/2026,10:02 AM,T-1503,"Chicken Wrap",Wraps,1,10.51,Dine In,Omar
+7/13/2026,07:55 PM,T-1504,"Greek Salad",Salads,1,9.13,Delivery,Noor
+7/13/2026,08:58 PM,T-1505,"Lamb Wrap",Wraps,1,11.71,Dine In,Omar
+7/13/2026,08:58 PM,T-1505,"Side Rice",Sides,1,3.05,Dine In,Omar
+7/13/2026,12:41 PM,T-1506,"Baklava",Desserts,1,4.56,Delivery,Noor
+7/13/2026,12:41 PM,T-1506,"Lentil Soup",Starters,1,5.61,Delivery,Noor
+7/13/2026,12:41 PM,T-1506,"Mixed Grill",Plates,1,19.25,Delivery,Noor
+7/13/2026,07:46 PM,T-1507,"Lentil Soup",Starters,1,5.45,Dine In,Amina
+7/13/2026,07:46 PM,T-1507,"Chicken Wrap",Wraps,1,10.43,Dine In,Amina
+7/13/2026,01:34 PM,T-1508,"Mixed Grill",Plates,1,18.77,Dine In,Amina
+7/13/2026,01:34 PM,T-1508,"Falafel Wrap",Wraps,1,9.48,Dine In,Amina
+7/13/2026,08:43 PM,T-1509,"Greek Salad",Salads,1,9.01,Dine In,Layla
+7/13/2026,08:43 PM,T-1509,"Falafel Wrap",Wraps,1,9.37,Dine In,Layla
+7/13/2026,08:43 PM,T-1509,"Lamb Wrap",Wraps,1,11.57,Dine In,Layla
+7/13/2026,07:00 PM,T-1510,"Chicken Wrap",Wraps,1,10.57,Dine In,Layla
+7/13/2026,07:00 PM,T-1510,"Mint Tea",Drinks,2,5.51,Dine In,Layla
+7/13/2026,07:00 PM,T-1510,"Lamb Wrap",Wraps,1,11.57,Dine In,Layla
+7/13/2026,06:39 PM,T-1511,"Falafel Wrap",Wraps,1,9.35,Delivery,Amina
+7/13/2026,06:39 PM,T-1511,"Chicken Shawarma Plate",Plates,1,14.32,Delivery,Amina
+7/13/2026,06:39 PM,T-1511,"Chicken Shawarma Plate",Plates,1,14.66,Delivery,Amina
+7/13/2026,11:49 AM,T-1512,"Chicken Wrap",Wraps,1,10.43,Takeout,Layla
+7/13/2026,07:03 PM,T-1513,"Side Rice",Sides,1,3.01,Dine In,Omar
+7/13/2026,07:03 PM,T-1513,"Fattoush Salad",Salads,1,8.55,Dine In,Omar
+7/13/2026,07:03 PM,T-1513,"Side Rice",Sides,2,5.93,Dine In,Omar
+7/14/2026,06:05 PM,T-1514,"Lentil Soup",Starters,1,5.54,Takeout,Noor
+7/14/2026,06:05 PM,T-1514,"Side Rice",Sides,1,3.01,Takeout,Noor
+7/14/2026,06:05 PM,T-1514,"Hummus",Starters,1,6.40,Takeout,Noor
+7/14/2026,12:35 PM,T-1515,"Chicken Shawarma Plate",Plates,1,14.22,Takeout,Amina
+7/14/2026,12:35 PM,T-1515,"Fattoush Salad",Salads,1,8.55,Takeout,Amina
+7/14/2026,08:59 PM,T-1516,"Lamb Wrap",Wraps,1,11.31,Dine In,Noor
+7/14/2026,08:59 PM,T-1516,"Falafel Wrap",Wraps,2,18.88,Dine In,Noor
+7/14/2026,08:59 PM,T-1516,"Side Rice",Sides,1,2.97,Dine In,Noor
+7/14/2026,08:59 PM,T-1516,"Side Rice",Sides,1,2.95,Dine In,Noor
+7/14/2026,12:23 PM,T-1517,"Chicken Wrap",Wraps,2,20.78,Dine In,Chris
+7/14/2026,12:46 PM,T-1518,"Mixed Grill",Plates,2,37.49,Delivery,Amina
+7/14/2026,12:46 PM,T-1518,"Chicken Shawarma Plate",Plates,1,14.56,Delivery,Amina
+7/14/2026,12:46 PM,T-1518,"Chicken Shawarma Plate",Plates,2,29.47,Delivery,Amina
+7/14/2026,12:46 PM,T-1518,"Beef Shawarma Plate",Plates,1,15.66,Delivery,Amina
+7/14/2026,07:40 PM,T-1519,"Hummus",Starters,1,6.54,Delivery,Chris
+7/14/2026,07:40 PM,T-1519,"Lamb Wrap",Wraps,1,11.58,Delivery,Chris
+7/14/2026,12:51 PM,T-1520,"Chicken Shawarma Plate",Plates,1,14.54,Dine In,Omar
+7/14/2026,12:51 PM,T-1520,"Mixed Grill",Plates,2,38.18,Dine In,Omar
+7/14/2026,12:51 PM,T-1520,"Chicken Wrap",Wraps,1,10.35,Dine In,Omar
+7/14/2026,12:51 PM,T-1520,"Chicken Shawarma Plate",Plates,1,14.49,Dine In,Omar
+7/14/2026,11:44 AM,T-1521,"Knafeh",Desserts,1,5.88,Delivery,Layla
+7/14/2026,11:44 AM,T-1521,"Chicken Shawarma Plate",Plates,1,14.79,Delivery,Layla
+7/14/2026,12:50 PM,T-1522,"Baklava",Desserts,1,4.49,Delivery,Layla
+7/14/2026,12:50 PM,T-1522,"Side Fries",Sides,1,3.48,Delivery,Layla
+7/14/2026,12:50 PM,T-1522,"Beef Shawarma Plate",Plates,1,15.35,Delivery,Layla
+7/14/2026,05:45 PM,T-1523,"Side Fries",Sides,1,3.46,Dine In,Amina
+7/14/2026,05:45 PM,T-1523,"Lentil Soup",Starters,1,5.59,Dine In,Amina
+7/14/2026,05:45 PM,T-1523,"Fattoush Salad",Salads,1,8.54,Dine In,Amina
+7/14/2026,05:45 PM,T-1523,"Mint Tea",Drinks,1,2.73,Dine In,Amina
+7/14/2026,04:08 PM,T-1524,"Fattoush Salad",Salads,1,8.66,Dine In,Noor
+7/14/2026,04:08 PM,T-1524,"Baklava",Desserts,1,4.51,Dine In,Noor
+7/14/2026,12:25 PM,T-1525,"Chicken Shawarma Plate",Plates,1,14.43,Takeout,Amina
+7/14/2026,02:50 PM,T-1526,"Lentil Soup",Starters,2,10.89,Dine In,Omar
+7/14/2026,02:50 PM,T-1526,"Chicken Wrap",Wraps,1,10.47,Dine In,Omar
+7/14/2026,02:50 PM,T-1526,"Chicken Shawarma Plate",Plates,1,14.61,Dine In,Omar
+7/14/2026,08:05 PM,T-1527,"Falafel Wrap",Wraps,1,9.35,Dine In,Noor
+7/14/2026,08:05 PM,T-1527,"Mint Tea",Drinks,1,2.80,Dine In,Noor
+7/14/2026,08:05 PM,T-1527,"Baklava",Desserts,2,9.10,Dine In,Noor
+7/14/2026,07:09 PM,T-1528,"Hummus",Starters,1,6.54,Dine In,Noor
+7/14/2026,01:29 PM,T-1529,"Mint Tea",Drinks,1,2.70,Takeout,Amina
+7/14/2026,12:00 PM,T-1530,"Chicken Wrap",Wraps,1,10.62,Delivery,Layla
+7/14/2026,12:17 PM,T-1531,"Fresh Lemonade",Drinks,2,6.90,Takeout,Chris
+7/14/2026,06:11 PM,T-1532,"Falafel Wrap",Wraps,1,9.65,Takeout,Amina
+7/14/2026,06:11 PM,T-1532,"Chicken Shawarma Plate",Plates,1,14.64,Takeout,Amina
+7/14/2026,07:54 PM,T-1533,"Fattoush Salad",Salads,1,8.55,Delivery,Amina
+7/14/2026,07:33 PM,T-1534,"Chicken Shawarma Plate",Plates,2,29.46,Dine In,Noor
+7/14/2026,07:33 PM,T-1534,"Hummus",Starters,1,6.37,Dine In,Noor
+7/14/2026,07:33 PM,T-1534,"Lamb Wrap",Wraps,1,11.73,Dine In,Noor
+7/14/2026,07:37 PM,T-1535,"Lamb Wrap",Wraps,1,11.50,Dine In,Noor
+7/14/2026,07:37 PM,T-1535,"Chicken Shawarma Plate",Plates,1,14.62,Dine In,Noor
+7/14/2026,07:37 PM,T-1535,"Falafel Wrap",Wraps,1,9.58,Dine In,Noor
+7/14/2026,07:37 PM,T-1535,"Greek Salad",Salads,1,8.84,Dine In,Noor
+7/14/2026,11:21 AM,T-1536,"Falafel Wrap",Wraps,1,9.69,Takeout,Amina
+7/14/2026,12:11 PM,T-1537,"Fresh Lemonade",Drinks,1,3.56,Takeout,Chris
+7/14/2026,12:11 PM,T-1537,"Lamb Wrap",Wraps,2,23.18,Takeout,Chris
+7/14/2026,12:11 PM,T-1537,"Falafel Wrap",Wraps,1,9.37,Takeout,Chris
+7/14/2026,12:11 PM,T-1537,"Mint Tea",Drinks,1,2.80,Takeout,Chris
+7/14/2026,07:15 PM,T-1538,"Hummus",Starters,1,6.60,Dine In,Noor
+7/14/2026,07:15 PM,T-1538,"Mint Tea",Drinks,1,2.70,Dine In,Noor
+7/14/2026,07:15 PM,T-1538,"Chicken Shawarma Plate",Plates,2,28.86,Dine In,Noor
+7/14/2026,07:00 PM,T-1539,"Chicken Shawarma Plate",Plates,1,14.54,Delivery,Chris
+7/14/2026,07:00 PM,T-1539,"Fresh Lemonade",Drinks,1,3.50,Delivery,Chris
+7/14/2026,03:33 PM,T-1540,"Chicken Wrap",Wraps,1,10.49,Takeout,Chris
+7/14/2026,01:32 PM,T-1541,"Mixed Grill",Plates,1,19.13,Dine In,Chris
+7/14/2026,02:37 PM,T-1542,"Lentil Soup",Starters,1,5.48,Dine In,Amina
+7/14/2026,12:19 PM,T-1543,"Chicken Shawarma Plate",Plates,1,14.67,Dine In,Layla
+7/15/2026,12:21 PM,T-1544,"Beef Shawarma Plate",Plates,1,15.52,Takeout,Noor
+7/15/2026,12:59 PM,T-1545,"Side Fries",Sides,1,3.44,Dine In,Chris
+7/15/2026,07:36 PM,T-1546,"Fattoush Salad",Salads,2,16.72,Dine In,Amina
+7/15/2026,07:36 PM,T-1546,"Mint Tea",Drinks,1,2.75,Dine In,Amina
+7/15/2026,07:36 PM,T-1546,"Baba Ganoush",Starters,1,6.54,Dine In,Amina
+7/15/2026,11:02 AM,T-1547,"Hummus",Starters,1,6.60,Takeout,Noor
+7/15/2026,11:02 AM,T-1547,"Mixed Grill",Plates,1,18.53,Takeout,Noor
+7/15/2026,12:07 PM,T-1548,"Chicken Shawarma Plate",Plates,1,14.62,Dine In,Chris
+7/15/2026,12:07 PM,T-1548,"Chicken Shawarma Plate",Plates,2,29.52,Dine In,Chris
+7/15/2026,12:07 PM,T-1548,"Mixed Grill",Plates,1,19.15,Dine In,Chris
+7/15/2026,05:45 PM,T-1549,"Mixed Grill",Plates,1,18.81,Dine In,Amina
+7/15/2026,05:45 PM,T-1549,"Hummus",Starters,2,13.11,Dine In,Amina
+7/15/2026,07:19 PM,T-1550,"Chicken Shawarma Plate",Plates,1,14.53,Dine In,Chris
+7/15/2026,12:24 PM,T-1551,"Beef Shawarma Plate",Plates,1,15.37,Delivery,Noor
+7/15/2026,12:24 PM,T-1551,"Lamb Wrap",Wraps,1,11.58,Delivery,Noor
+7/15/2026,12:24 PM,T-1551,"Hummus",Starters,1,6.43,Delivery,Noor
+7/15/2026,12:54 PM,T-1552,"Beef Shawarma Plate",Plates,1,15.24,Dine In,Layla
+7/15/2026,12:54 PM,T-1552,"Side Rice",Sides,1,2.95,Dine In,Layla
+7/15/2026,04:39 PM,T-1553,"Chicken Shawarma Plate",Plates,1,14.25,Takeout,Layla
+7/15/2026,04:39 PM,T-1553,"Side Rice",Sides,1,3.04,Takeout,Layla
+7/15/2026,04:39 PM,T-1553,"Beef Shawarma Plate",Plates,1,15.63,Takeout,Layla
+7/15/2026,04:39 PM,T-1553,"Knafeh",Desserts,1,5.96,Takeout,Layla
+7/15/2026,10:38 PM,T-1554,"Chicken Wrap",Wraps,1,10.33,Dine In,Chris
+7/15/2026,10:38 PM,T-1554,"Side Rice",Sides,1,3.00,Dine In,Chris
+7/15/2026,10:38 PM,T-1554,"Side Fries",Sides,1,3.47,Dine In,Chris
+7/15/2026,05:36 PM,T-1555,"Fresh Lemonade",Drinks,1,3.45,Dine In,Layla
+7/15/2026,05:36 PM,T-1555,"Side Rice",Sides,1,3.00,Dine In,Layla
+7/15/2026,05:36 PM,T-1555,"Baba Ganoush",Starters,2,13.17,Dine In,Layla
+7/15/2026,09:34 PM,T-1556,"Chicken Wrap",Wraps,1,10.51,Dine In,Noor
+7/15/2026,09:34 PM,T-1556,"Chicken Shawarma Plate",Plates,1,14.47,Dine In,Noor
+7/15/2026,09:34 PM,T-1556,"Chicken Shawarma Plate",Plates,1,14.34,Dine In,Noor
+7/15/2026,12:59 PM,T-1557,"Side Rice",Sides,1,2.97,Takeout,Amina
+7/15/2026,12:59 PM,T-1557,"Baklava",Desserts,1,4.53,Takeout,Amina
+7/15/2026,12:59 PM,T-1557,"Hummus",Starters,1,6.49,Takeout,Amina
+7/15/2026,10:19 AM,T-1558,"Falafel Wrap",Wraps,1,9.33,Takeout,Amina
+7/15/2026,10:19 AM,T-1558,"Chicken Shawarma Plate",Plates,1,14.33,Takeout,Amina
+7/15/2026,11:36 AM,T-1559,"Hummus",Starters,1,6.48,Takeout,Chris
+7/15/2026,11:36 AM,T-1559,"Chicken Wrap",Wraps,1,10.56,Takeout,Chris
+7/15/2026,11:36 AM,T-1559,"Side Fries",Sides,1,3.47,Takeout,Chris
+7/15/2026,12:45 PM,T-1560,"Falafel Wrap",Wraps,1,9.35,Delivery,Amina
+7/15/2026,05:43 PM,T-1561,"Baba Ganoush",Starters,2,13.12,Delivery,Noor
+7/15/2026,05:43 PM,T-1561,"Chicken Shawarma Plate",Plates,2,28.49,Delivery,Noor
+7/15/2026,05:43 PM,T-1561,"Hummus",Starters,1,6.51,Delivery,Noor
+7/15/2026,05:30 PM,T-1562,"Beef Shawarma Plate",Plates,1,15.20,Delivery,Amina
+7/15/2026,05:30 PM,T-1562,"Lamb Wrap",Wraps,1,11.59,Delivery,Amina
+7/15/2026,12:16 PM,T-1563,"Side Rice",Sides,1,3.02,Dine In,Noor
+7/15/2026,12:16 PM,T-1563,"Chicken Shawarma Plate",Plates,1,14.74,Dine In,Noor
+7/15/2026,12:16 PM,T-1563,"Lamb Wrap",Wraps,1,11.68,Dine In,Noor
+7/15/2026,11:37 AM,T-1564,"Fattoush Salad",Salads,2,17.08,Dine In,Amina
+7/15/2026,11:37 AM,T-1564,"Greek Salad",Salads,1,8.98,Dine In,Amina
+7/15/2026,11:37 AM,T-1564,"Turkish Coffee",Drinks,1,3.26,Dine In,Amina
+7/15/2026,11:37 AM,T-1564,"Lamb Wrap",Wraps,2,23.11,Dine In,Amina
+7/15/2026,11:48 AM,T-1565,"Mixed Grill",Plates,1,18.84,Takeout,Noor
+7/15/2026,11:48 AM,T-1565,"Lamb Wrap",Wraps,1,11.56,Takeout,Noor
+7/15/2026,11:48 AM,T-1565,"Hummus",Starters,2,13.16,Takeout,Noor
+7/15/2026,12:44 PM,T-1566,"Mixed Grill",Plates,1,18.77,Takeout,Amina
+7/15/2026,12:44 PM,T-1566,"Mixed Grill",Plates,1,19.15,Takeout,Amina
+7/15/2026,07:39 PM,T-1567,"Mint Tea",Drinks,1,2.74,Dine In,Omar
+7/15/2026,07:39 PM,T-1567,"Lentil Soup",Starters,1,5.44,Dine In,Omar
+7/15/2026,07:39 PM,T-1567,"Chicken Shawarma Plate",Plates,1,14.66,Dine In,Omar
+7/16/2026,12:42 PM,T-1568,"Fresh Lemonade",Drinks,1,3.46,Dine In,Noor
+7/16/2026,07:53 PM,T-1569,"Fattoush Salad",Salads,1,8.40,Takeout,Noor
+7/16/2026,07:01 PM,T-1570,"Baklava",Desserts,2,9.16,Delivery,Chris
+7/16/2026,07:01 PM,T-1570,"Baklava",Desserts,1,4.49,Delivery,Chris
+7/16/2026,07:01 PM,T-1570,"Fresh Lemonade",Drinks,1,3.44,Delivery,Chris
+7/16/2026,07:26 PM,T-1571,"Chicken Wrap",Wraps,2,21.36,Dine In,Layla
+7/16/2026,07:26 PM,T-1571,"Falafel Wrap",Wraps,1,9.55,Dine In,Layla
+7/16/2026,07:26 PM,T-1571,"Side Fries",Sides,1,3.55,Dine In,Layla
+7/16/2026,06:25 PM,T-1572,"Fresh Lemonade",Drinks,1,3.56,Delivery,Chris
+7/16/2026,06:25 PM,T-1572,"Side Fries",Sides,1,3.45,Delivery,Chris
+7/16/2026,07:14 PM,T-1573,"Chicken Wrap",Wraps,2,20.95,Takeout,Omar
+7/16/2026,07:14 PM,T-1573,"Baba Ganoush",Starters,1,6.49,Takeout,Omar
+7/16/2026,12:22 PM,T-1574,"Baklava",Desserts,2,9.14,Dine In,Chris
+7/16/2026,12:22 PM,T-1574,"Chicken Wrap",Wraps,1,10.67,Dine In,Chris
+7/16/2026,12:22 PM,T-1574,"Lamb Wrap",Wraps,1,11.62,Dine In,Chris
+7/16/2026,12:22 PM,T-1574,"Chicken Shawarma Plate",Plates,1,14.77,Dine In,Chris
+7/16/2026,12:43 PM,T-1575,"Chicken Shawarma Plate",Plates,1,14.66,Dine In,Noor
+7/16/2026,12:43 PM,T-1575,"Side Rice",Sides,2,5.98,Dine In,Noor
+7/16/2026,12:43 PM,T-1575,"Chicken Shawarma Plate",Plates,1,14.77,Dine In,Noor
+7/16/2026,08:10 PM,T-1576,"Greek Salad",Salads,1,8.86,Takeout,Chris
+7/16/2026,08:10 PM,T-1576,"Lentil Soup",Starters,1,5.43,Takeout,Chris
+7/16/2026,07:16 PM,T-1577,"Fresh Lemonade",Drinks,1,3.44,Delivery,Layla
+7/16/2026,07:16 PM,T-1577,"Side Fries",Sides,1,3.57,Delivery,Layla
+7/16/2026,07:16 PM,T-1577,"Side Rice",Sides,1,3.05,Delivery,Layla
+7/16/2026,12:17 PM,T-1578,"Baba Ganoush",Starters,1,6.42,Delivery,Layla
+7/16/2026,12:17 PM,T-1578,"Kids Nuggets",Kids,1,7.57,Delivery,Layla
+7/16/2026,11:54 AM,T-1579,"Mixed Grill",Plates,1,18.71,Delivery,Layla
+7/16/2026,11:54 AM,T-1579,"Chicken Shawarma Plate",Plates,1,14.28,Delivery,Layla
+7/16/2026,05:15 PM,T-1580,"Beef Shawarma Plate",Plates,1,15.79,Dine In,Chris
+7/16/2026,05:15 PM,T-1580,"Chicken Shawarma Plate",Plates,1,14.49,Dine In,Chris
+7/16/2026,05:15 PM,T-1580,"Chicken Wrap",Wraps,1,10.35,Dine In,Chris
+7/16/2026,04:34 PM,T-1581,"Lentil Soup",Starters,1,5.51,Dine In,Amina
+7/16/2026,04:34 PM,T-1581,"Fresh Lemonade",Drinks,1,3.53,Dine In,Amina
+7/16/2026,04:26 PM,T-1582,"Side Fries",Sides,1,3.47,Dine In,Chris
+7/16/2026,07:06 PM,T-1583,"Fattoush Salad",Salads,1,8.53,Takeout,Amina
+7/16/2026,07:17 PM,T-1584,"Mint Tea",Drinks,1,2.73,Dine In,Noor
+7/16/2026,07:17 PM,T-1584,"Beef Shawarma Plate",Plates,1,15.66,Dine In,Noor
+7/16/2026,12:09 PM,T-1585,"Beef Shawarma Plate",Plates,1,15.73,Takeout,Layla
+7/16/2026,12:09 PM,T-1585,"Hummus",Starters,1,6.43,Takeout,Layla
+7/16/2026,12:45 PM,T-1586,"Beef Shawarma Plate",Plates,1,15.23,Delivery,Omar
+7/16/2026,09:33 PM,T-1587,"Chicken Shawarma Plate",Plates,1,14.63,Dine In,Amina
+7/16/2026,11:59 AM,T-1588,"Fresh Lemonade",Drinks,2,7.01,Takeout,Amina
+7/16/2026,11:59 AM,T-1588,"Baklava",Desserts,1,4.58,Takeout,Amina
+7/16/2026,07:45 PM,T-1589,"Chicken Shawarma Plate",Plates,1,14.70,Dine In,Noor
+7/16/2026,07:45 PM,T-1589,"Lamb Wrap",Wraps,1,11.31,Dine In,Noor
+7/16/2026,01:41 PM,T-1590,"Side Fries",Sides,1,3.48,Dine In,Noor
+7/16/2026,01:41 PM,T-1590,"Mint Tea",Drinks,1,2.75,Dine In,Noor
+7/16/2026,06:00 PM,T-1591,"Chicken Shawarma Plate",Plates,1,14.77,Takeout,Omar
+7/16/2026,12:02 PM,T-1592,"Chicken Wrap",Wraps,1,10.56,Takeout,Layla
+7/16/2026,12:02 PM,T-1592,"Chicken Wrap",Wraps,1,10.41,Takeout,Layla
+7/16/2026,12:02 PM,T-1592,"Lamb Wrap",Wraps,1,11.71,Takeout,Layla
+7/16/2026,11:19 AM,T-1593,"Lentil Soup",Starters,2,10.88,Takeout,Noor
+7/16/2026,11:19 AM,T-1593,"Side Fries",Sides,1,3.50,Takeout,Noor
+7/16/2026,11:19 AM,T-1593,"Hummus",Starters,1,6.39,Takeout,Noor
+7/16/2026,11:19 AM,T-1593,"Falafel Wrap",Wraps,2,19.29,Takeout,Noor
+7/16/2026,07:05 PM,T-1594,"Fresh Lemonade",Drinks,1,3.43,Delivery,Chris
+7/16/2026,07:22 PM,T-1595,"Chicken Shawarma Plate",Plates,1,14.75,Takeout,Chris
+7/16/2026,07:22 PM,T-1595,"Chicken Wrap",Wraps,1,10.57,Takeout,Chris
+7/16/2026,07:22 PM,T-1595,"Chicken Wrap",Wraps,1,10.65,Takeout,Chris
+7/16/2026,02:21 PM,T-1596,"Chicken Wrap",Wraps,1,10.39,Delivery,Amina
+7/16/2026,02:21 PM,T-1596,"Beef Shawarma Plate",Plates,1,15.68,Delivery,Amina
+7/16/2026,02:21 PM,T-1596,"Side Fries",Sides,1,3.45,Delivery,Amina
+7/16/2026,02:21 PM,T-1596,"Mint Tea",Drinks,1,2.73,Delivery,Amina
+7/17/2026,12:22 PM,T-1597,"Hummus",Starters,1,6.51,Dine In,Layla
+7/17/2026,12:22 PM,T-1597,"Mixed Grill",Plates,2,37.97,Dine In,Layla
+7/17/2026,07:03 PM,T-1598,"Lentil Soup",Starters,1,5.61,Delivery,Amina
+7/17/2026,07:03 PM,T-1598,"Fattoush Salad",Salads,1,8.49,Delivery,Amina
+7/17/2026,07:03 PM,T-1598,"Chicken Wrap",Wraps,1,10.49,Delivery,Amina
+7/17/2026,12:18 PM,T-1599,"Turkish Coffee",Drinks,1,3.26,Delivery,Layla
+7/17/2026,12:18 PM,T-1599,"Beef Shawarma Plate",Plates,1,15.52,Delivery,Layla
+7/17/2026,12:18 PM,T-1599,"Lamb Wrap",Wraps,1,11.31,Delivery,Layla
+7/17/2026,06:05 PM,T-1600,"Beef Shawarma Plate",Plates,1,15.22,Takeout,Chris
+7/17/2026,01:37 PM,T-1601,"Fresh Lemonade",Drinks,1,3.46,Dine In,Amina
+7/17/2026,07:27 PM,T-1602,"Chicken Wrap",Wraps,1,10.61,Dine In,Amina
+7/17/2026,07:27 PM,T-1602,"Hummus",Starters,1,6.45,Dine In,Amina
+7/17/2026,12:10 PM,T-1603,"Side Rice",Sides,1,2.97,Takeout,Layla
+7/17/2026,12:10 PM,T-1603,"Falafel Wrap",Wraps,1,9.68,Takeout,Layla
+7/17/2026,12:10 PM,T-1603,"Side Fries",Sides,1,3.43,Takeout,Layla
+7/17/2026,11:18 AM,T-1604,"Fresh Lemonade",Drinks,1,3.47,Dine In,Layla
+7/17/2026,11:18 AM,T-1604,"Beef Shawarma Plate",Plates,1,15.36,Dine In,Layla
+7/17/2026,11:18 AM,T-1604,"Hummus",Starters,1,6.59,Dine In,Layla
+7/17/2026,07:27 PM,T-1605,"Mint Tea",Drinks,1,2.70,Takeout,Noor
+7/17/2026,07:27 PM,T-1605,"Baba Ganoush",Starters,2,12.90,Takeout,Noor
+7/17/2026,07:27 PM,T-1605,"Fattoush Salad",Salads,1,8.55,Takeout,Noor
+7/17/2026,04:40 PM,T-1606,"Chicken Shawarma Plate",Plates,1,14.66,Delivery,Noor
+7/17/2026,04:40 PM,T-1606,"Chicken Wrap",Wraps,1,10.36,Delivery,Noor
+7/17/2026,06:38 PM,T-1607,"Beef Shawarma Plate",Plates,1,15.36,Dine In,Omar
+7/17/2026,06:38 PM,T-1607,"Falafel Wrap",Wraps,2,18.99,Dine In,Omar
+7/17/2026,10:58 PM,T-1608,"Baba Ganoush",Starters,1,6.43,Takeout,Layla
+7/17/2026,10:58 PM,T-1608,"Fresh Lemonade",Drinks,1,3.44,Takeout,Layla
+7/17/2026,10:58 PM,T-1608,"Side Fries",Sides,2,6.98,Takeout,Layla
+7/17/2026,10:58 PM,T-1608,"Side Fries",Sides,1,3.44,Takeout,Layla
+7/17/2026,10:46 PM,T-1609,"Chicken Shawarma Plate",Plates,2,28.71,Delivery,Layla
+7/17/2026,10:46 PM,T-1609,"Baklava",Desserts,1,4.55,Delivery,Layla
+7/17/2026,10:46 PM,T-1609,"Beef Shawarma Plate",Plates,2,30.54,Delivery,Layla
+7/17/2026,12:12 PM,T-1610,"Mixed Grill",Plates,1,19.21,Dine In,Amina
+7/17/2026,12:12 PM,T-1610,"Turkish Coffee",Drinks,1,3.31,Dine In,Amina
+7/17/2026,12:12 PM,T-1610,"Fattoush Salad",Salads,1,8.67,Dine In,Amina
+7/17/2026,06:08 PM,T-1611,"Chicken Wrap",Wraps,1,10.59,Delivery,Omar
+7/17/2026,11:29 AM,T-1612,"Lamb Wrap",Wraps,1,11.40,Takeout,Chris
+7/17/2026,05:14 PM,T-1613,"Hummus",Starters,1,6.38,Dine In,Amina
+7/17/2026,08:37 PM,T-1614,"Chicken Shawarma Plate",Plates,1,14.30,Delivery,Omar
+7/17/2026,12:37 PM,T-1615,"Hummus",Starters,1,6.55,Delivery,Noor
+7/17/2026,05:06 PM,T-1616,"Chicken Wrap",Wraps,1,10.61,Dine In,Omar
+7/17/2026,05:06 PM,T-1616,"Lamb Wrap",Wraps,1,11.66,Dine In,Omar
+7/17/2026,04:37 PM,T-1617,"Falafel Wrap",Wraps,2,19.10,Dine In,Omar
+7/17/2026,04:37 PM,T-1617,"Chicken Wrap",Wraps,2,21.22,Dine In,Omar
+7/17/2026,04:37 PM,T-1617,"Fresh Lemonade",Drinks,1,3.55,Dine In,Omar
+7/17/2026,12:27 PM,T-1618,"Chicken Wrap",Wraps,1,10.63,Takeout,Omar
+7/17/2026,12:27 PM,T-1618,"Side Rice",Sides,2,6.02,Takeout,Omar
+7/17/2026,12:27 PM,T-1618,"Chicken Shawarma Plate",Plates,1,14.38,Takeout,Omar
+7/17/2026,02:42 PM,T-1619,"Mint Tea",Drinks,2,5.43,Dine In,Layla
+7/17/2026,04:45 PM,T-1620,"Stuffed Grape Leaves",Starters,1,7.01,Dine In,Omar
+7/17/2026,04:45 PM,T-1620,"Mixed Grill",Plates,2,38.43,Dine In,Omar
+7/17/2026,12:13 PM,T-1621,"Hummus",Starters,1,6.39,Takeout,Amina
+7/17/2026,12:13 PM,T-1621,"Chicken Wrap",Wraps,1,10.49,Takeout,Amina
+7/17/2026,07:29 PM,T-1622,"Falafel Wrap",Wraps,1,9.67,Dine In,Layla
+7/17/2026,08:51 PM,T-1623,"Mixed Grill",Plates,1,18.73,Takeout,Noor
+7/17/2026,08:51 PM,T-1623,"Baba Ganoush",Starters,1,6.44,Takeout,Noor
+7/17/2026,08:51 PM,T-1623,"Chicken Shawarma Plate",Plates,1,14.50,Takeout,Noor
+7/17/2026,07:30 PM,T-1624,"Side Rice",Sides,2,6.02,Delivery,Chris
+7/17/2026,07:30 PM,T-1624,"Stuffed Grape Leaves",Starters,1,6.91,Delivery,Chris
+7/17/2026,07:30 PM,T-1624,"Falafel Wrap",Wraps,1,9.63,Delivery,Chris
+7/17/2026,01:14 PM,T-1625,"Falafel Wrap",Wraps,1,9.69,Takeout,Omar
+7/17/2026,01:14 PM,T-1625,"Chicken Shawarma Plate",Plates,1,14.78,Takeout,Omar
+7/17/2026,01:14 PM,T-1625,"Mixed Grill",Plates,2,37.97,Takeout,Omar
+7/17/2026,01:53 PM,T-1626,"Baklava",Desserts,2,8.95,Takeout,Layla
+7/17/2026,01:53 PM,T-1626,"Greek Salad",Salads,1,8.95,Takeout,Layla
+7/17/2026,01:53 PM,T-1626,"Fattoush Salad",Salads,1,8.43,Takeout,Layla
+7/17/2026,01:53 PM,T-1626,"Side Rice",Sides,1,3.04,Takeout,Layla
+7/17/2026,06:50 PM,T-1627,"Stuffed Grape Leaves",Starters,1,7.13,Delivery,Omar
+7/17/2026,06:50 PM,T-1627,"Fresh Lemonade",Drinks,1,3.57,Delivery,Omar
+7/17/2026,05:01 PM,T-1628,"Side Rice",Sides,1,2.95,Dine In,Omar
+7/17/2026,05:01 PM,T-1628,"Side Rice",Sides,1,2.95,Dine In,Omar
+7/17/2026,05:01 PM,T-1628,"Turkish Coffee",Drinks,1,3.20,Dine In,Omar
+7/17/2026,05:01 PM,T-1628,"Lamb Wrap",Wraps,1,11.30,Dine In,Omar
+7/17/2026,04:48 PM,T-1629,"Fresh Lemonade",Drinks,1,3.44,Delivery,Omar
+7/17/2026,04:48 PM,T-1629,"Greek Salad",Salads,1,8.90,Delivery,Omar
+7/17/2026,11:05 AM,T-1630,"Baba Ganoush",Starters,1,6.61,Takeout,Chris
+7/17/2026,11:05 AM,T-1630,"Beef Shawarma Plate",Plates,2,30.53,Takeout,Chris
+7/17/2026,11:05 AM,T-1630,"Lamb Wrap",Wraps,1,11.45,Takeout,Chris
+7/17/2026,11:42 AM,T-1631,"Chicken Wrap",Wraps,1,10.47,Dine In,Omar
+7/17/2026,11:42 AM,T-1631,"Fattoush Salad",Salads,1,8.65,Dine In,Omar
+7/17/2026,11:42 AM,T-1631,"Beef Shawarma Plate",Plates,2,31.23,Dine In,Omar
+7/17/2026,12:59 PM,T-1632,"Falafel Wrap",Wraps,1,9.56,Takeout,Amina
+7/17/2026,12:59 PM,T-1632,"Mint Tea",Drinks,1,2.76,Takeout,Amina
+7/17/2026,12:08 PM,T-1633,"Greek Salad",Salads,1,9.03,Dine In,Chris
+7/17/2026,11:25 AM,T-1634,"Hummus",Starters,1,6.53,Dine In,Noor
+7/17/2026,11:25 AM,T-1634,"Baklava",Desserts,1,4.44,Dine In,Noor
+7/17/2026,01:39 PM,T-1635,"Falafel Wrap",Wraps,1,9.64,Takeout,Amina
+7/17/2026,01:39 PM,T-1635,"Fresh Lemonade",Drinks,1,3.50,Takeout,Amina
+7/17/2026,05:44 PM,T-1636,"Chicken Wrap",Wraps,1,10.66,Takeout,Noor
+7/17/2026,05:44 PM,T-1636,"Fattoush Salad",Salads,1,8.64,Takeout,Noor
+7/17/2026,12:18 PM,T-1637,"Knafeh",Desserts,2,11.83,Dine In,Noor
+7/17/2026,12:18 PM,T-1637,"Kids Nuggets",Kids,1,7.45,Dine In,Noor
+7/18/2026,07:56 PM,T-1638,"Side Rice",Sides,1,3.03,Dine In,Amina
+7/18/2026,07:56 PM,T-1638,"Lamb Wrap",Wraps,1,11.54,Dine In,Amina
+7/18/2026,07:14 PM,T-1639,"Side Rice",Sides,1,3.06,Takeout,Chris
+7/18/2026,07:14 PM,T-1639,"Mixed Grill",Plates,1,18.93,Takeout,Chris
+7/18/2026,07:14 PM,T-1639,"Turkish Coffee",Drinks,1,3.31,Takeout,Chris
+7/18/2026,12:49 PM,T-1640,"Falafel Wrap",Wraps,1,9.41,Takeout,Layla
+7/18/2026,07:47 PM,T-1641,"Mint Tea",Drinks,1,2.75,Takeout,Noor
+7/18/2026,07:47 PM,T-1641,"Side Fries",Sides,1,3.50,Takeout,Noor
+7/18/2026,12:50 PM,T-1642,"Falafel Wrap",Wraps,1,9.50,Delivery,Omar
+7/18/2026,12:50 PM,T-1642,"Side Fries",Sides,1,3.53,Delivery,Omar
+7/18/2026,12:50 PM,T-1642,"Falafel Wrap",Wraps,1,9.38,Delivery,Omar
+7/18/2026,12:50 PM,T-1642,"Mixed Grill",Plates,1,18.86,Delivery,Omar
+7/18/2026,11:35 AM,T-1643,"Falafel Wrap",Wraps,1,9.67,Takeout,Chris
+7/18/2026,11:35 AM,T-1643,"Chicken Shawarma Plate",Plates,1,14.21,Takeout,Chris
+7/18/2026,12:17 PM,T-1644,"Baba Ganoush",Starters,1,6.55,Delivery,Omar
+7/18/2026,12:17 PM,T-1644,"Baklava",Desserts,2,9.02,Delivery,Omar
+7/18/2026,10:09 AM,T-1645,"Baklava",Desserts,1,4.54,Dine In,Chris
+7/18/2026,03:33 PM,T-1646,"Greek Salad",Salads,1,8.95,Takeout,Noor
+7/18/2026,01:24 PM,T-1647,"Baba Ganoush",Starters,1,6.61,Dine In,Omar
+7/18/2026,01:24 PM,T-1647,"Hummus",Starters,1,6.55,Dine In,Omar
+7/18/2026,01:24 PM,T-1647,"Chicken Wrap",Wraps,1,10.60,Dine In,Omar
+7/18/2026,01:24 PM,T-1647,"Chicken Shawarma Plate",Plates,1,14.50,Dine In,Omar
+7/18/2026,11:43 AM,T-1648,"Falafel Wrap",Wraps,1,9.69,Takeout,Omar
+7/18/2026,11:43 AM,T-1648,"Chicken Shawarma Plate",Plates,1,14.58,Takeout,Omar
+7/18/2026,09:47 PM,T-1649,"Turkish Coffee",Drinks,2,6.41,Takeout,Chris
+7/18/2026,06:12 PM,T-1650,"Chicken Wrap",Wraps,1,10.65,Takeout,Chris
+7/18/2026,06:12 PM,T-1650,"Fattoush Salad",Salads,1,8.35,Takeout,Chris
+7/18/2026,06:12 PM,T-1650,"Chicken Wrap",Wraps,1,10.30,Takeout,Chris
+7/18/2026,07:45 PM,T-1651,"Turkish Coffee",Drinks,1,3.30,Takeout,Chris
+7/18/2026,07:45 PM,T-1651,"Falafel Wrap",Wraps,1,9.41,Takeout,Chris
+7/18/2026,12:23 PM,T-1652,"Chicken Wrap",Wraps,1,10.50,Dine In,Layla
+7/18/2026,05:30 PM,T-1653,"Fresh Lemonade",Drinks,1,3.57,Takeout,Chris
+7/18/2026,12:44 PM,T-1654,"Chicken Wrap",Wraps,1,10.53,Delivery,Noor
+7/18/2026,12:44 PM,T-1654,"Fattoush Salad",Salads,1,8.49,Delivery,Noor
+7/18/2026,12:44 PM,T-1654,"Side Fries",Sides,1,3.52,Delivery,Noor
+7/18/2026,12:56 PM,T-1655,"Mint Tea",Drinks,1,2.75,Takeout,Omar
+7/18/2026,12:56 PM,T-1655,"Side Rice",Sides,1,2.97,Takeout,Omar
+7/18/2026,12:56 PM,T-1655,"Chicken Shawarma Plate",Plates,2,29.45,Takeout,Omar
+7/18/2026,08:42 PM,T-1656,"Falafel Wrap",Wraps,1,9.60,Takeout,Amina
+7/18/2026,08:42 PM,T-1656,"Chicken Wrap",Wraps,2,21.36,Takeout,Amina
+7/18/2026,07:07 PM,T-1657,"Chicken Wrap",Wraps,1,10.60,Dine In,Chris
+7/18/2026,07:07 PM,T-1657,"Fresh Lemonade",Drinks,1,3.56,Dine In,Chris
+7/18/2026,07:07 PM,T-1657,"Side Fries",Sides,1,3.52,Dine In,Chris
+7/18/2026,10:19 PM,T-1658,"Lamb Wrap",Wraps,1,11.64,Takeout,Noor
+7/18/2026,10:19 PM,T-1658,"Side Rice",Sides,1,2.94,Takeout,Noor
+7/18/2026,10:19 PM,T-1658,"Fattoush Salad",Salads,2,17.12,Takeout,Noor
+7/18/2026,10:19 PM,T-1658,"Fresh Lemonade",Drinks,1,3.56,Takeout,Noor
+7/18/2026,12:02 PM,T-1659,"Chicken Shawarma Plate",Plates,1,14.53,Takeout,Amina
+7/18/2026,08:03 PM,T-1660,"Side Rice",Sides,1,2.98,Dine In,Omar
+7/18/2026,08:03 PM,T-1660,"Fattoush Salad",Salads,2,17.31,Dine In,Omar
+7/18/2026,07:18 PM,T-1661,"Chicken Shawarma Plate",Plates,1,14.57,Delivery,Omar
+7/18/2026,12:25 PM,T-1662,"Kids Nuggets",Kids,1,7.37,Dine In,Layla
+7/18/2026,12:37 PM,T-1663,"Fattoush Salad",Salads,1,8.49,Dine In,Layla
+7/18/2026,05:23 PM,T-1664,"Greek Salad",Salads,1,8.97,Dine In,Amina
+7/18/2026,05:23 PM,T-1664,"Baba Ganoush",Starters,1,6.56,Dine In,Amina
+7/18/2026,12:05 PM,T-1665,"Baklava",Desserts,2,8.96,Dine In,Chris
+7/18/2026,12:05 PM,T-1665,"Fresh Lemonade",Drinks,1,3.57,Dine In,Chris
+7/18/2026,12:05 PM,T-1665,"Stuffed Grape Leaves",Starters,1,7.10,Dine In,Chris
+7/18/2026,12:05 PM,T-1665,"Baklava",Desserts,1,4.45,Dine In,Chris
+7/18/2026,12:44 PM,T-1666,"Falafel Wrap",Wraps,1,9.68,Dine In,Chris
+7/18/2026,05:54 PM,T-1667,"Fattoush Salad",Salads,1,8.38,Takeout,Noor
+7/18/2026,05:54 PM,T-1667,"Knafeh",Desserts,1,5.94,Takeout,Noor
+7/18/2026,05:54 PM,T-1667,"Side Rice",Sides,1,3.04,Takeout,Noor
+7/18/2026,08:29 PM,T-1668,"Mixed Grill",Plates,1,18.88,Delivery,Omar
+7/18/2026,07:41 PM,T-1669,"Lentil Soup",Starters,2,10.93,Delivery,Noor
+7/18/2026,07:41 PM,T-1669,"Beef Shawarma Plate",Plates,1,15.46,Delivery,Noor
+7/18/2026,07:11 PM,T-1670,"Greek Salad",Salads,1,8.97,Dine In,Noor
+7/18/2026,12:06 PM,T-1671,"Falafel Wrap",Wraps,1,9.52,Delivery,Amina
+7/18/2026,03:36 PM,T-1672,"Hummus",Starters,2,12.91,Dine In,Omar
+7/18/2026,03:36 PM,T-1672,"Side Fries",Sides,1,3.47,Dine In,Omar
+7/18/2026,04:21 PM,T-1673,"Falafel Wrap",Wraps,1,9.35,Dine In,Layla
+7/18/2026,04:21 PM,T-1673,"Greek Salad",Salads,2,17.65,Dine In,Layla
+7/18/2026,12:20 PM,T-1674,"Mixed Grill",Plates,1,18.64,Takeout,Layla
+7/18/2026,12:20 PM,T-1674,"Fresh Lemonade",Drinks,1,3.47,Takeout,Layla
+7/18/2026,12:20 PM,T-1674,"Fattoush Salad",Salads,1,8.55,Takeout,Layla
+7/18/2026,07:54 PM,T-1675,"Mint Tea",Drinks,1,2.79,Takeout,Noor
+7/18/2026,07:54 PM,T-1675,"Baba Ganoush",Starters,1,6.60,Takeout,Noor
+7/18/2026,05:15 PM,T-1676,"Falafel Wrap",Wraps,1,9.49,Takeout,Chris
+7/18/2026,11:05 AM,T-1677,"Beef Shawarma Plate",Plates,1,15.62,Delivery,Amina
+7/18/2026,11:05 AM,T-1677,"Side Fries",Sides,1,3.49,Delivery,Amina
+7/18/2026,02:56 PM,T-1678,"Mixed Grill",Plates,1,18.72,Takeout,Chris
+7/18/2026,02:56 PM,T-1678,"Chicken Wrap",Wraps,1,10.47,Takeout,Chris
+7/18/2026,02:56 PM,T-1678,"Beef Shawarma Plate",Plates,1,15.31,Takeout,Chris
+7/18/2026,02:56 PM,T-1678,"Turkish Coffee",Drinks,1,3.21,Takeout,Chris
+7/18/2026,11:21 AM,T-1679,"Fresh Lemonade",Drinks,1,3.44,Dine In,Layla
+7/18/2026,11:21 AM,T-1679,"Hummus",Starters,2,12.91,Dine In,Layla
+7/18/2026,07:54 PM,T-1680,"Chicken Shawarma Plate",Plates,1,14.34,Delivery,Chris
+7/18/2026,07:54 PM,T-1680,"Beef Shawarma Plate",Plates,1,15.45,Delivery,Chris
+7/18/2026,07:54 PM,T-1680,"Mint Tea",Drinks,1,2.79,Delivery,Chris
+7/18/2026,07:54 PM,T-1680,"Fattoush Salad",Salads,1,8.34,Delivery,Chris
+7/18/2026,01:16 PM,T-1681,"Baba Ganoush",Starters,2,12.82,Dine In,Omar
+7/18/2026,01:16 PM,T-1681,"Chicken Shawarma Plate",Plates,1,14.33,Dine In,Omar
+7/18/2026,01:16 PM,T-1681,"Mixed Grill",Plates,1,19.15,Dine In,Omar
+7/18/2026,12:09 PM,T-1682,"Beef Shawarma Plate",Plates,1,15.62,Takeout,Noor
+7/18/2026,01:10 PM,T-1683,"Falafel Wrap",Wraps,1,9.59,Takeout,Noor
+7/19/2026,12:15 PM,T-1684,"Baklava",Desserts,1,4.48,Dine In,Layla
+7/19/2026,12:15 PM,T-1684,"Side Rice",Sides,1,3.01,Dine In,Layla
+7/19/2026,07:52 PM,T-1685,"Chicken Shawarma Plate",Plates,1,14.59,Delivery,Layla
+7/19/2026,07:37 PM,T-1686,"Fresh Lemonade",Drinks,1,3.53,Dine In,Noor
+7/19/2026,07:37 PM,T-1686,"Beef Shawarma Plate",Plates,1,15.44,Dine In,Noor
+7/19/2026,07:37 PM,T-1686,"Fresh Lemonade",Drinks,2,7.03,Dine In,Noor
+7/19/2026,12:37 PM,T-1687,"Mixed Grill",Plates,1,18.79,Takeout,Omar
+7/19/2026,12:37 PM,T-1687,"Fresh Lemonade",Drinks,2,7.14,Takeout,Omar
+7/19/2026,08:14 PM,T-1688,"Beef Shawarma Plate",Plates,1,15.22,Takeout,Noor
+7/19/2026,08:14 PM,T-1688,"Beef Shawarma Plate",Plates,1,15.57,Takeout,Noor
+7/19/2026,10:49 PM,T-1689,"Lamb Wrap",Wraps,1,11.53,Takeout,Noor
+7/19/2026,05:39 PM,T-1690,"Falafel Wrap",Wraps,1,9.45,Dine In,Omar
+7/19/2026,05:39 PM,T-1690,"Fresh Lemonade",Drinks,2,6.98,Dine In,Omar
+7/19/2026,05:39 PM,T-1690,"Stuffed Grape Leaves",Starters,1,7.10,Dine In,Omar
+7/19/2026,12:02 PM,T-1691,"Greek Salad",Salads,1,8.95,Takeout,Layla
+7/19/2026,12:02 PM,T-1691,"Falafel Wrap",Wraps,1,9.61,Takeout,Layla
+7/19/2026,12:02 PM,T-1691,"Side Fries",Sides,1,3.53,Takeout,Layla
+7/19/2026,07:52 PM,T-1692,"Knafeh",Desserts,1,6.07,Delivery,Chris
+7/19/2026,07:52 PM,T-1692,"Beef Shawarma Plate",Plates,1,15.22,Delivery,Chris
+7/19/2026,05:08 PM,T-1693,"Kids Nuggets",Kids,1,7.36,Takeout,Amina
+7/19/2026,05:08 PM,T-1693,"Fresh Lemonade",Drinks,1,3.45,Takeout,Amina
+7/19/2026,05:08 PM,T-1693,"Fresh Lemonade",Drinks,1,3.52,Takeout,Amina
+7/19/2026,03:09 PM,T-1694,"Hummus",Starters,1,6.48,Delivery,Omar
+7/19/2026,03:09 PM,T-1694,"Hummus",Starters,1,6.50,Delivery,Omar
+7/19/2026,06:11 PM,T-1695,"Beef Shawarma Plate",Plates,1,15.23,Dine In,Omar
+7/19/2026,11:56 AM,T-1696,"Hummus",Starters,1,6.46,Dine In,Layla
+7/19/2026,07:22 PM,T-1697,"Kids Nuggets",Kids,1,7.53,Takeout,Layla
+7/19/2026,11:42 AM,T-1698,"Fresh Lemonade",Drinks,1,3.48,Takeout,Noor
+7/19/2026,11:42 AM,T-1698,"Chicken Wrap",Wraps,1,10.54,Takeout,Noor
+7/19/2026,08:40 PM,T-1699,"Chicken Wrap",Wraps,2,21.35,Dine In,Layla
+7/19/2026,12:09 PM,T-1700,"Side Fries",Sides,1,3.53,Dine In,Noor
+7/19/2026,12:09 PM,T-1700,"Beef Shawarma Plate",Plates,1,15.59,Dine In,Noor
+7/19/2026,12:09 PM,T-1700,"Chicken Shawarma Plate",Plates,2,28.46,Dine In,Noor
+7/19/2026,12:44 PM,T-1701,"Turkish Coffee",Drinks,2,6.47,Delivery,Amina
+7/19/2026,12:44 PM,T-1701,"Fresh Lemonade",Drinks,1,3.56,Delivery,Amina
+7/19/2026,03:04 PM,T-1702,"Side Rice",Sides,1,3.06,Dine In,Chris
+7/19/2026,03:04 PM,T-1702,"Hummus",Starters,2,13.13,Dine In,Chris
+7/19/2026,03:04 PM,T-1702,"Baba Ganoush",Starters,1,6.46,Dine In,Chris
+7/19/2026,07:46 PM,T-1703,"Fattoush Salad",Salads,1,8.53,Delivery,Omar
+7/19/2026,07:46 PM,T-1703,"Mixed Grill",Plates,1,18.57,Delivery,Omar
+7/19/2026,07:46 PM,T-1703,"Fattoush Salad",Salads,1,8.57,Delivery,Omar
+7/19/2026,12:25 PM,T-1704,"Lamb Wrap",Wraps,1,11.56,Takeout,Amina
+7/19/2026,12:25 PM,T-1704,"Baba Ganoush",Starters,1,6.38,Takeout,Amina
+7/19/2026,09:27 PM,T-1705,"Chicken Wrap",Wraps,2,20.66,Dine In,Omar
+7/19/2026,09:27 PM,T-1705,"Chicken Shawarma Plate",Plates,1,14.77,Dine In,Omar
+7/19/2026,08:18 PM,T-1706,"Chicken Wrap",Wraps,1,10.45,Dine In,Layla
+7/19/2026,08:18 PM,T-1706,"Chicken Shawarma Plate",Plates,1,14.55,Dine In,Layla
+7/19/2026,07:03 PM,T-1707,"Fresh Lemonade",Drinks,1,3.47,Dine In,Chris
+7/19/2026,03:20 PM,T-1708,"Hummus",Starters,1,6.46,Takeout,Amina
+7/19/2026,03:20 PM,T-1708,"Mixed Grill",Plates,1,19.17,Takeout,Amina
+7/19/2026,03:20 PM,T-1708,"Mint Tea",Drinks,1,2.75,Takeout,Amina
+7/19/2026,12:54 PM,T-1709,"Falafel Wrap",Wraps,2,19.09,Dine In,Omar
+7/19/2026,12:54 PM,T-1709,"Lentil Soup",Starters,1,5.40,Dine In,Omar
+7/19/2026,12:54 PM,T-1709,"Chicken Wrap",Wraps,1,10.51,Dine In,Omar
+7/19/2026,07:35 PM,T-1710,"Side Fries",Sides,2,6.91,Delivery,Amina
+7/19/2026,07:35 PM,T-1710,"Side Rice",Sides,1,3.00,Delivery,Amina
+7/19/2026,10:54 PM,T-1711,"Greek Salad",Salads,1,9.16,Dine In,Omar
+7/19/2026,10:54 PM,T-1711,"Beef Shawarma Plate",Plates,1,15.71,Dine In,Omar
+7/19/2026,10:54 PM,T-1711,"Side Fries",Sides,1,3.56,Dine In,Omar
+7/19/2026,10:54 PM,T-1711,"Chicken Shawarma Plate",Plates,1,14.32,Dine In,Omar
+7/19/2026,07:44 PM,T-1712,"Mixed Grill",Plates,1,18.78,Takeout,Chris
+7/19/2026,07:44 PM,T-1712,"Side Rice",Sides,1,2.99,Takeout,Chris
+7/19/2026,07:44 PM,T-1712,"Hummus",Starters,1,6.48,Takeout,Chris
+7/19/2026,12:58 PM,T-1713,"Beef Shawarma Plate",Plates,1,15.24,Takeout,Layla
+7/19/2026,07:50 PM,T-1714,"Chicken Shawarma Plate",Plates,1,14.32,Dine In,Noor
+7/19/2026,07:50 PM,T-1714,"Fresh Lemonade",Drinks,1,3.47,Dine In,Noor
+7/19/2026,07:50 PM,T-1714,"Side Fries",Sides,1,3.47,Dine In,Noor
+7/20/2026,07:12 PM,T-1715,"Greek Salad",Salads,1,8.87,Takeout,Omar
+7/20/2026,07:12 PM,T-1715,"Chicken Wrap",Wraps,1,10.35,Takeout,Omar
+7/20/2026,08:09 PM,T-1716,"Mint Tea",Drinks,1,2.71,Dine In,Layla
+7/20/2026,08:09 PM,T-1716,"Side Fries",Sides,1,3.44,Dine In,Layla
+7/20/2026,06:28 PM,T-1717,"Chicken Wrap",Wraps,1,10.32,Delivery,Amina
+7/20/2026,07:48 PM,T-1718,"Chicken Wrap",Wraps,1,10.47,Delivery,Layla
+7/20/2026,05:57 PM,T-1719,"Side Rice",Sides,1,3.04,Dine In,Omar
+7/20/2026,05:57 PM,T-1719,"Fattoush Salad",Salads,1,8.64,Dine In,Omar
+7/20/2026,05:57 PM,T-1719,"Falafel Wrap",Wraps,2,19.04,Dine In,Omar
+7/20/2026,05:57 PM,T-1719,"Chicken Wrap",Wraps,1,10.58,Dine In,Omar
+7/20/2026,06:12 PM,T-1720,"Fresh Lemonade",Drinks,1,3.48,Delivery,Chris
+7/20/2026,07:34 PM,T-1721,"Chicken Shawarma Plate",Plates,2,28.94,Delivery,Noor
+7/20/2026,12:22 PM,T-1722,"Kids Nuggets",Kids,1,7.59,Takeout,Layla
+7/20/2026,12:22 PM,T-1722,"Lentil Soup",Starters,1,5.51,Takeout,Layla
+7/20/2026,07:41 PM,T-1723,"Chicken Wrap",Wraps,1,10.65,Takeout,Layla
+7/20/2026,07:41 PM,T-1723,"Side Rice",Sides,1,3.01,Takeout,Layla
+7/20/2026,07:41 PM,T-1723,"Chicken Wrap",Wraps,1,10.30,Takeout,Layla
+7/20/2026,12:18 PM,T-1724,"Baba Ganoush",Starters,1,6.44,Takeout,Amina
+7/20/2026,12:18 PM,T-1724,"Side Fries",Sides,1,3.45,Takeout,Amina
+7/20/2026,12:18 PM,T-1724,"Side Rice",Sides,1,3.06,Takeout,Amina
+7/20/2026,12:10 PM,T-1725,"Greek Salad",Salads,1,8.94,Delivery,Layla
+7/20/2026,12:10 PM,T-1725,"Lamb Wrap",Wraps,1,11.52,Delivery,Layla
+7/20/2026,12:51 PM,T-1726,"Fresh Lemonade",Drinks,2,7.11,Delivery,Amina
+7/20/2026,12:51 PM,T-1726,"Baba Ganoush",Starters,1,6.39,Delivery,Amina
+7/20/2026,12:51 PM,T-1726,"Beef Shawarma Plate",Plates,1,15.40,Delivery,Amina
+7/20/2026,12:38 PM,T-1727,"Side Fries",Sides,1,3.55,Dine In,Noor
+7/20/2026,12:50 PM,T-1728,"Baklava",Desserts,1,4.48,Takeout,Noor
+7/20/2026,12:50 PM,T-1728,"Chicken Shawarma Plate",Plates,2,28.71,Takeout,Noor
+7/20/2026,05:14 PM,T-1729,"Beef Shawarma Plate",Plates,2,30.55,Dine In,Chris
+7/20/2026,05:14 PM,T-1729,"Chicken Wrap",Wraps,1,10.64,Dine In,Chris
+7/20/2026,12:53 PM,T-1730,"Fresh Lemonade",Drinks,1,3.55,Delivery,Noor
+7/20/2026,12:53 PM,T-1730,"Fresh Lemonade",Drinks,1,3.56,Delivery,Noor
+7/20/2026,12:53 PM,T-1730,"Chicken Shawarma Plate",Plates,1,14.36,Delivery,Noor
+7/20/2026,07:28 PM,T-1731,"Lamb Wrap",Wraps,1,11.56,Takeout,Omar
+7/20/2026,07:28 PM,T-1731,"Fattoush Salad",Salads,2,16.68,Takeout,Omar
+7/20/2026,12:09 PM,T-1732,"Mixed Grill",Plates,1,18.84,Delivery,Amina
+7/20/2026,12:09 PM,T-1732,"Fattoush Salad",Salads,1,8.44,Delivery,Amina
+7/20/2026,10:06 PM,T-1733,"Chicken Wrap",Wraps,1,10.30,Dine In,Layla
+7/20/2026,10:06 PM,T-1733,"Chicken Shawarma Plate",Plates,2,29.51,Dine In,Layla
+7/20/2026,10:06 PM,T-1733,"Fattoush Salad",Salads,1,8.63,Dine In,Layla
+7/20/2026,10:06 PM,T-1733,"Falafel Wrap",Wraps,1,9.67,Dine In,Layla
+7/20/2026,11:38 AM,T-1734,"Fattoush Salad",Salads,1,8.56,Delivery,Chris
+7/20/2026,12:16 PM,T-1735,"Mixed Grill",Plates,1,19.04,Dine In,Omar
+7/20/2026,12:16 PM,T-1735,"Chicken Wrap",Wraps,1,10.71,Dine In,Omar
+7/20/2026,12:16 PM,T-1735,"Side Fries",Sides,1,3.54,Dine In,Omar
+7/20/2026,12:16 PM,T-1735,"Baba Ganoush",Starters,1,6.56,Dine In,Omar
+7/20/2026,12:39 PM,T-1736,"Fattoush Salad",Salads,1,8.66,Takeout,Chris
+7/20/2026,12:39 PM,T-1736,"Hummus",Starters,2,12.80,Takeout,Chris
+7/20/2026,07:50 PM,T-1737,"Greek Salad",Salads,1,9.03,Dine In,Omar
+7/20/2026,07:50 PM,T-1737,"Chicken Wrap",Wraps,1,10.64,Dine In,Omar
+7/20/2026,12:16 PM,T-1738,"Beef Shawarma Plate",Plates,1,15.23,Dine In,Omar
+7/20/2026,10:20 PM,T-1739,"Lentil Soup",Starters,1,5.46,Dine In,Amina
+7/20/2026,10:20 PM,T-1739,"Hummus",Starters,2,12.87,Dine In,Amina
+7/21/2026,11:05 AM,T-1740,"Hummus",Starters,2,13.06,Dine In,Noor
+7/21/2026,11:05 AM,T-1740,"Baklava",Desserts,1,4.47,Dine In,Noor
+7/21/2026,11:05 AM,T-1740,"Chicken Shawarma Plate",Plates,1,14.65,Dine In,Noor
+7/21/2026,11:05 AM,T-1740,"Hummus",Starters,1,6.61,Dine In,Noor
+7/21/2026,12:20 PM,T-1741,"Fattoush Salad",Salads,1,8.64,Dine In,Amina
+7/21/2026,12:20 PM,T-1741,"Lentil Soup",Starters,1,5.58,Dine In,Amina
+7/21/2026,12:20 PM,T-1741,"Baba Ganoush",Starters,1,6.54,Dine In,Amina
+7/21/2026,12:20 PM,T-1741,"Fresh Lemonade",Drinks,1,3.50,Dine In,Amina
+7/21/2026,04:21 PM,T-1742,"Fresh Lemonade",Drinks,1,3.48,Takeout,Noor
+7/21/2026,07:10 PM,T-1743,"Lentil Soup",Starters,1,5.50,Takeout,Layla
+7/21/2026,07:10 PM,T-1743,"Chicken Shawarma Plate",Plates,2,28.84,Takeout,Layla
+7/21/2026,12:07 PM,T-1744,"Hummus",Starters,1,6.52,Dine In,Omar
+7/21/2026,07:56 PM,T-1745,"Falafel Wrap",Wraps,1,9.64,Dine In,Layla
+7/21/2026,12:00 PM,T-1746,"Baklava",Desserts,1,4.59,Takeout,Noor
+7/21/2026,12:00 PM,T-1746,"Falafel Wrap",Wraps,1,9.32,Takeout,Noor
+7/21/2026,12:00 PM,T-1746,"Fresh Lemonade",Drinks,1,3.49,Takeout,Noor
+7/21/2026,07:09 PM,T-1748,"Falafel Wrap",Wraps,1,9.32,Takeout,Chris
+7/21/2026,05:05 PM,T-1749,"Chicken Shawarma Plate",Plates,2,28.61,Delivery,Chris
+7/21/2026,05:05 PM,T-1749,"Chicken Shawarma Plate",Plates,1,14.49,Delivery,Chris
+7/21/2026,07:38 PM,T-1750,"Lamb Wrap",Wraps,1,11.55,Delivery,Layla
+7/21/2026,07:38 PM,T-1750,"Baklava",Desserts,1,4.55,Delivery,Layla
+7/21/2026,07:38 PM,T-1750,"Baklava",Desserts,1,4.48,Delivery,Layla
+7/21/2026,12:06 PM,T-1751,"Hummus",Starters,1,6.57,Takeout,Chris
+7/21/2026,12:06 PM,T-1751,"Side Rice",Sides,1,3.06,Takeout,Chris
+7/21/2026,12:06 PM,T-1751,"Hummus",Starters,1,6.49,Takeout,Chris
+7/21/2026,07:29 PM,T-1752,"Fattoush Salad",Salads,2,17.07,Dine In,Layla
+7/21/2026,07:29 PM,T-1752,"Chicken Shawarma Plate",Plates,1,14.75,Dine In,Layla
+7/21/2026,12:16 PM,T-1753,"Beef Shawarma Plate",Plates,1,15.25,Takeout,Noor
+7/21/2026,12:16 PM,T-1753,"Chicken Shawarma Plate",Plates,1,14.79,Takeout,Noor
+7/21/2026,12:00 PM,T-1754,"Beef Shawarma Plate",Plates,1,15.48,Takeout,Omar
+7/21/2026,12:00 PM,T-1754,"Greek Salad",Salads,1,9.02,Takeout,Omar
+7/21/2026,05:59 PM,T-1755,"Baklava",Desserts,1,4.50,Dine In,Layla
+7/21/2026,05:59 PM,T-1755,"Beef Shawarma Plate",Plates,1,15.77,Dine In,Layla
+7/21/2026,07:53 PM,T-1756,"Side Rice",Sides,1,3.01,Dine In,Chris
+7/21/2026,12:38 PM,T-1757,"Baba Ganoush",Starters,2,13.10,Dine In,Amina
+7/21/2026,12:38 PM,T-1757,"Falafel Wrap",Wraps,1,9.31,Dine In,Amina
+7/21/2026,12:38 PM,T-1757,"Side Fries",Sides,1,3.46,Dine In,Amina
+7/21/2026,12:53 PM,T-1758,"Fresh Lemonade",Drinks,1,3.48,Takeout,Amina
+7/21/2026,12:53 PM,T-1758,"Baba Ganoush",Starters,1,6.37,Takeout,Amina
+7/21/2026,12:53 PM,T-1758,"Chicken Wrap",Wraps,1,10.34,Takeout,Amina
+7/21/2026,01:14 PM,T-1759,"Chicken Wrap",Wraps,2,21.12,Dine In,Amina
+7/21/2026,01:14 PM,T-1759,"Chicken Wrap",Wraps,2,20.65,Dine In,Amina
+7/21/2026,07:44 PM,T-1760,"Fresh Lemonade",Drinks,1,3.52,Takeout,Omar
+7/21/2026,12:48 PM,T-1761,"Chicken Wrap",Wraps,1,10.58,Takeout,Chris
+7/21/2026,12:48 PM,T-1761,"Fresh Lemonade",Drinks,1,3.55,Takeout,Chris
+7/21/2026,12:48 PM,T-1761,"Lentil Soup",Starters,1,5.44,Takeout,Chris
+7/21/2026,07:55 PM,T-1762,"Beef Shawarma Plate",Plates,2,30.80,Dine In,Omar
+7/21/2026,06:39 PM,T-1763,"Side Fries",Sides,1,3.55,Takeout,Noor
+7/21/2026,06:39 PM,T-1763,"Hummus",Starters,1,6.49,Takeout,Noor
+7/21/2026,07:47 PM,T-1764,"Baklava",Desserts,2,9.05,Dine In,Omar
+7/21/2026,07:47 PM,T-1764,"Chicken Wrap",Wraps,2,21.33,Dine In,Omar
+7/21/2026,12:59 PM,T-1765,"Falafel Wrap",Wraps,1,9.35,Delivery,Amina
+7/21/2026,12:59 PM,T-1765,"Chicken Shawarma Plate",Plates,1,14.77,Delivery,Amina
+7/21/2026,12:59 PM,T-1765,"Hummus",Starters,1,6.58,Delivery,Amina
+7/21/2026,06:59 PM,T-1766,"Beef Shawarma Plate",Plates,1,15.80,Takeout,Layla
+7/21/2026,07:08 PM,T-1767,"Side Fries",Sides,2,6.92,Dine In,Layla
+7/21/2026,07:08 PM,T-1767,"Mixed Grill",Plates,1,18.74,Dine In,Layla
+7/21/2026,07:08 PM,T-1767,"Chicken Wrap",Wraps,1,10.69,Dine In,Layla
+7/22/2026,04:30 PM,T-1768,"Falafel Wrap",Wraps,1,9.34,Takeout,Omar
+7/22/2026,07:27 PM,T-1769,"Lamb Wrap",Wraps,1,11.41,Delivery,Omar
+7/22/2026,07:27 PM,T-1769,"Mixed Grill",Plates,2,37.70,Delivery,Omar
+7/22/2026,07:58 PM,T-1770,"Chicken Shawarma Plate",Plates,1,14.47,Delivery,Chris
+7/22/2026,07:58 PM,T-1770,"Lamb Wrap",Wraps,2,23.03,Delivery,Chris
+7/22/2026,07:58 PM,T-1770,"Hummus",Starters,1,6.52,Delivery,Chris
+7/22/2026,12:36 PM,T-1771,"Fresh Lemonade",Drinks,1,3.50,Takeout,Omar
+7/22/2026,12:36 PM,T-1771,"Mint Tea",Drinks,1,2.74,Takeout,Omar
+7/22/2026,12:36 PM,T-1771,"Mint Tea",Drinks,2,5.46,Takeout,Omar
+7/22/2026,07:56 PM,T-1772,"Side Rice",Sides,1,2.96,Takeout,Omar
+7/22/2026,07:56 PM,T-1772,"Greek Salad",Salads,1,8.86,Takeout,Omar
+7/22/2026,01:15 PM,T-1773,"Fattoush Salad",Salads,1,8.57,Delivery,Chris
+7/22/2026,12:06 PM,T-1774,"Chicken Shawarma Plate",Plates,1,14.36,Takeout,Amina
+7/22/2026,12:06 PM,T-1774,"Mixed Grill",Plates,1,19.16,Takeout,Amina
+7/22/2026,07:18 PM,T-1775,"Side Fries",Sides,1,3.44,Takeout,Noor
+7/22/2026,07:18 PM,T-1775,"Chicken Shawarma Plate",Plates,1,14.27,Takeout,Noor
+7/22/2026,07:18 PM,T-1775,"Fresh Lemonade",Drinks,1,3.50,Takeout,Noor
+7/22/2026,07:07 PM,T-1776,"Chicken Wrap",Wraps,1,10.38,Delivery,Noor
+7/22/2026,07:07 PM,T-1776,"Chicken Shawarma Plate",Plates,1,14.60,Delivery,Noor
+7/22/2026,07:07 PM,T-1776,"Baklava",Desserts,2,9.03,Delivery,Noor
+7/22/2026,12:11 PM,T-1777,"Fresh Lemonade",Drinks,2,7.11,Dine In,Layla
+7/22/2026,12:42 PM,T-1778,"Lentil Soup",Starters,1,5.52,Dine In,Omar
+7/22/2026,12:42 PM,T-1778,"Lentil Soup",Starters,1,5.43,Dine In,Omar
+7/22/2026,12:42 PM,T-1778,"Mixed Grill",Plates,1,19.21,Dine In,Omar
+7/22/2026,12:39 PM,T-1779,"Side Rice",Sides,1,3.01,Takeout,Layla
+7/22/2026,12:39 PM,T-1779,"Lentil Soup",Starters,1,5.48,Takeout,Layla
+7/22/2026,12:39 PM,T-1779,"Hummus",Starters,1,6.54,Takeout,Layla
+7/22/2026,12:39 PM,T-1779,"Beef Shawarma Plate",Plates,1,15.58,Takeout,Layla
+7/22/2026,01:51 PM,T-1780,"Side Fries",Sides,1,3.49,Dine In,Amina
+7/22/2026,12:59 PM,T-1781,"Baklava",Desserts,1,4.50,Dine In,Chris
+7/22/2026,12:59 PM,T-1781,"Lamb Wrap",Wraps,1,11.39,Dine In,Chris
+7/22/2026,12:59 PM,T-1781,"Chicken Shawarma Plate",Plates,1,14.48,Dine In,Chris
+7/22/2026,07:55 PM,T-1782,"Side Rice",Sides,1,2.98,Delivery,Layla
+7/22/2026,07:55 PM,T-1782,"Side Rice",Sides,1,2.97,Delivery,Layla
+7/22/2026,12:39 PM,T-1783,"Side Fries",Sides,1,3.44,Delivery,Chris
+7/22/2026,05:58 PM,T-1784,"Side Fries",Sides,1,3.48,Takeout,Chris
+7/22/2026,08:37 PM,T-1785,"Baklava",Desserts,1,4.47,Takeout,Omar
+7/22/2026,08:37 PM,T-1785,"Mixed Grill",Plates,1,18.67,Takeout,Omar
+7/22/2026,08:37 PM,T-1785,"Beef Shawarma Plate",Plates,1,15.42,Takeout,Omar
+7/22/2026,05:33 PM,T-1786,"Turkish Coffee",Drinks,1,3.23,Takeout,Amina
+7/22/2026,07:06 PM,T-1787,"Fattoush Salad",Salads,2,17.12,Dine In,Noor
+7/22/2026,07:06 PM,T-1787,"Baba Ganoush",Starters,2,13.21,Dine In,Noor
+7/22/2026,07:06 PM,T-1787,"Chicken Shawarma Plate",Plates,1,14.33,Dine In,Noor
+7/22/2026,12:18 PM,T-1788,"Chicken Wrap",Wraps,1,10.45,Dine In,Noor
+7/22/2026,12:18 PM,T-1788,"Baba Ganoush",Starters,1,6.59,Dine In,Noor
+7/22/2026,12:18 PM,T-1788,"Chicken Wrap",Wraps,1,10.41,Dine In,Noor
+7/22/2026,04:15 PM,T-1789,"Fresh Lemonade",Drinks,1,3.55,Delivery,Noor
+7/22/2026,04:15 PM,T-1789,"Falafel Wrap",Wraps,1,9.42,Delivery,Noor
+7/22/2026,04:15 PM,T-1789,"Hummus",Starters,1,6.52,Delivery,Noor
+7/22/2026,02:59 PM,T-1790,"Lentil Soup",Starters,1,5.44,Takeout,Noor
+7/22/2026,02:59 PM,T-1790,"Greek Salad",Salads,1,8.88,Takeout,Noor
+7/22/2026,12:29 PM,T-1791,"Side Fries",Sides,1,3.47,Takeout,Layla
+7/22/2026,12:29 PM,T-1791,"Greek Salad",Salads,1,9.14,Takeout,Layla
+7/22/2026,12:49 PM,T-1792,"Chicken Wrap",Wraps,1,10.51,Delivery,Omar
+7/22/2026,12:49 PM,T-1792,"Baba Ganoush",Starters,1,6.42,Delivery,Omar
+7/22/2026,12:38 PM,T-1793,"Chicken Wrap",Wraps,1,10.50,Dine In,Noor
+7/22/2026,12:38 PM,T-1793,"Chicken Shawarma Plate",Plates,1,14.45,Dine In,Noor
+7/22/2026,01:13 PM,T-1794,"Chicken Shawarma Plate",Plates,1,14.67,Delivery,Amina
+7/22/2026,01:13 PM,T-1794,"Side Rice",Sides,1,2.99,Delivery,Amina
+7/22/2026,01:13 PM,T-1794,"Falafel Wrap",Wraps,1,9.49,Delivery,Amina
+7/22/2026,06:10 PM,T-1795,"Beef Shawarma Plate",Plates,1,15.41,Dine In,Omar
+7/22/2026,06:10 PM,T-1795,"Chicken Wrap",Wraps,1,10.52,Dine In,Omar
+7/22/2026,10:51 PM,T-1796,"Fresh Lemonade",Drinks,1,3.49,Dine In,Layla
+7/22/2026,10:51 PM,T-1796,"Mixed Grill",Plates,1,18.94,Dine In,Layla
+7/22/2026,10:51 PM,T-1796,"Chicken Wrap",Wraps,1,10.38,Dine In,Layla
+7/23/2026,06:57 PM,T-1797,"Side Rice",Sides,2,6.06,Dine In,Layla
+7/23/2026,06:57 PM,T-1797,"Chicken Wrap",Wraps,1,10.44,Dine In,Layla
+7/23/2026,06:57 PM,T-1797,"Baklava",Desserts,1,4.41,Dine In,Layla
+7/23/2026,05:56 PM,T-1798,"Turkish Coffee",Drinks,1,3.29,Dine In,Omar
+7/23/2026,10:25 PM,T-1799,"Fresh Lemonade",Drinks,1,3.44,Takeout,Layla
+7/23/2026,10:25 PM,T-1799,"Lamb Wrap",Wraps,1,11.67,Takeout,Layla
+7/23/2026,10:25 PM,T-1799,"Fresh Lemonade",Drinks,1,3.44,Takeout,Layla
+7/23/2026,12:30 PM,T-1800,"Baba Ganoush",Starters,1,6.52,Dine In,Omar
+7/23/2026,06:22 PM,T-1801,"Kids Nuggets",Kids,1,7.35,Takeout,Amina
+7/23/2026,06:22 PM,T-1801,"Falafel Wrap",Wraps,2,19.29,Takeout,Amina
+7/23/2026,06:22 PM,T-1801,"Mixed Grill",Plates,1,18.62,Takeout,Amina
+7/23/2026,12:02 PM,T-1802,"Chicken Wrap",Wraps,1,10.68,Dine In,Layla
+7/23/2026,12:02 PM,T-1802,"Falafel Wrap",Wraps,1,9.66,Dine In,Layla
+7/23/2026,12:02 PM,T-1802,"Falafel Wrap",Wraps,1,9.60,Dine In,Layla
+7/23/2026,11:45 AM,T-1803,"Chicken Wrap",Wraps,1,10.33,Takeout,Layla
+7/23/2026,11:45 AM,T-1803,"Chicken Wrap",Wraps,1,10.48,Takeout,Layla
+7/23/2026,11:17 AM,T-1804,"Beef Shawarma Plate",Plates,1,15.35,Takeout,Amina
+7/23/2026,07:03 PM,T-1805,"Beef Shawarma Plate",Plates,1,15.27,Takeout,Chris
+7/23/2026,07:03 PM,T-1805,"Chicken Wrap",Wraps,1,10.57,Takeout,Chris
+7/23/2026,07:03 PM,T-1805,"Baklava",Desserts,1,4.55,Takeout,Chris
+7/23/2026,12:51 PM,T-1806,"Hummus",Starters,1,6.39,Delivery,Layla
+7/23/2026,12:51 PM,T-1806,"Lamb Wrap",Wraps,1,11.36,Delivery,Layla
+7/23/2026,12:51 PM,T-1806,"Baba Ganoush",Starters,1,6.50,Delivery,Layla
+7/23/2026,01:30 PM,T-1807,"Fresh Lemonade",Drinks,2,6.88,Dine In,Amina
+7/23/2026,01:30 PM,T-1807,"Side Rice",Sides,2,6.12,Dine In,Amina
+7/23/2026,01:30 PM,T-1807,"Mint Tea",Drinks,1,2.73,Dine In,Amina
+7/23/2026,06:21 PM,T-1808,"Side Fries",Sides,1,3.49,Dine In,Omar
+7/23/2026,06:21 PM,T-1808,"Chicken Shawarma Plate",Plates,1,14.67,Dine In,Omar
+7/23/2026,12:32 PM,T-1809,"Fresh Lemonade",Drinks,1,3.49,Delivery,Omar
+7/23/2026,12:32 PM,T-1809,"Fresh Lemonade",Drinks,1,3.55,Delivery,Omar
+7/23/2026,06:44 PM,T-1810,"Turkish Coffee",Drinks,2,6.45,Dine In,Chris
+7/23/2026,06:44 PM,T-1810,"Chicken Shawarma Plate",Plates,2,29.46,Dine In,Chris
+7/23/2026,06:44 PM,T-1810,"Lamb Wrap",Wraps,1,11.29,Dine In,Chris
+7/23/2026,07:21 PM,T-1811,"Chicken Wrap",Wraps,2,21.37,Delivery,Noor
+7/23/2026,12:19 PM,T-1812,"Side Fries",Sides,1,3.54,Delivery,Noor
+7/23/2026,12:19 PM,T-1812,"Kids Nuggets",Kids,2,15.29,Delivery,Noor
+7/23/2026,07:39 PM,T-1813,"Chicken Wrap",Wraps,1,10.45,Delivery,Amina
+7/23/2026,07:39 PM,T-1813,"Fattoush Salad",Salads,2,17.22,Delivery,Amina
+7/23/2026,07:39 PM,T-1813,"Lamb Wrap",Wraps,1,11.31,Delivery,Amina
+7/23/2026,02:31 PM,T-1814,"Greek Salad",Salads,1,8.85,Takeout,Noor
+7/23/2026,09:49 PM,T-1815,"Fresh Lemonade",Drinks,1,3.55,Dine In,Omar
+7/23/2026,09:49 PM,T-1815,"Greek Salad",Salads,1,8.99,Dine In,Omar
+7/23/2026,09:49 PM,T-1815,"Chicken Shawarma Plate",Plates,1,14.30,Dine In,Omar
+7/23/2026,08:51 PM,T-1816,"Mint Tea",Drinks,1,2.73,Dine In,Chris
+7/23/2026,08:51 PM,T-1816,"Chicken Shawarma Plate",Plates,1,14.59,Dine In,Chris
+7/23/2026,06:49 PM,T-1817,"Hummus",Starters,1,6.51,Delivery,Noor
+7/23/2026,06:49 PM,T-1817,"Fattoush Salad",Salads,2,17.22,Delivery,Noor
+7/23/2026,07:02 PM,T-1818,"Beef Shawarma Plate",Plates,1,15.75,Dine In,Noor
+7/23/2026,08:19 PM,T-1819,"Chicken Shawarma Plate",Plates,1,14.42,Dine In,Amina
+7/23/2026,12:01 PM,T-1820,"Turkish Coffee",Drinks,1,3.24,Delivery,Omar
+7/23/2026,12:01 PM,T-1820,"Falafel Wrap",Wraps,1,9.39,Delivery,Omar
+7/23/2026,07:56 PM,T-1821,"Kids Nuggets",Kids,1,7.57,Takeout,Amina
+7/23/2026,07:56 PM,T-1821,"Beef Shawarma Plate",Plates,1,15.21,Takeout,Amina
+7/23/2026,12:22 PM,T-1822,"Chicken Shawarma Plate",Plates,1,14.67,Takeout,Chris
+7/23/2026,12:26 PM,T-1823,"Beef Shawarma Plate",Plates,2,31.41,Dine In,Chris
+7/23/2026,12:26 PM,T-1823,"Chicken Wrap",Wraps,1,10.65,Dine In,Chris
+7/23/2026,11:48 AM,T-1824,"Chicken Wrap",Wraps,2,21.00,Takeout,Layla
+7/23/2026,11:48 AM,T-1824,"Lamb Wrap",Wraps,1,11.36,Takeout,Layla
+7/23/2026,07:07 PM,T-1825,"Side Fries",Sides,1,3.57,Takeout,Noor
+7/23/2026,10:21 PM,T-1826,"Hummus",Starters,1,6.54,Takeout,Omar
+7/23/2026,10:21 PM,T-1826,"Chicken Wrap",Wraps,2,20.74,Takeout,Omar
+7/23/2026,12:47 PM,T-1827,"Beef Shawarma Plate",Plates,1,15.52,Delivery,Chris
+7/23/2026,12:47 PM,T-1827,"Mint Tea",Drinks,1,2.72,Delivery,Chris
+7/23/2026,12:47 PM,T-1827,"Fattoush Salad",Salads,1,8.51,Delivery,Chris
+7/23/2026,12:47 PM,T-1827,"Lentil Soup",Starters,2,10.87,Delivery,Chris
+7/24/2026,07:53 PM,T-1828,"Falafel Wrap",Wraps,1,9.61,Dine In,Noor
+7/24/2026,07:53 PM,T-1828,"Beef Shawarma Plate",Plates,1,15.69,Dine In,Noor
+7/24/2026,07:53 PM,T-1828,"Hummus",Starters,1,6.46,Dine In,Noor
+7/24/2026,12:08 PM,T-1829,"Mixed Grill",Plates,1,18.93,Takeout,Omar
+7/24/2026,12:08 PM,T-1829,"Chicken Shawarma Plate",Plates,1,14.50,Takeout,Omar
+7/24/2026,12:54 PM,T-1830,"Greek Salad",Salads,1,8.87,Takeout,Omar
+7/24/2026,12:54 PM,T-1830,"Lentil Soup",Starters,1,5.42,Takeout,Omar
+7/24/2026,07:05 PM,T-1831,"Greek Salad",Salads,1,9.00,Takeout,Amina
+7/24/2026,07:05 PM,T-1831,"Side Fries",Sides,1,3.51,Takeout,Amina
+7/24/2026,07:05 PM,T-1831,"Hummus",Starters,2,13.23,Takeout,Amina
+7/24/2026,07:05 PM,T-1831,"Baklava",Desserts,1,4.54,Takeout,Amina
+7/24/2026,12:40 PM,T-1832,"Side Rice",Sides,1,3.01,Takeout,Noor
+7/24/2026,12:40 PM,T-1832,"Falafel Wrap",Wraps,1,9.47,Takeout,Noor
+7/24/2026,07:28 PM,T-1833,"Baba Ganoush",Starters,1,6.44,Dine In,Omar
+7/24/2026,07:28 PM,T-1833,"Lentil Soup",Starters,2,11.00,Dine In,Omar
+7/24/2026,07:28 PM,T-1833,"Stuffed Grape Leaves",Starters,1,7.06,Dine In,Omar
+7/24/2026,07:28 PM,T-1833,"Baklava",Desserts,1,4.54,Dine In,Omar
+7/24/2026,12:07 PM,T-1834,"Chicken Wrap",Wraps,1,10.69,Takeout,Chris
+7/24/2026,12:07 PM,T-1834,"Side Rice",Sides,1,2.98,Takeout,Chris
+7/24/2026,12:07 PM,T-1834,"Turkish Coffee",Drinks,1,3.25,Takeout,Chris
+7/24/2026,12:07 PM,T-1834,"Chicken Wrap",Wraps,1,10.38,Takeout,Chris
+7/24/2026,06:46 PM,T-1835,"Mint Tea",Drinks,1,2.71,Dine In,Layla
+7/24/2026,06:46 PM,T-1835,"Side Rice",Sides,1,2.95,Dine In,Layla
+7/24/2026,06:46 PM,T-1835,"Fattoush Salad",Salads,1,8.55,Dine In,Layla
+7/24/2026,12:49 PM,T-1836,"Chicken Shawarma Plate",Plates,1,14.59,Dine In,Layla
+7/24/2026,12:49 PM,T-1836,"Fresh Lemonade",Drinks,1,3.44,Dine In,Layla
+7/24/2026,11:44 AM,T-1837,"Side Fries",Sides,1,3.45,Delivery,Amina
+7/24/2026,12:05 PM,T-1838,"Mixed Grill",Plates,1,18.87,Dine In,Layla
+7/24/2026,06:32 PM,T-1839,"Hummus",Starters,1,6.53,Takeout,Amina
+7/24/2026,06:32 PM,T-1839,"Falafel Wrap",Wraps,1,9.42,Takeout,Amina
+7/24/2026,06:32 PM,T-1839,"Chicken Shawarma Plate",Plates,2,28.62,Takeout,Amina
+7/24/2026,04:15 PM,T-1840,"Baklava",Desserts,1,4.58,Dine In,Amina
+7/24/2026,04:15 PM,T-1840,"Chicken Shawarma Plate",Plates,1,14.72,Dine In,Amina
+7/24/2026,04:15 PM,T-1840,"Chicken Wrap",Wraps,1,10.31,Dine In,Amina
+7/24/2026,04:15 PM,T-1840,"Side Fries",Sides,1,3.55,Dine In,Amina
+7/24/2026,05:40 PM,T-1841,"Lamb Wrap",Wraps,1,11.63,Dine In,Omar
+7/24/2026,06:34 PM,T-1842,"Fresh Lemonade",Drinks,1,3.50,Delivery,Layla
+7/24/2026,06:34 PM,T-1842,"Mint Tea",Drinks,1,2.70,Delivery,Layla
+7/24/2026,01:52 PM,T-1843,"Chicken Wrap",Wraps,1,10.44,Takeout,Omar
+7/24/2026,01:52 PM,T-1843,"Beef Shawarma Plate",Plates,1,15.76,Takeout,Omar
+7/24/2026,01:52 PM,T-1843,"Mint Tea",Drinks,1,2.71,Takeout,Omar
+7/24/2026,09:48 PM,T-1844,"Chicken Shawarma Plate",Plates,1,14.57,Dine In,Amina
+7/24/2026,09:48 PM,T-1844,"Fresh Lemonade",Drinks,1,3.51,Dine In,Amina
+7/24/2026,07:05 PM,T-1845,"Chicken Shawarma Plate",Plates,1,14.43,Takeout,Chris
+7/24/2026,07:05 PM,T-1845,"Mint Tea",Drinks,1,2.74,Takeout,Chris
+7/24/2026,08:09 PM,T-1846,"Chicken Shawarma Plate",Plates,1,14.34,Delivery,Omar
+7/24/2026,08:09 PM,T-1846,"Mint Tea",Drinks,2,5.52,Delivery,Omar
+7/24/2026,08:09 PM,T-1846,"Baklava",Desserts,1,4.46,Delivery,Omar
+7/24/2026,11:54 AM,T-1847,"Chicken Wrap",Wraps,1,10.31,Dine In,Layla
+7/24/2026,11:02 AM,T-1848,"Lamb Wrap",Wraps,1,11.42,Dine In,Chris
+7/24/2026,07:45 PM,T-1849,"Kids Nuggets",Kids,2,14.97,Takeout,Chris
+7/24/2026,07:45 PM,T-1849,"Fresh Lemonade",Drinks,1,3.45,Takeout,Chris
+7/24/2026,07:09 PM,T-1850,"Baklava",Desserts,1,4.42,Takeout,Amina
+7/24/2026,07:09 PM,T-1850,"Side Rice",Sides,1,2.96,Takeout,Amina
+7/24/2026,07:09 PM,T-1850,"Greek Salad",Salads,1,8.98,Takeout,Amina
+7/24/2026,08:47 PM,T-1851,"Chicken Wrap",Wraps,1,10.51,Takeout,Noor
+7/24/2026,08:54 PM,T-1852,"Lamb Wrap",Wraps,1,11.37,Delivery,Noor
+7/24/2026,08:54 PM,T-1852,"Hummus",Starters,1,6.48,Delivery,Noor
+7/24/2026,05:03 PM,T-1853,"Mixed Grill",Plates,1,19.09,Takeout,Amina
+7/24/2026,11:25 AM,T-1854,"Fattoush Salad",Salads,1,8.63,Takeout,Noor
+7/24/2026,11:25 AM,T-1854,"Lamb Wrap",Wraps,1,11.71,Takeout,Noor
+7/24/2026,09:27 PM,T-1855,"Baba Ganoush",Starters,1,6.53,Dine In,Omar
+7/24/2026,08:04 PM,T-1856,"Hummus",Starters,1,6.42,Delivery,Amina
+7/24/2026,08:04 PM,T-1856,"Chicken Wrap",Wraps,1,10.67,Delivery,Amina
+7/24/2026,08:04 PM,T-1856,"Chicken Wrap",Wraps,1,10.60,Delivery,Amina
+7/24/2026,07:11 PM,T-1857,"Side Fries",Sides,1,3.56,Dine In,Noor
+7/24/2026,07:11 PM,T-1857,"Greek Salad",Salads,2,18.00,Dine In,Noor
+7/24/2026,07:11 PM,T-1857,"Lentil Soup",Starters,1,5.57,Dine In,Noor
+7/24/2026,01:38 PM,T-1858,"Fresh Lemonade",Drinks,1,3.52,Dine In,Layla
+7/24/2026,01:38 PM,T-1858,"Fresh Lemonade",Drinks,1,3.56,Dine In,Layla
+7/24/2026,01:38 PM,T-1858,"Falafel Wrap",Wraps,1,9.69,Dine In,Layla
+7/24/2026,07:06 PM,T-1859,"Beef Shawarma Plate",Plates,1,15.43,Delivery,Chris
+7/24/2026,07:06 PM,T-1859,"Turkish Coffee",Drinks,1,3.22,Delivery,Chris
+7/24/2026,10:46 PM,T-1860,"Chicken Shawarma Plate",Plates,1,14.51,Dine In,Layla
+7/24/2026,10:46 PM,T-1860,"Turkish Coffee",Drinks,1,3.31,Dine In,Layla
+7/24/2026,10:46 PM,T-1860,"Knafeh",Desserts,1,6.01,Dine In,Layla
+7/24/2026,04:19 PM,T-1861,"Mixed Grill",Plates,1,18.73,Delivery,Noor
+7/24/2026,07:40 PM,T-1862,"Mint Tea",Drinks,2,5.60,Takeout,Amina
+7/24/2026,07:40 PM,T-1862,"Lamb Wrap",Wraps,1,11.41,Takeout,Amina
+7/24/2026,07:40 PM,T-1862,"Chicken Wrap",Wraps,2,20.97,Takeout,Amina
+7/24/2026,05:32 PM,T-1863,"Chicken Wrap",Wraps,2,21.20,Dine In,Chris
+7/24/2026,05:32 PM,T-1863,"Greek Salad",Salads,1,9.14,Dine In,Chris
+7/24/2026,05:32 PM,T-1863,"Fresh Lemonade",Drinks,1,3.54,Dine In,Chris
+7/24/2026,01:20 PM,T-1864,"Chicken Wrap",Wraps,1,10.43,Dine In,Chris
+7/24/2026,01:20 PM,T-1864,"Side Rice",Sides,1,3.01,Dine In,Chris
+7/24/2026,05:08 PM,T-1865,"Beef Shawarma Plate",Plates,2,30.60,Takeout,Omar
+7/24/2026,12:04 PM,T-1866,"Chicken Wrap",Wraps,2,21.09,Takeout,Omar
+7/24/2026,12:04 PM,T-1866,"Mixed Grill",Plates,1,19.15,Takeout,Omar
+7/24/2026,12:34 PM,T-1867,"Chicken Shawarma Plate",Plates,1,14.79,Delivery,Amina
+7/24/2026,12:34 PM,T-1867,"Chicken Shawarma Plate",Plates,1,14.66,Delivery,Amina
+7/24/2026,12:21 PM,T-1868,"Hummus",Starters,1,6.58,Takeout,Chris
+7/24/2026,12:21 PM,T-1868,"Lamb Wrap",Wraps,2,22.66,Takeout,Chris
+7/24/2026,12:21 PM,T-1868,"Chicken Shawarma Plate",Plates,1,14.61,Takeout,Chris
+7/24/2026,07:47 PM,T-1869,"Kids Nuggets",Kids,1,7.43,Dine In,Chris
+7/24/2026,07:47 PM,T-1869,"Lamb Wrap",Wraps,1,11.65,Dine In,Chris
+7/24/2026,12:25 PM,T-1870,"Baklava",Desserts,2,9.14,Takeout,Omar
+7/24/2026,12:25 PM,T-1870,"Fattoush Salad",Salads,1,8.34,Takeout,Omar
+7/24/2026,07:59 PM,T-1871,"Hummus",Starters,1,6.54,Takeout,Amina
+7/24/2026,07:59 PM,T-1871,"Falafel Wrap",Wraps,1,9.56,Takeout,Amina
+7/24/2026,07:59 PM,T-1871,"Chicken Wrap",Wraps,1,10.38,Takeout,Amina
+7/24/2026,07:59 PM,T-1871,"Chicken Wrap",Wraps,1,10.68,Takeout,Amina
+7/24/2026,07:38 PM,T-1872,"Hummus",Starters,1,6.58,Dine In,Omar
+7/24/2026,07:38 PM,T-1872,"Fattoush Salad",Salads,1,8.46,Dine In,Omar
+7/24/2026,07:38 PM,T-1872,"Mint Tea",Drinks,1,2.75,Dine In,Omar
+7/25/2026,12:34 PM,T-1873,"Greek Salad",Salads,1,9.06,Dine In,Chris
+7/25/2026,12:34 PM,T-1873,"Chicken Wrap",Wraps,1,10.44,Dine In,Chris
+7/25/2026,07:46 PM,T-1874,"Falafel Wrap",Wraps,1,9.33,Delivery,Noor
+7/25/2026,07:46 PM,T-1874,"Baklava",Desserts,1,4.52,Delivery,Noor
+7/25/2026,12:40 PM,T-1875,"Chicken Shawarma Plate",Plates,1,14.35,Delivery,Layla
+7/25/2026,12:40 PM,T-1875,"Baba Ganoush",Starters,1,6.49,Delivery,Layla
+7/25/2026,12:40 PM,T-1875,"Chicken Shawarma Plate",Plates,1,14.37,Delivery,Layla
+7/25/2026,09:40 PM,T-1876,"Side Fries",Sides,2,7.04,Dine In,Omar
+7/25/2026,09:40 PM,T-1876,"Baba Ganoush",Starters,1,6.42,Dine In,Omar
+7/25/2026,07:40 PM,T-1877,"Lamb Wrap",Wraps,1,11.48,Delivery,Amina
+7/25/2026,07:40 PM,T-1877,"Fattoush Salad",Salads,1,8.35,Delivery,Amina
+7/25/2026,07:40 PM,T-1877,"Lamb Wrap",Wraps,2,22.75,Delivery,Amina
+7/25/2026,07:40 PM,T-1877,"Fresh Lemonade",Drinks,1,3.53,Delivery,Amina
+7/25/2026,12:49 PM,T-1878,"Baba Ganoush",Starters,1,6.48,Dine In,Noor
+7/25/2026,12:31 PM,T-1879,"Baklava",Desserts,1,4.43,Takeout,Omar
+7/25/2026,12:31 PM,T-1879,"Falafel Wrap",Wraps,1,9.68,Takeout,Omar
+7/25/2026,10:34 PM,T-1880,"Hummus",Starters,1,6.41,Dine In,Layla
+7/25/2026,07:53 PM,T-1881,"Baba Ganoush",Starters,2,12.85,Takeout,Noor
+7/25/2026,07:53 PM,T-1881,"Hummus",Starters,1,6.42,Takeout,Noor
+7/25/2026,07:36 PM,T-1882,"Mixed Grill",Plates,1,19.10,Dine In,Omar
+7/25/2026,07:36 PM,T-1882,"Falafel Wrap",Wraps,2,19.07,Dine In,Omar
+7/25/2026,07:36 PM,T-1882,"Lamb Wrap",Wraps,2,22.92,Dine In,Omar
+7/25/2026,11:20 AM,T-1883,"Chicken Shawarma Plate",Plates,1,14.31,Dine In,Omar
+7/25/2026,12:51 PM,T-1884,"Side Fries",Sides,1,3.44,Delivery,Omar
+7/25/2026,02:49 PM,T-1885,"Chicken Shawarma Plate",Plates,1,14.64,Dine In,Layla
+7/25/2026,02:49 PM,T-1885,"Chicken Wrap",Wraps,1,10.43,Dine In,Layla
+7/25/2026,02:49 PM,T-1885,"Beef Shawarma Plate",Plates,1,15.57,Dine In,Layla
+7/25/2026,07:23 PM,T-1886,"Falafel Wrap",Wraps,1,9.39,Dine In,Amina
+7/25/2026,07:23 PM,T-1886,"Baklava",Desserts,2,9.07,Dine In,Amina
+7/25/2026,07:23 PM,T-1886,"Side Rice",Sides,1,2.99,Dine In,Amina
+7/25/2026,11:18 PM,T-1887,"Chicken Wrap",Wraps,1,10.48,Delivery,Amina
+7/25/2026,11:18 PM,T-1887,"Side Rice",Sides,1,2.95,Delivery,Amina
+7/25/2026,07:15 PM,T-1888,"Baba Ganoush",Starters,1,6.56,Delivery,Layla
+7/25/2026,07:15 PM,T-1888,"Chicken Shawarma Plate",Plates,1,14.34,Delivery,Layla
+7/25/2026,01:00 PM,T-1889,"Mixed Grill",Plates,2,37.58,Dine In,Amina
+7/25/2026,08:01 PM,T-1890,"Side Rice",Sides,1,3.01,Dine In,Layla
+7/25/2026,08:01 PM,T-1890,"Knafeh",Desserts,1,5.99,Dine In,Layla
+7/25/2026,07:19 PM,T-1891,"Chicken Shawarma Plate",Plates,1,14.57,Dine In,Omar
+7/25/2026,07:19 PM,T-1891,"Chicken Shawarma Plate",Plates,1,14.23,Dine In,Omar
+7/25/2026,07:19 PM,T-1891,"Baklava",Desserts,1,4.42,Dine In,Omar
+7/25/2026,12:50 PM,T-1892,"Chicken Shawarma Plate",Plates,1,14.71,Dine In,Chris
+7/25/2026,12:50 PM,T-1892,"Mint Tea",Drinks,1,2.70,Dine In,Chris
+7/25/2026,05:00 PM,T-1893,"Chicken Shawarma Plate",Plates,1,14.21,Dine In,Noor
+7/25/2026,05:00 PM,T-1893,"Baba Ganoush",Starters,2,12.99,Dine In,Noor
+7/25/2026,05:00 PM,T-1893,"Baklava",Desserts,1,4.43,Dine In,Noor
+7/25/2026,06:46 PM,T-1894,"Fresh Lemonade",Drinks,1,3.44,Delivery,Amina
+7/25/2026,06:46 PM,T-1894,"Chicken Wrap",Wraps,1,10.47,Delivery,Amina
+7/25/2026,06:46 PM,T-1894,"Mixed Grill",Plates,1,18.65,Delivery,Amina
+7/25/2026,05:01 PM,T-1895,"Lentil Soup",Starters,1,5.47,Dine In,Layla
+7/25/2026,05:01 PM,T-1895,"Lamb Wrap",Wraps,1,11.69,Dine In,Layla
+7/25/2026,05:01 PM,T-1895,"Fresh Lemonade",Drinks,2,7.03,Dine In,Layla
+7/25/2026,05:01 PM,T-1895,"Fresh Lemonade",Drinks,1,3.50,Dine In,Layla
+7/25/2026,07:40 PM,T-1896,"Chicken Wrap",Wraps,1,10.57,Takeout,Omar
+7/25/2026,07:40 PM,T-1896,"Chicken Shawarma Plate",Plates,1,14.46,Takeout,Omar
+7/25/2026,07:40 PM,T-1896,"Baba Ganoush",Starters,1,6.44,Takeout,Omar
+7/25/2026,07:55 PM,T-1897,"Side Fries",Sides,1,3.49,Takeout,Chris
+7/25/2026,07:55 PM,T-1897,"Beef Shawarma Plate",Plates,1,15.75,Takeout,Chris
+7/25/2026,07:55 PM,T-1897,"Chicken Shawarma Plate",Plates,1,14.65,Takeout,Chris
+7/25/2026,07:55 PM,T-1897,"Beef Shawarma Plate",Plates,1,15.46,Takeout,Chris
+7/25/2026,09:51 PM,T-1898,"Greek Salad",Salads,1,9.01,Delivery,Omar
+7/25/2026,09:51 PM,T-1898,"Side Rice",Sides,1,2.97,Delivery,Omar
+7/25/2026,06:22 PM,T-1899,"Falafel Wrap",Wraps,1,9.59,Delivery,Amina
+7/25/2026,12:53 PM,T-1900,"Mixed Grill",Plates,2,37.24,Delivery,Noor
+7/25/2026,12:53 PM,T-1900,"Turkish Coffee",Drinks,2,6.55,Delivery,Noor
+7/25/2026,12:53 PM,T-1900,"Side Fries",Sides,1,3.47,Delivery,Noor
+7/25/2026,12:53 PM,T-1900,"Side Rice",Sides,1,2.97,Delivery,Noor
+7/25/2026,07:35 PM,T-1901,"Kids Nuggets",Kids,1,7.59,Delivery,Omar
+7/25/2026,11:44 AM,T-1902,"Fattoush Salad",Salads,1,8.56,Delivery,Omar
+7/25/2026,11:44 AM,T-1902,"Mint Tea",Drinks,1,2.72,Delivery,Omar
+7/25/2026,03:28 PM,T-1903,"Chicken Wrap",Wraps,1,10.30,Delivery,Layla
+7/25/2026,03:28 PM,T-1903,"Baba Ganoush",Starters,1,6.51,Delivery,Layla
+7/25/2026,01:05 PM,T-1904,"Side Rice",Sides,1,2.97,Takeout,Noor
+7/25/2026,01:05 PM,T-1904,"Falafel Wrap",Wraps,1,9.55,Takeout,Noor
+7/25/2026,08:59 PM,T-1905,"Beef Shawarma Plate",Plates,2,30.53,Delivery,Noor
+7/25/2026,10:39 PM,T-1906,"Baklava",Desserts,1,4.53,Delivery,Noor
+7/25/2026,10:39 PM,T-1906,"Kids Nuggets",Kids,1,7.42,Delivery,Noor
+7/25/2026,10:39 PM,T-1906,"Chicken Wrap",Wraps,1,10.65,Delivery,Noor
+7/25/2026,07:37 PM,T-1907,"Lentil Soup",Starters,1,5.51,Delivery,Noor
+7/25/2026,07:37 PM,T-1907,"Chicken Wrap",Wraps,1,10.40,Delivery,Noor
+7/25/2026,07:37 PM,T-1907,"Mint Tea",Drinks,1,2.76,Delivery,Noor
+7/25/2026,12:23 PM,T-1908,"Chicken Wrap",Wraps,1,10.56,Delivery,Layla
+7/25/2026,12:23 PM,T-1908,"Side Rice",Sides,1,3.06,Delivery,Layla
+7/25/2026,12:23 PM,T-1908,"Side Fries",Sides,1,3.55,Delivery,Layla
+7/25/2026,03:43 PM,T-1909,"Chicken Shawarma Plate",Plates,1,14.68,Dine In,Omar
+7/25/2026,12:26 PM,T-1910,"Mint Tea",Drinks,2,5.42,Dine In,Noor
+7/25/2026,12:26 PM,T-1910,"Baklava",Desserts,2,8.83,Dine In,Noor
+7/25/2026,12:26 PM,T-1910,"Beef Shawarma Plate",Plates,1,15.48,Dine In,Noor
+7/25/2026,12:26 PM,T-1910,"Hummus",Starters,1,6.45,Dine In,Noor
+7/25/2026,12:19 PM,T-1911,"Chicken Shawarma Plate",Plates,1,14.74,Dine In,Amina
+7/25/2026,12:19 PM,T-1911,"Baklava",Desserts,1,4.42,Dine In,Amina
+7/26/2026,05:35 PM,T-1912,"Hummus",Starters,1,6.61,Dine In,Amina
+7/26/2026,05:35 PM,T-1912,"Greek Salad",Salads,1,8.91,Dine In,Amina
+7/26/2026,11:13 AM,T-1913,"Greek Salad",Salads,1,9.09,Delivery,Noor
+7/26/2026,11:13 AM,T-1913,"Kids Nuggets",Kids,1,7.60,Delivery,Noor
+7/26/2026,11:13 AM,T-1913,"Lamb Wrap",Wraps,1,11.65,Delivery,Noor
+7/26/2026,07:17 PM,T-1914,"Lamb Wrap",Wraps,2,23.33,Delivery,Chris
+7/26/2026,07:17 PM,T-1914,"Greek Salad",Salads,1,8.95,Delivery,Chris
+7/26/2026,07:17 PM,T-1914,"Side Fries",Sides,1,3.53,Delivery,Chris
+7/26/2026,07:17 PM,T-1914,"Baba Ganoush",Starters,1,6.51,Delivery,Chris
+7/26/2026,06:24 PM,T-1915,"Chicken Shawarma Plate",Plates,1,14.38,Takeout,Noor
+7/26/2026,06:24 PM,T-1915,"Hummus",Starters,1,6.63,Takeout,Noor
+7/26/2026,06:24 PM,T-1915,"Side Fries",Sides,1,3.51,Takeout,Noor
+7/26/2026,01:44 PM,T-1916,"Falafel Wrap",Wraps,1,9.54,Delivery,Noor
+7/26/2026,01:44 PM,T-1916,"Mint Tea",Drinks,1,2.71,Delivery,Noor
+7/26/2026,01:44 PM,T-1916,"Hummus",Starters,1,6.48,Delivery,Noor
+7/26/2026,04:19 PM,T-1917,"Side Fries",Sides,1,3.55,Dine In,Omar
+7/26/2026,04:19 PM,T-1917,"Turkish Coffee",Drinks,1,3.23,Dine In,Omar
+7/26/2026,08:41 PM,T-1918,"Side Rice",Sides,1,3.03,Takeout,Noor
+7/26/2026,08:41 PM,T-1918,"Fresh Lemonade",Drinks,1,3.50,Takeout,Noor
+7/26/2026,08:41 PM,T-1918,"Fattoush Salad",Salads,1,8.49,Takeout,Noor
+7/26/2026,08:41 PM,T-1918,"Falafel Wrap",Wraps,1,9.47,Takeout,Noor
+7/26/2026,12:19 PM,T-1919,"Turkish Coffee",Drinks,1,3.29,Dine In,Omar
+7/26/2026,12:19 PM,T-1919,"Falafel Wrap",Wraps,1,9.45,Dine In,Omar
+7/26/2026,07:33 PM,T-1920,"Mixed Grill",Plates,1,18.88,Dine In,Layla
+7/26/2026,07:33 PM,T-1920,"Turkish Coffee",Drinks,1,3.26,Dine In,Layla
+7/26/2026,07:33 PM,T-1920,"Greek Salad",Salads,1,8.99,Dine In,Layla
+7/26/2026,12:52 PM,T-1921,"Side Fries",Sides,1,3.52,Delivery,Chris
+7/26/2026,07:10 PM,T-1922,"Beef Shawarma Plate",Plates,1,15.36,Delivery,Omar
+7/26/2026,01:39 PM,T-1923,"Fattoush Salad",Salads,1,8.53,Dine In,Noor
+7/26/2026,01:39 PM,T-1923,"Lentil Soup",Starters,1,5.47,Dine In,Noor
+7/26/2026,01:39 PM,T-1923,"Falafel Wrap",Wraps,1,9.53,Dine In,Noor
+7/26/2026,12:49 PM,T-1924,"Beef Shawarma Plate",Plates,1,15.41,Delivery,Layla
+7/26/2026,08:44 PM,T-1925,"Beef Shawarma Plate",Plates,2,31.39,Takeout,Noor
+7/26/2026,08:44 PM,T-1925,"Falafel Wrap",Wraps,1,9.54,Takeout,Noor
+7/26/2026,12:35 PM,T-1926,"Side Rice",Sides,1,3.05,Delivery,Chris
+7/26/2026,08:08 PM,T-1927,"Lentil Soup",Starters,1,5.43,Delivery,Omar
+7/26/2026,08:08 PM,T-1927,"Baba Ganoush",Starters,1,6.61,Delivery,Omar
+7/26/2026,08:08 PM,T-1927,"Hummus",Starters,1,6.60,Delivery,Omar
+7/26/2026,08:08 PM,T-1927,"Mixed Grill",Plates,1,19.12,Delivery,Omar
+7/26/2026,02:51 PM,T-1928,"Kids Nuggets",Kids,1,7.36,Takeout,Noor
+7/26/2026,12:42 PM,T-1929,"Baklava",Desserts,1,4.55,Dine In,Noor
+7/26/2026,12:42 PM,T-1929,"Falafel Wrap",Wraps,1,9.64,Dine In,Noor
+7/26/2026,12:42 PM,T-1929,"Baklava",Desserts,2,8.91,Dine In,Noor
+7/26/2026,11:56 AM,T-1930,"Falafel Wrap",Wraps,1,9.37,Dine In,Amina
+7/26/2026,11:56 AM,T-1930,"Chicken Shawarma Plate",Plates,1,14.26,Dine In,Amina
+7/26/2026,11:56 AM,T-1930,"Beef Shawarma Plate",Plates,1,15.81,Dine In,Amina
+7/26/2026,07:13 PM,T-1931,"Hummus",Starters,1,6.45,Delivery,Layla
+7/26/2026,07:13 PM,T-1931,"Chicken Wrap",Wraps,1,10.33,Delivery,Layla
+7/26/2026,02:49 PM,T-1932,"Chicken Wrap",Wraps,1,10.38,Delivery,Noor
+7/26/2026,02:49 PM,T-1932,"Greek Salad",Salads,1,8.94,Delivery,Noor
+7/26/2026,09:42 PM,T-1933,"Chicken Wrap",Wraps,1,10.44,Dine In,Chris
+7/26/2026,06:03 PM,T-1934,"Baklava",Desserts,1,4.50,Dine In,Layla
+7/26/2026,06:03 PM,T-1934,"Fresh Lemonade",Drinks,1,3.51,Dine In,Layla
+7/26/2026,06:03 PM,T-1934,"Greek Salad",Salads,1,9.17,Dine In,Layla
+7/26/2026,06:03 PM,T-1934,"Beef Shawarma Plate",Plates,1,15.41,Dine In,Layla
+7/26/2026,05:08 PM,T-1935,"Beef Shawarma Plate",Plates,1,15.78,Dine In,Amina
+7/26/2026,12:37 PM,T-1936,"Beef Shawarma Plate",Plates,1,15.46,Takeout,Layla
+7/26/2026,12:37 PM,T-1936,"Lentil Soup",Starters,1,5.49,Takeout,Layla
+7/26/2026,08:56 PM,T-1937,"Chicken Wrap",Wraps,1,10.55,Dine In,Amina
+7/26/2026,12:29 PM,T-1938,"Side Fries",Sides,2,7.07,Dine In,Chris
+7/26/2026,12:29 PM,T-1938,"Hummus",Starters,1,6.41,Dine In,Chris
+7/26/2026,12:57 PM,T-1939,"Hummus",Starters,1,6.47,Takeout,Omar
+7/27/2026,11:43 AM,T-1940,"Kids Nuggets",Kids,1,7.51,Takeout,Layla
+7/27/2026,11:43 AM,T-1940,"Beef Shawarma Plate",Plates,1,15.36,Takeout,Layla
+7/27/2026,01:53 PM,T-1941,"Side Fries",Sides,1,3.54,Takeout,Noor
+7/27/2026,01:53 PM,T-1941,"Chicken Shawarma Plate",Plates,1,14.29,Takeout,Noor
+7/27/2026,01:53 PM,T-1941,"Mixed Grill",Plates,1,18.65,Takeout,Noor
+7/27/2026,01:53 PM,T-1941,"Chicken Wrap",Wraps,1,10.57,Takeout,Noor
+7/27/2026,09:36 PM,T-1942,"Side Fries",Sides,1,3.47,Delivery,Chris
+7/27/2026,09:36 PM,T-1942,"Hummus",Starters,1,6.42,Delivery,Chris
+7/27/2026,12:22 PM,T-1943,"Fattoush Salad",Salads,1,8.53,Dine In,Chris
+7/27/2026,12:04 PM,T-1944,"Falafel Wrap",Wraps,1,9.37,Delivery,Layla
+7/27/2026,07:07 PM,T-1945,"Falafel Wrap",Wraps,1,9.32,Dine In,Noor
+7/27/2026,07:07 PM,T-1945,"Beef Shawarma Plate",Plates,1,15.31,Dine In,Noor
+7/27/2026,12:13 PM,T-1946,"Hummus",Starters,1,6.58,Dine In,Omar
+7/27/2026,07:24 PM,T-1947,"Stuffed Grape Leaves",Starters,2,14.14,Takeout,Amina
+7/27/2026,07:24 PM,T-1947,"Chicken Wrap",Wraps,1,10.57,Takeout,Amina
+7/27/2026,07:24 PM,T-1947,"Beef Shawarma Plate",Plates,1,15.72,Takeout,Amina
+7/27/2026,10:28 PM,T-1948,"Side Rice",Sides,1,2.98,Dine In,Layla
+7/27/2026,10:28 PM,T-1948,"Turkish Coffee",Drinks,2,6.53,Dine In,Layla
+7/27/2026,12:46 PM,T-1949,"Baklava",Desserts,1,4.58,Delivery,Amina
+7/27/2026,12:46 PM,T-1949,"Baba Ganoush",Starters,1,6.54,Delivery,Amina
+7/27/2026,12:51 PM,T-1950,"Hummus",Starters,1,6.62,Dine In,Noor
+7/27/2026,12:51 PM,T-1950,"Falafel Wrap",Wraps,1,9.68,Dine In,Noor
+7/27/2026,12:02 PM,T-1951,"Mint Tea",Drinks,1,2.72,Takeout,Layla
+7/27/2026,02:09 PM,T-1952,"Hummus",Starters,1,6.38,Dine In,Chris
+7/27/2026,02:09 PM,T-1952,"Chicken Shawarma Plate",Plates,1,14.69,Dine In,Chris
+7/27/2026,02:09 PM,T-1952,"Baklava",Desserts,1,4.57,Dine In,Chris
+7/27/2026,12:19 PM,T-1953,"Mint Tea",Drinks,2,5.50,Delivery,Omar
+7/27/2026,12:19 PM,T-1953,"Beef Shawarma Plate",Plates,1,15.61,Delivery,Omar
+7/27/2026,12:19 PM,T-1953,"Side Fries",Sides,1,3.57,Delivery,Omar
+7/27/2026,04:59 PM,T-1954,"Side Rice",Sides,1,2.95,Takeout,Chris
+7/27/2026,04:59 PM,T-1954,"Hummus",Starters,2,13.07,Takeout,Chris
+7/27/2026,04:59 PM,T-1954,"Baba Ganoush",Starters,1,6.42,Takeout,Chris
+7/27/2026,12:01 PM,T-1955,"Mixed Grill",Plates,1,19.24,Delivery,Amina
+7/27/2026,12:01 PM,T-1955,"Side Rice",Sides,1,3.02,Delivery,Amina
+7/27/2026,12:01 PM,T-1955,"Fresh Lemonade",Drinks,1,3.50,Delivery,Amina
+7/27/2026,12:28 PM,T-1956,"Falafel Wrap",Wraps,1,9.57,Dine In,Chris
+7/27/2026,08:41 PM,T-1957,"Fattoush Salad",Salads,1,8.49,Dine In,Layla
+7/27/2026,05:26 PM,T-1958,"Kids Nuggets",Kids,1,7.62,Dine In,Layla
+7/27/2026,07:15 PM,T-1959,"Chicken Wrap",Wraps,1,10.63,Takeout,Amina
+7/27/2026,07:15 PM,T-1959,"Baba Ganoush",Starters,1,6.50,Takeout,Amina
+7/27/2026,07:15 PM,T-1959,"Chicken Shawarma Plate",Plates,1,14.40,Takeout,Amina
+7/27/2026,07:18 PM,T-1960,"Beef Shawarma Plate",Plates,1,15.54,Takeout,Amina
+7/27/2026,07:18 PM,T-1960,"Side Rice",Sides,1,2.98,Takeout,Amina
+7/27/2026,07:18 PM,T-1960,"Falafel Wrap",Wraps,1,9.44,Takeout,Amina
+7/27/2026,12:59 PM,T-1961,"Mixed Grill",Plates,1,19.11,Takeout,Omar
+7/27/2026,12:05 PM,T-1962,"Falafel Wrap",Wraps,1,9.36,Dine In,Chris
+7/27/2026,07:58 PM,T-1963,"Hummus",Starters,1,6.51,Delivery,Chris
+7/27/2026,07:58 PM,T-1963,"Falafel Wrap",Wraps,2,18.83,Delivery,Chris
+7/27/2026,12:47 PM,T-1964,"Beef Shawarma Plate",Plates,1,15.69,Takeout,Amina
+7/27/2026,12:47 PM,T-1964,"Baba Ganoush",Starters,1,6.52,Takeout,Amina
+7/27/2026,12:14 PM,T-1965,"Chicken Shawarma Plate",Plates,1,14.46,Takeout,Amina
+7/27/2026,12:14 PM,T-1965,"Lamb Wrap",Wraps,1,11.34,Takeout,Amina
+7/27/2026,11:47 PM,T-1966,"Turkish Coffee",Drinks,1,3.21,Dine In,Amina
