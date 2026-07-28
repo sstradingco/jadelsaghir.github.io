@@ -381,10 +381,17 @@ body.is-cursor-press .cursor-ring {
   text-decoration: none;
 }
 
+.hero-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: end;
+}
+
 .display-title {
   display: grid;
-  margin-bottom: 28px;
-  font-size: clamp(64px, 13vw, 148px);
+  margin: 0;
+  font-size: clamp(64px, 11vw, 132px);
   letter-spacing: -0.07em;
   line-height: 0.84;
 }
@@ -409,11 +416,14 @@ body.is-ready .display-title .word {
 }
 
 .hero-copy {
-  max-width: 62ch;
+  max-width: none;
+  padding-bottom: 6px;
 }
 
 .hero-copy p {
   color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .hero-copy p:last-child {
@@ -888,10 +898,16 @@ body.is-ready .char {
     padding-left: 14px;
   }
 
+  .hero-main,
   .role-card,
   .edu-grid,
   .project-inquiry {
     grid-template-columns: 1fr;
+  }
+
+  .hero-main {
+    gap: 22px;
+    align-items: start;
   }
 
   .inquiry-copy {
