@@ -65,7 +65,7 @@ const runIntro = () => {
     if (introLine) introLine.style.setProperty("--progress", `${eased}`);
     if (ratio < 1) {
       window.requestAnimationFrame(tick);
-    50|      return;
+      return;
     }
     window.setTimeout(finishIntro, 220);
   };
