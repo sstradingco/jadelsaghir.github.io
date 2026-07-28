@@ -396,6 +396,16 @@ article + article {
   font-size: 13px;
 }
 
+.subheading a {
+  color: inherit;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.education article .subheading:last-child {
+  margin-bottom: 0;
+}
+
 ul {
   margin: 0;
   padding-left: 19px;
