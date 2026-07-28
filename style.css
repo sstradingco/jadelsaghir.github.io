@@ -390,21 +390,8 @@ body.is-ready .display-title .word {
   transition-delay: 90ms;
 }
 
-.hero-grid {
-  display: grid;
-  margin-bottom: 0;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 36px;
-}
-
-.hero-lead {
-  max-width: none;
-  margin: 0;
-  font-family: "Syne", sans-serif;
-  font-size: clamp(28px, 3.4vw, 42px);
-  font-weight: 600;
-  letter-spacing: -0.045em;
-  line-height: 1.1;
+.hero-copy {
+  max-width: 62ch;
 }
 
 .hero-copy p {
@@ -883,7 +870,6 @@ body.is-ready .char {
     padding-left: 14px;
   }
 
-  .hero-grid,
   .role-card,
   .edu-grid,
   .project-inquiry {
