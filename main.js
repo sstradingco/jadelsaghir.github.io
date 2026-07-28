@@ -146,7 +146,7 @@ if (splitText && !reduceMotion) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".hero-lead, .hero-copy, .stat-strip, .section-head, .role-card, .edu-card, .recognition-list, .course-group, .project-feature, .interest-block"
+  ".hero-lead, .hero-copy, .section-head, .role-card, .edu-card, .recognition-list, .course-group, .project-feature, .interest-block"
 );
 
 revealTargets.forEach((element, index) => {
