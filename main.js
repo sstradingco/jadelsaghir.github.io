@@ -1,10 +1,59 @@
 const progress = document.querySelector("[data-reading-progress]");
+const intro = document.querySelector("[data-site-intro]");
+const introCounter = document.querySelector("[data-intro-counter]");
+const introLine = document.querySelector("[data-intro-line]");
 const tabs = [...document.querySelectorAll(".tab[href^='#']")];
 const sections = tabs
   .map((tab) => document.querySelector(tab.getAttribute("href")))
   .filter(Boolean);
 const panels = [...document.querySelectorAll(".panel")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const finishIntro = () => {
+  document.body.classList.remove("is-introducing");
+  document.body.classList.add("is-ready");
+  if (!intro) return;
+  intro.classList.add("is-exit");
+  window.setTimeout(() => {
+    intro.remove();
+  }, 950);
+};
+
+const runIntro = () => {
+  if (!intro || reduceMotion) {
+    document.body.classList.remove("is-introducing");
+    document.body.classList.add("is-ready");
+    intro?.remove();
+    return;
+  }
+
+  const duration = 1600;
+  const start = performance.now();
+
+  const tick = (now) => {
+    const ratio = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - ratio, 3);
+    const value = Math.round(eased * 100);
+
+    if (introCounter) introCounter.textContent = String(value);
+    if (introLine) introLine.style.setProperty("--progress", `${eased}`);
+
+    if (ratio < 1) {
+      window.requestAnimationFrame(tick);
+      return;
+    }
+
+    window.setTimeout(finishIntro, 220);
+  };
+
+  window.requestAnimationFrame(tick);
+};
+
+if (introLine) {
+  introLine.style.setProperty("--progress", "0");
+}
+
+runIntro();
 
 const revealTargets = document.querySelectorAll(
   ".intro > h1, .intro > .lead, .intro > p:not(.overline), .panel > h2, .panel > .section-intro, .panel > article, .panel > .recognition-list, .course-explorer > .course-group"
