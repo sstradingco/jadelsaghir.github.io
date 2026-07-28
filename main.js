@@ -2,14 +2,12 @@ const progress = document.querySelector("[data-reading-progress]");
 const intro = document.querySelector("[data-site-intro]");
 const introCounter = document.querySelector("[data-intro-counter]");
 const introLine = document.querySelector("[data-intro-line]");
-const header = document.querySelector(".site-header");
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorRing = document.querySelector("[data-cursor-ring]");
-const tabs = [...document.querySelectorAll(".tab[href^='#']")];
-const sections = tabs
-  .map((tab) => document.querySelector(tab.getAttribute("href")))
-  .filter(Boolean);
-const panels = [...document.querySelectorAll(".panel")];
+const railLinks = [...document.querySelectorAll("[data-rail-link]")];
+const menuToggle = document.querySelector("[data-menu-toggle]");
+const mobileNav = document.querySelector("[data-mobile-nav]");
+const sections = [...document.querySelectorAll("main .panel[id]")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
@@ -18,9 +16,7 @@ const finishIntro = () => {
   document.body.classList.add("is-ready");
   if (!intro) return;
   intro.classList.add("is-exit");
-  window.setTimeout(() => {
-    intro.remove();
-  }, 950);
+  window.setTimeout(() => intro.remove(), 950);
 };
 
 const runIntro = () => {
@@ -37,26 +33,19 @@ const runIntro = () => {
   const tick = (now) => {
     const ratio = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - ratio, 3);
-    const value = Math.round(eased * 100);
-
-    if (introCounter) introCounter.textContent = String(value);
+    if (introCounter) introCounter.textContent = String(Math.round(eased * 100));
     if (introLine) introLine.style.setProperty("--progress", `${eased}`);
-
     if (ratio < 1) {
       window.requestAnimationFrame(tick);
       return;
     }
-
     window.setTimeout(finishIntro, 220);
   };
 
   window.requestAnimationFrame(tick);
 };
 
-if (introLine) {
-  introLine.style.setProperty("--progress", "0");
-}
-
+if (introLine) introLine.style.setProperty("--progress", "0");
 runIntro();
 
 const initCursor = () => {
@@ -94,21 +83,12 @@ const initCursor = () => {
     { passive: true }
   );
 
-  document.addEventListener("mousedown", () => {
-    document.body.classList.add("is-cursor-press");
-  });
+  document.addEventListener("mousedown", () => document.body.classList.add("is-cursor-press"));
+  document.addEventListener("mouseup", () => document.body.classList.remove("is-cursor-press"));
 
-  document.addEventListener("mouseup", () => {
-    document.body.classList.remove("is-cursor-press");
-  });
-
-  document.querySelectorAll("a, button, summary, .tab, .course-card summary").forEach((element) => {
-    element.addEventListener("mouseenter", () => {
-      document.body.classList.add("is-cursor-hover");
-    });
-    element.addEventListener("mouseleave", () => {
-      document.body.classList.remove("is-cursor-hover");
-    });
+  document.querySelectorAll("a, button, summary").forEach((element) => {
+    element.addEventListener("mouseenter", () => document.body.classList.add("is-cursor-hover"));
+    element.addEventListener("mouseleave", () => document.body.classList.remove("is-cursor-hover"));
   });
 
   window.requestAnimationFrame(render);
@@ -116,20 +96,32 @@ const initCursor = () => {
 
 const initMagneticLinks = () => {
   if (!canHover || reduceMotion) return;
-
-  document.querySelectorAll(".tab, .links a, .project-inquiry a, .asset-link a").forEach((element) => {
+  document.querySelectorAll(".hero-links a, .project-inquiry a, .rail-brand").forEach((element) => {
     element.addEventListener("mousemove", (event) => {
       const rect = element.getBoundingClientRect();
       const offsetX = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
       const offsetY = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
       element.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });
-
     element.addEventListener("mouseleave", () => {
       element.style.transform = "";
     });
   });
 };
+
+const closeMenu = () => {
+  if (!menuToggle || !mobileNav) return;
+  menuToggle.setAttribute("aria-expanded", "false");
+  mobileNav.hidden = true;
+};
+
+menuToggle?.addEventListener("click", () => {
+  const open = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!open));
+  mobileNav.hidden = open;
+});
+
+mobileNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 
 initCursor();
 initMagneticLinks();
@@ -137,8 +129,7 @@ initMagneticLinks();
 const splitWords = document.querySelector("[data-split-words]");
 if (splitWords) {
   splitWords.querySelectorAll(".title-line").forEach((line) => {
-    const text = line.textContent.trim();
-    line.innerHTML = `<span class="word">${text}</span>`;
+    line.innerHTML = `<span class="word">${line.textContent.trim()}</span>`;
   });
 }
 
@@ -155,17 +146,16 @@ if (splitText && !reduceMotion) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".intro > p:not(.overline):not(.hero-kicker):not(.scroll-cue), .panel > h2, .panel > .section-intro, .panel > article, .panel > .recognition-list, .course-explorer > .course-group, .hero-kicker, .hero-footer"
+  ".hero-lead, .hero-copy, .stat-strip, .section-head, .role-card, .edu-card, .recognition-list, .course-group, .project-feature, .interest-block"
 );
 
 revealTargets.forEach((element, index) => {
   element.classList.add("motion-item");
-  element.style.setProperty("--reveal-delay", `${(index % 4) * 65}ms`);
+  element.style.setProperty("--reveal-delay", `${(index % 4) * 60}ms`);
 });
 
 if (reduceMotion || !("IntersectionObserver" in window)) {
   revealTargets.forEach((element) => element.classList.add("is-visible"));
-  panels.forEach((panel) => panel.classList.add("is-inview"));
 } else {
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -177,19 +167,7 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
     },
     { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
   );
-
   revealTargets.forEach((element) => revealObserver.observe(element));
-
-  const panelObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle("is-inview", entry.isIntersecting);
-      });
-    },
-    { threshold: 0.28 }
-  );
-
-  panels.forEach((panel) => panelObserver.observe(panel));
 }
 
 let frameRequested = false;
@@ -198,36 +176,17 @@ const updateScrollDetails = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const progressValue = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
   progress?.style.setProperty("transform", `scaleX(${progressValue})`);
-  header?.classList.toggle("is-scrolled", window.scrollY > 8);
 
   let activeSection = sections[0];
   const activationLine = window.innerHeight * 0.35;
-
   sections.forEach((section) => {
-    if (section.getBoundingClientRect().top <= activationLine) {
-      activeSection = section;
-    }
+    if (section.getBoundingClientRect().top <= activationLine) activeSection = section;
   });
 
-  tabs.forEach((tab) => {
-    const isActive = tab.getAttribute("href") === `#${activeSection?.id}`;
-    tab.classList.toggle("is-active", isActive);
-    if (isActive) {
-      tab.setAttribute("aria-current", "location");
-    } else {
-      tab.removeAttribute("aria-current");
-    }
+  railLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${activeSection?.id}`;
+    link.classList.toggle("is-active", isActive);
   });
-
-  if (!reduceMotion && window.innerWidth > 650) {
-    panels.forEach((panel) => {
-      const rect = panel.getBoundingClientRect();
-      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
-      const distanceFromCenter = window.innerHeight / 2 - (rect.top + rect.height / 2);
-      const shift = Math.max(-32, Math.min(32, distanceFromCenter * 0.05));
-      panel.style.setProperty("--number-shift", `${shift}px`);
-    });
-  }
 
   frameRequested = false;
 };
