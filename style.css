@@ -379,9 +379,9 @@ body.is-cursor-press .cursor-ring {
 
 .hero-main {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: clamp(28px, 5vw, 64px);
-  align-items: end;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
 }
 
 .display-title {
@@ -412,11 +412,13 @@ body.is-ready .display-title .word {
 }
 
 .hero-copy {
-  max-width: none;
-  padding-bottom: 6px;
+  max-width: 38ch;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-copy p {
+  margin: 0 0 0.9em;
   color: var(--muted);
   font-size: 15px;
   line-height: 1.55;

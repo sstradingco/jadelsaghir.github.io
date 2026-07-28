@@ -85,10 +85,10 @@ const initCursor = () => {
   let visible = false;
 
   const render = () => {
-    dotX += (mouseX - dotX) * 0.4;
-    dotY += (mouseY - dotY) * 0.4;
-    ringX += (mouseX - ringX) * 0.18;
-    ringY += (mouseY - ringY) * 0.18;
+    dotX += (mouseX - dotX) * 0.22;
+    dotY += (mouseY - dotY) * 0.22;
+    ringX += (mouseX - ringX) * 0.1;
+    ringY += (mouseY - ringY) * 0.1;
     cursorDot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0)`;
     cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
     window.requestAnimationFrame(render);
