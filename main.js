@@ -83,12 +83,17 @@ const initCursor = () => {
   let ringX = mouseX;
   let ringY = mouseY;
   let visible = false;
+  let lastTime = performance.now();
 
-  const render = () => {
-    dotX += (mouseX - dotX) * 0.22;
-    dotY += (mouseY - dotY) * 0.22;
-    ringX += (mouseX - ringX) * 0.1;
-    ringY += (mouseY - ringY) * 0.1;
+  const render = (time) => {
+    const dt = Math.min((time - lastTime) / 1000, 0.05);
+    lastTime = time;
+    const dotEase = 1 - Math.exp(-9 * dt);
+    const ringEase = 1 - Math.exp(-5 * dt);
+    dotX += (mouseX - dotX) * dotEase;
+    dotY += (mouseY - dotY) * dotEase;
+    ringX += (mouseX - ringX) * ringEase;
+    ringY += (mouseY - ringY) * ringEase;
     cursorDot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0)`;
     cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
     window.requestAnimationFrame(render);
