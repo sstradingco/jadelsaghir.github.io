@@ -134,8 +134,28 @@ const initMagneticLinks = () => {
 initCursor();
 initMagneticLinks();
 
+const splitWords = document.querySelector("[data-split-words]");
+if (splitWords) {
+  splitWords.querySelectorAll(".title-line").forEach((line) => {
+    const text = line.textContent.trim();
+    line.innerHTML = `<span class="word">${text}</span>`;
+  });
+}
+
+const splitText = document.querySelector("[data-split-text]");
+if (splitText && !reduceMotion) {
+  const text = splitText.textContent;
+  splitText.setAttribute("aria-label", text);
+  splitText.innerHTML = [...text]
+    .map((char, index) => {
+      const content = char === " " ? "&nbsp;" : char;
+      return `<span class="char" style="transition-delay:${index * 18}ms">${content}</span>`;
+    })
+    .join("");
+}
+
 const revealTargets = document.querySelectorAll(
-  ".intro > h1, .intro > .lead, .intro > p:not(.overline), .panel > h2, .panel > .section-intro, .panel > article, .panel > .recognition-list, .course-explorer > .course-group"
+  ".intro > p:not(.overline):not(.hero-kicker):not(.scroll-cue), .panel > h2, .panel > .section-intro, .panel > article, .panel > .recognition-list, .course-explorer > .course-group, .hero-kicker, .hero-footer"
 );
 
 revealTargets.forEach((element, index) => {

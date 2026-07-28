@@ -65,6 +65,206 @@ h1 {
   line-height: 0.95;
 }
 
+.display-title {
+  display: grid;
+  gap: 0.04em;
+  margin-bottom: 18px;
+  font-size: clamp(56px, 11vw, 118px);
+  line-height: 0.86;
+}
+
+.display-title .title-line {
+  display: block;
+  overflow: hidden;
+}
+
+.display-title .word {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.is-ready .display-title .word {
+  transform: translateY(0);
+}
+
+.display-title .title-line:nth-child(2) .word {
+  transition-delay: 90ms;
+}
+
+.hero-kicker {
+  max-width: none;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-footer {
+  display: flex;
+  margin-top: 34px;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hero-footer .links {
+  margin-top: 0;
+}
+
+.scroll-cue {
+  display: inline-flex;
+  margin: 0;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.scroll-cue span {
+  width: 1px;
+  height: 34px;
+  background: var(--ink);
+  animation: scroll-pulse 1.6s ease-in-out infinite;
+  transform-origin: top;
+}
+
+@keyframes scroll-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+body.is-ready .char {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.corner-marks {
+  position: absolute;
+  z-index: 2;
+  inset: 16px;
+  pointer-events: none;
+}
+
+.corner-marks span {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid currentColor;
+  opacity: 0.28;
+}
+
+.corner-marks span:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.corner-marks span:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.corner-marks span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  border-top: 0;
+  border-left: 0;
+}
+
+.corner-marks span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.corner-marks.inverted {
+  color: var(--white);
+}
+
+.marquee {
+  overflow: hidden;
+  border-right: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee-track span {
+  padding: 14px 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.giant-word {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  max-width: none;
+  color: currentColor;
+  font-size: clamp(80px, 18vw, 220px);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+  opacity: 0.05;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  white-space: nowrap;
+}
+
+.footer-stamp {
+  position: absolute;
+  left: 0;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
 h2 {
   margin-bottom: 30px;
   font-size: 27px;
@@ -835,14 +1035,20 @@ li + li {
 }
 
 footer {
+  position: relative;
   display: flex;
-  padding: 24px 4px 0;
+  padding: 34px 4px 10px;
   border-top: 1px solid var(--line);
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   color: var(--muted);
   font-size: 12px;
+}
+
+footer p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer p {
@@ -904,6 +1110,33 @@ footer p {
 
   .role-heading p {
     white-space: normal;
+  }
+
+  .hero-footer {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .scroll-cue {
+    display: none;
+  }
+
+  .corner-marks {
+    inset: 12px;
+  }
+
+  .footer-stamp {
+    position: static;
+    margin-bottom: 8px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .course-explorer .section-intro {
@@ -1001,6 +1234,18 @@ footer p {
   .cursor-ring,
   .noise {
     display: none;
+  }
+
+  .marquee-track,
+  .scroll-cue span {
+    animation: none;
+  }
+
+  .display-title .word,
+  .char {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .site-shell {
