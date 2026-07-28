@@ -160,28 +160,21 @@ p {
   transition: box-shadow 180ms ease, filter 180ms ease;
 }
 
-.tab-about {
-  background: var(--white);
-}
-
-.tab-experience {
-  background: var(--black);
-}
-
-.tab-education {
-  background: var(--white);
-}
-
+.tab-about,
+.tab-education,
 .tab-coursework {
-  background: var(--black);
+  background: var(--white);
 }
 
+.tab-experience,
+.tab-research,
 .tab-projects {
-  background: var(--white);
+  background: var(--black);
 }
 
 .site-nav .tab-experience,
-.site-nav .tab-coursework {
+.site-nav .tab-research,
+.site-nav .tab-projects {
   color: var(--white);
 }
 
@@ -260,32 +253,118 @@ p {
   content: "03";
 }
 
-.course-explorer {
+.research {
   background: var(--black);
   color: var(--white);
 }
 
-.course-explorer::after {
+.research::after {
   color: var(--white);
   content: "04";
   opacity: 0.07;
 }
 
-.projects {
+.course-explorer {
   background: var(--white);
 }
 
-.projects::after {
+.course-explorer::after {
   content: "05";
 }
 
-.experience article + article {
+.projects {
+  background: var(--black);
+  color: var(--white);
+}
+
+.projects::after {
+  color: var(--white);
+  content: "06";
+  opacity: 0.07;
+}
+
+.experience article + article,
+.research article + article,
+.projects article + article {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
 .experience .role-heading p,
-.experience .subheading {
+.experience .subheading,
+.research .role-heading p,
+.research .subheading,
+.projects .role-heading p,
+.projects .subheading {
   color: #b8b8b2;
+}
+
+.research .section-intro {
+  max-width: 760px;
+  margin-bottom: 48px;
+  color: #b8b8b2;
+  font-size: 16px;
+}
+
+.research-block + .research-block {
+  margin-top: 58px;
+}
+
+.research-block > h3 {
+  margin-bottom: 22px;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+}
+
+.research .subheading a,
+.research a {
+  color: inherit;
+}
+
+.asset-link {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.asset-link a {
+  display: inline-flex;
+  padding-bottom: 3px;
+  border-bottom: 2px solid currentColor;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.recognition-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recognition-list li {
+  display: grid;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  color: #b8b8b2;
+}
+
+.recognition-list li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.recognition-list li > span:last-child {
+  color: #9c9c97;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.recognition-list a {
+  color: var(--white);
+  font-weight: 700;
 }
 
 .overline {
@@ -417,7 +496,7 @@ li + li {
 
 .course-explorer .section-intro,
 .course-explorer .group-intro {
-  color: #b8b8b2;
+  color: var(--muted);
 }
 
 .course-explorer .section-intro {
@@ -441,11 +520,11 @@ li + li {
 }
 
 .course-card {
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid var(--line);
 }
 
 .course-card:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid var(--line);
 }
 
 .course-card summary {
@@ -463,7 +542,7 @@ li + li {
 }
 
 .course-code {
-  color: #9c9c97;
+  color: var(--muted);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -481,7 +560,7 @@ li + li {
   width: 30px;
   height: 30px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--line);
   border-radius: 50%;
   font-size: 19px;
   font-weight: 400;
@@ -490,8 +569,8 @@ li + li {
 }
 
 .course-card[open] .course-toggle {
-  background: var(--white);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   transform: rotate(45deg);
 }
 
@@ -499,7 +578,7 @@ li + li {
   max-width: 850px;
   margin-bottom: 0;
   padding: 0 52px 24px 110px;
-  color: #b8b8b2;
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -513,10 +592,15 @@ li + li {
   display: grid;
   margin-top: 30px;
   padding-top: 22px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
   gap: 36px;
+}
+
+.projects .inquiry-label,
+.projects .inquiry-copy {
+  color: #b8b8b2;
 }
 
 .project-inquiry p {
@@ -540,9 +624,10 @@ li + li {
 .project-inquiry a {
   display: inline-flex;
   padding-bottom: 3px;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid currentColor;
   align-items: center;
   gap: 9px;
+  color: var(--white);
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
@@ -601,7 +686,7 @@ footer p {
 
   .nav-tabs {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .tab {
@@ -633,8 +718,18 @@ footer p {
     white-space: normal;
   }
 
+  .research .section-intro,
   .course-explorer .section-intro {
     margin-bottom: 38px;
+  }
+
+  .research-block + .research-block {
+    margin-top: 46px;
+  }
+
+  .recognition-list li {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .course-group + .course-group {
