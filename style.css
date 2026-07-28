@@ -158,18 +158,6 @@ body.is-introducing {
   will-change: transform;
 }
 
-.intro-meta {
-  margin: 0;
-  color: #9c9c97;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: translateY(12px);
-  animation: intro-rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 280ms forwards;
-}
-
 @keyframes intro-rise {
   to {
     opacity: 1;
@@ -876,8 +864,7 @@ footer p {
   }
 
   .intro-brand,
-  .intro-counter,
-  .intro-meta {
+  .intro-counter {
     opacity: 1;
     transform: none;
     animation: none;
