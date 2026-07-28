@@ -7,7 +7,7 @@ const panels = [...document.querySelectorAll(".panel")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const revealTargets = document.querySelectorAll(
-  ".intro > h1, .intro > .lead, .intro > p:not(.overline), .panel > h2, .panel > .section-intro, .panel > article, .research > .research-block, .course-explorer > .course-group"
+  ".intro > h1, .intro > .lead, .intro > p:not(.overline), .panel > h2, .panel > .section-intro, .panel > article, .panel > .recognition-list, .degree-subsection, .course-explorer > .course-group"
 );
 
 revealTargets.forEach((element, index) => {

@@ -167,13 +167,13 @@ p {
 }
 
 .tab-experience,
-.tab-research,
+.tab-recognition,
 .tab-projects {
   background: var(--black);
 }
 
 .site-nav .tab-experience,
-.site-nav .tab-research,
+.site-nav .tab-recognition,
 .site-nav .tab-projects {
   color: var(--white);
 }
@@ -253,12 +253,12 @@ p {
   content: "03";
 }
 
-.research {
+.recognition {
   background: var(--black);
   color: var(--white);
 }
 
-.research::after {
+.recognition::after {
   color: var(--white);
   content: "04";
   opacity: 0.07;
@@ -284,55 +284,50 @@ p {
 }
 
 .experience article + article,
-.research article + article,
 .projects article + article {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
 .experience .role-heading p,
 .experience .subheading,
-.research .role-heading p,
-.research .subheading,
 .projects .role-heading p,
 .projects .subheading {
   color: #b8b8b2;
 }
 
-.research .section-intro {
-  max-width: 760px;
-  margin-bottom: 48px;
-  color: #b8b8b2;
-  font-size: 16px;
+.degree-subsection {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
 }
 
-.research-block + .research-block {
-  margin-top: 58px;
-}
-
-.research-block > h3 {
-  margin-bottom: 22px;
-  font-size: 20px;
-  letter-spacing: -0.03em;
-}
-
-.research .subheading a,
-.research a {
-  color: inherit;
-}
-
-.asset-link {
-  margin-top: 18px;
-  margin-bottom: 0;
-}
-
-.asset-link a {
-  display: inline-flex;
-  padding-bottom: 3px;
-  border-bottom: 2px solid currentColor;
-  align-items: center;
-  gap: 8px;
+.degree-subsection h4 {
+  margin-bottom: 18px;
+  font-size: 15px;
   font-weight: 700;
-  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.subsection-label {
+  margin: 18px 0 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.compact-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.compact-list li + li {
+  margin-top: 6px;
+}
+
+.compact-list a {
+  font-weight: 700;
 }
 
 .recognition-list {
@@ -718,13 +713,8 @@ footer p {
     white-space: normal;
   }
 
-  .research .section-intro,
   .course-explorer .section-intro {
     margin-bottom: 38px;
-  }
-
-  .research-block + .research-block {
-    margin-top: 46px;
   }
 
   .recognition-list li {
