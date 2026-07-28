@@ -415,39 +415,6 @@ body.is-ready .display-title .word {
   margin-bottom: 0;
 }
 
-.marquee {
-  margin-left: calc(-1 * (var(--rail) + 36px));
-  width: calc(100vw);
-  overflow: hidden;
-  background: var(--black);
-  color: var(--white);
-}
-
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee-scroll 28s linear infinite;
-}
-
-.marquee-track span {
-  padding: 12px 0;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-@keyframes marquee-scroll {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-
 .section-head {
   display: flex;
   margin-bottom: 28px;
@@ -909,8 +876,7 @@ body.is-ready .char {
 
   .experience,
   .recognition,
-  .projects,
-  .marquee {
+  .projects {
     margin-left: -14px;
     width: calc(100% + 28px);
     padding-right: 14px;
@@ -976,10 +942,6 @@ body.is-ready .char {
     opacity: 1;
     transform: none;
     transition: none;
-  }
-
-  .marquee-track {
-    animation: none;
   }
 
   body.is-introducing {
