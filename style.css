@@ -473,7 +473,7 @@ body.is-ready .display-title .word {
 
 .section-head h2 {
   margin: 0;
-  font-size: clamp(42px, 7vw, 72px);
+  font-size: clamp(36px, 6vw, 60px);
   letter-spacing: -0.06em;
   line-height: 0.9;
 }
@@ -633,7 +633,7 @@ body.is-ready .display-title .word {
 
 .recognition-list li {
   display: grid;
-  padding: 22px 0;
+  padding: 16px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   grid-template-columns: 1fr auto;
   gap: 28px;
@@ -681,7 +681,7 @@ body.is-ready .display-title .word {
 
 .course-card summary {
   display: grid;
-  padding: 18px 0;
+  padding: 14px 0;
   grid-template-columns: 92px 1fr 34px;
   align-items: center;
   gap: 16px;
