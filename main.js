@@ -16,7 +16,7 @@ if ("scrollRestoration" in history) {
 }
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: "instant" in window ? "instant" : "auto" });
+  window.scrollTo(0, 0);
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
 };
