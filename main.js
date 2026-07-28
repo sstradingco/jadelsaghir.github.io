@@ -11,6 +11,26 @@ const sections = [...document.querySelectorAll("main .panel[id]")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" in window ? "instant" : "auto" });
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+};
+
+if (window.location.hash) {
+  history.replaceState(null, "", window.location.pathname + window.location.search);
+}
+
+scrollToTop();
+window.addEventListener("load", scrollToTop);
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) scrollToTop();
+});
+
 const finishIntro = () => {
   document.body.classList.remove("is-introducing");
   document.body.classList.add("is-ready");
