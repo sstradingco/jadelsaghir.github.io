@@ -39,6 +39,15 @@
   </script>
 </head>
 <body class="is-introducing has-custom-cursor">
+  <script>
+    window.setTimeout(function () {
+      if (!document.body.classList.contains("is-introducing")) return;
+      document.body.classList.remove("is-introducing");
+      document.body.classList.add("is-ready");
+      var intro = document.querySelector("[data-site-intro]");
+      if (intro) intro.remove();
+    }, 4000);
+  </script>
   <div class="site-intro" data-site-intro aria-hidden="true">
     <div class="intro-inner">
       <p class="intro-brand">Jad Elsaghir</p>
