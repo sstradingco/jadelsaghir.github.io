@@ -15,15 +15,7 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 
-let smoothScroll = null;
-
-const getScrollMax = () => Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-
 const scrollToTop = () => {
-  if (smoothScroll) {
-    smoothScroll.set(0, true);
-    return;
-  }
   window.scrollTo(0, 0);
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
@@ -76,76 +68,6 @@ const runIntro = () => {
 if (introLine) introLine.style.setProperty("--progress", "0");
 runIntro();
 
-const initSmoothScroll = () => {
-  if (reduceMotion || !canHover) return null;
-
-  document.documentElement.classList.add("is-smooth-scrolling");
-
-  let current = window.scrollY;
-  let target = window.scrollY;
-  let frameId = 0;
-
-  const clampTarget = () => {
-    target = Math.max(0, Math.min(target, getScrollMax()));
-  };
-
-  const render = () => {
-    clampTarget();
-    current += (target - current) * 0.085;
-    if (Math.abs(target - current) < 0.15) current = target;
-    window.scrollTo(0, current);
-    frameId = current === target ? 0 : window.requestAnimationFrame(render);
-  };
-
-  const kick = () => {
-    if (!frameId) frameId = window.requestAnimationFrame(render);
-  };
-
-  const set = (value, instant = false) => {
-    target = value;
-    clampTarget();
-    if (instant) {
-      current = target;
-      window.scrollTo(0, current);
-      frameId = 0;
-      return;
-    }
-    kick();
-  };
-
-  window.addEventListener(
-    "wheel",
-    (event) => {
-      if (event.ctrlKey) return;
-      const path = typeof event.composedPath === "function" ? event.composedPath() : [];
-      const nestedScroll = path.find(
-        (node) =>
-          node instanceof HTMLElement &&
-          node !== document.body &&
-          node !== document.documentElement &&
-          node.scrollHeight > node.clientHeight + 1 &&
-          /(auto|scroll)/.test(getComputedStyle(node).overflowY)
-      );
-      if (nestedScroll) return;
-
-      event.preventDefault();
-      target += event.deltaY;
-      clampTarget();
-      kick();
-    },
-    { passive: false }
-  );
-
-  window.addEventListener("resize", () => {
-    clampTarget();
-    kick();
-  });
-
-  return { set, kick };
-};
-
-smoothScroll = initSmoothScroll();
-
 const initCursor = () => {
   if (!canHover || reduceMotion || !cursorDot || !cursorRing) {
     document.body.classList.remove("has-custom-cursor");
@@ -163,10 +85,10 @@ const initCursor = () => {
   let visible = false;
 
   const render = () => {
-    dotX += (mouseX - dotX) * 0.35;
-    dotY += (mouseY - dotY) * 0.35;
-    ringX += (mouseX - ringX) * 0.14;
-    ringY += (mouseY - ringY) * 0.14;
+    dotX += (mouseX - dotX) * 0.4;
+    dotY += (mouseY - dotY) * 0.4;
+    ringX += (mouseX - ringX) * 0.18;
+    ringY += (mouseY - ringY) * 0.18;
     cursorDot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0)`;
     cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
     window.requestAnimationFrame(render);
@@ -201,8 +123,8 @@ const initMagneticLinks = () => {
   document.querySelectorAll(".hero-links a, .project-inquiry a, .rail-brand").forEach((element) => {
     element.addEventListener("mousemove", (event) => {
       const rect = element.getBoundingClientRect();
-      const offsetX = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
-      const offsetY = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
+      const offsetX = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
+      const offsetY = ((event.clientY - rect.top) / rect.height - 0.5) * 6;
       element.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });
     element.addEventListener("mouseleave", () => {
@@ -230,10 +152,6 @@ const scrollToHash = (hash) => {
   const target = document.getElementById(id);
   if (!target) return;
   const top = target.getBoundingClientRect().top + window.scrollY - 16;
-  if (smoothScroll) {
-    smoothScroll.set(top);
-    return;
-  }
   window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
 };
 
@@ -278,7 +196,7 @@ const revealTargets = document.querySelectorAll(
 
 revealTargets.forEach((element, index) => {
   element.classList.add("motion-item");
-  element.style.setProperty("--reveal-delay", `${(index % 4) * 80}ms`);
+  element.style.setProperty("--reveal-delay", `${(index % 4) * 50}ms`);
 });
 
 if (reduceMotion || !("IntersectionObserver" in window)) {
@@ -292,7 +210,7 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
         revealObserver.unobserve(entry.target);
       });
     },
-    { threshold: 0.1, rootMargin: "0px 0px -6% 0px" }
+    { threshold: 0.08, rootMargin: "0px 0px -4% 0px" }
   );
   revealTargets.forEach((element) => revealObserver.observe(element));
 }
@@ -300,7 +218,7 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 let frameRequested = false;
 
 const updateScrollDetails = () => {
-  const scrollable = getScrollMax();
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const progressValue = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
   progress?.style.setProperty("transform", `scaleX(${progressValue})`);
 
