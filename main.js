@@ -1,4 +1,5 @@
 const progress = document.querySelector("[data-reading-progress]");
+const railProgress = document.querySelector("[data-rail-progress]");
 const intro = document.querySelector("[data-site-intro]");
 const introCounter = document.querySelector("[data-intro-counter]");
 const introLine = document.querySelector("[data-intro-line]");
@@ -222,6 +223,7 @@ const updateScrollDetails = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const progressValue = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
   progress?.style.setProperty("transform", `scaleX(${progressValue})`);
+  railProgress?.style.setProperty("transform", `scaleY(${progressValue})`);
 
   let activeSection = sections[0];
   const activationLine = window.innerHeight * 0.35;
