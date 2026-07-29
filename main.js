@@ -48,7 +48,7 @@ const runIntro = () => {
     return;
   }
 
-  const duration = 1600;
+  const duration = 1400;
   const start = performance.now();
 
   const tick = (now) => {
@@ -60,7 +60,7 @@ const runIntro = () => {
       window.requestAnimationFrame(tick);
       return;
     }
-    window.setTimeout(finishIntro, 220);
+    window.setTimeout(finishIntro, 180);
   };
 
   window.requestAnimationFrame(tick);
@@ -82,17 +82,30 @@ const initCursor = () => {
   let cursorX = mouseX;
   let cursorY = mouseY;
   let visible = false;
+  let running = false;
   let lastTime = performance.now();
 
   const render = (time) => {
     const dt = Math.min((time - lastTime) / 1000, 0.05);
     lastTime = time;
-    const ease = 1 - Math.exp(-10 * dt);
+    const ease = 1 - Math.exp(-14 * dt);
     cursorX += (mouseX - cursorX) * ease;
     cursorY += (mouseY - cursorY) * ease;
     const transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
     cursorDot.style.transform = transform;
     cursorRing.style.transform = transform;
+
+    if (Math.abs(mouseX - cursorX) > 0.15 || Math.abs(mouseY - cursorY) > 0.15) {
+      window.requestAnimationFrame(render);
+      return;
+    }
+    running = false;
+  };
+
+  const kick = () => {
+    if (running) return;
+    running = true;
+    lastTime = performance.now();
     window.requestAnimationFrame(render);
   };
 
@@ -105,6 +118,7 @@ const initCursor = () => {
         visible = true;
         document.body.classList.add("is-cursor-ready");
       }
+      kick();
     },
     { passive: true }
   );
@@ -115,23 +129,6 @@ const initCursor = () => {
   document.querySelectorAll("a, button, summary").forEach((element) => {
     element.addEventListener("mouseenter", () => document.body.classList.add("is-cursor-hover"));
     element.addEventListener("mouseleave", () => document.body.classList.remove("is-cursor-hover"));
-  });
-
-  window.requestAnimationFrame(render);
-};
-
-const initMagneticLinks = () => {
-  if (!canHover || reduceMotion) return;
-  document.querySelectorAll(".hero-links a, .project-inquiry a, .rail-brand").forEach((element) => {
-    element.addEventListener("mousemove", (event) => {
-      const rect = element.getBoundingClientRect();
-      const offsetX = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
-      const offsetY = ((event.clientY - rect.top) / rect.height - 0.5) * 6;
-      element.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    });
-    element.addEventListener("mouseleave", () => {
-      element.style.transform = "";
-    });
   });
 };
 
@@ -171,7 +168,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 initCursor();
-initMagneticLinks();
 
 const splitWords = document.querySelector("[data-split-words]");
 if (splitWords) {
@@ -180,25 +176,13 @@ if (splitWords) {
   });
 }
 
-const splitText = document.querySelector("[data-split-text]");
-if (splitText && !reduceMotion) {
-  const text = splitText.textContent;
-  splitText.setAttribute("aria-label", text);
-  splitText.innerHTML = [...text]
-    .map((char, index) => {
-      const content = char === " " ? "&nbsp;" : char;
-      return `<span class="char" style="transition-delay:${index * 18}ms">${content}</span>`;
-    })
-    .join("");
-}
-
 const revealTargets = document.querySelectorAll(
-  ".hero-copy, .section-head, .role-card, .role-graphic, .edu-card, .recognition-list, .course-group, .project-feature, .interest-block"
+  ".hero-copy, .section-head, .role-card, .edu-card, .recognition-list, .course-group, .project-feature, .interest-block"
 );
 
 revealTargets.forEach((element, index) => {
   element.classList.add("motion-item");
-  element.style.setProperty("--reveal-delay", `${(index % 4) * 50}ms`);
+  element.style.setProperty("--reveal-delay", `${(index % 3) * 40}ms`);
 });
 
 if (reduceMotion || !("IntersectionObserver" in window)) {

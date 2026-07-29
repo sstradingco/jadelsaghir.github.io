@@ -26,10 +26,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(1200px 700px at 12% -10%, rgba(200, 241, 53, 0.08), transparent 55%),
-    radial-gradient(900px 600px at 100% 8%, rgba(10, 10, 10, 0.04), transparent 50%),
+    radial-gradient(900px 520px at 10% -8%, rgba(200, 241, 53, 0.06), transparent 55%),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-deep) 100%);
-  background-attachment: fixed;
   color: var(--ink);
   font-family: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -178,13 +176,7 @@ body.is-ready .site-shell {
 }
 
 .noise {
-  position: fixed;
-  z-index: 90;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.04;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  display: none;
 }
 
 .cursor-dot,
@@ -196,7 +188,6 @@ body.is-ready .site-shell {
   border-radius: 50%;
   pointer-events: none;
   opacity: 0;
-  will-change: transform;
   mix-blend-mode: normal;
   transition:
     width 280ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -263,8 +254,7 @@ body.is-cursor-press .cursor-ring {
   width: var(--rail);
   padding: 28px 18px;
   border-right: 1px solid var(--line);
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
-  backdrop-filter: blur(10px);
+  background: var(--paper);
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -582,85 +572,24 @@ body.is-ready .display-title .word {
 }
 
 .role-graphic {
-  margin-top: 22px;
-  max-width: 240px;
-  color: rgba(255, 255, 255, 0.58);
+  margin-top: 26px;
+  max-width: 260px;
+  color: rgba(255, 255, 255, 0.62);
 }
 
-.graphic-line {
+.mark-graphic {
   display: block;
   width: 100%;
   height: auto;
-  overflow: visible;
 }
 
-.graphic-line .g-accent {
+.mark-graphic .mark-accent {
   color: var(--accent);
 }
 
-.graphic-line .g-label {
-  fill: rgba(255, 255, 255, 0.42);
-  font-family: "Syne", sans-serif;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
-
-.graphic-line .g-pulse {
-  transform-origin: center;
-  transform-box: fill-box;
-  animation: graphic-pulse 2.4s ease-in-out infinite;
-}
-
-.graphic-line .g-drift {
-  animation: graphic-drift 3.6s ease-in-out infinite;
-}
-
-.graphic-line .g-bars {
-  stroke-linecap: square;
-  animation: graphic-bars 2.8s ease-in-out infinite;
-}
-
-@keyframes graphic-pulse {
-  0%,
-  100% {
-    opacity: 0.45;
-    transform: scale(0.9);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.15);
-  }
-}
-
-@keyframes graphic-drift {
-  0%,
-  100% {
-    transform: translateX(0);
-    opacity: 0.55;
-  }
-  50% {
-    transform: translateX(18px);
-    opacity: 1;
-  }
-}
-
-@keyframes graphic-bars {
-  0%,
-  100% {
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .graphic-line .g-pulse,
-  .graphic-line .g-drift,
-  .graphic-line .g-bars {
-    animation: none;
-  }
+.role-card:hover .role-graphic,
+.role-card:focus-within .role-graphic {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .role-body h3 {
@@ -1100,8 +1029,7 @@ body.is-ready .char {
     min-height: 64px;
     padding: 0 18px;
     border-bottom: 1px solid var(--line);
-    background: color-mix(in srgb, var(--paper) 90%, transparent);
-    backdrop-filter: blur(12px);
+    background: var(--paper);
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
