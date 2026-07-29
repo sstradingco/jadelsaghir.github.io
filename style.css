@@ -701,23 +701,7 @@ body.is-ready .display-title .word {
   overflow: hidden;
 }
 
-.giant-word {
-  position: absolute;
-  z-index: 0;
-  top: 42%;
-  right: 2%;
-  margin: 0;
-  color: var(--white);
-  font-family: "Syne", sans-serif;
-  font-size: clamp(90px, 18vw, 220px);
-  font-weight: 800;
-  letter-spacing: -0.08em;
-  line-height: 0.8;
-  opacity: 0.09;
-  pointer-events: none;
-  transform: rotate(-8deg);
-  white-space: nowrap;
-}
+
 
 .recognition-list {
   position: relative;
