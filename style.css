@@ -617,7 +617,6 @@ body.is-ready .display-title .word {
 }
 
 .graphic-line .g-bars {
-  stroke: var(--accent);
   stroke-linecap: square;
   animation: graphic-bars 2.8s ease-in-out infinite;
 }
