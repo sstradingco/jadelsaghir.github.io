@@ -193,7 +193,7 @@ if (splitText && !reduceMotion) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".hero-copy, .section-head, .role-card, .edu-card, .recognition-list, .course-group, .project-feature, .interest-block"
+  ".hero-copy, .section-head, .role-card, .edu-card, .recognition-list, .course-group, .project-feature, .focus-list, .interest-block"
 );
 
 revealTargets.forEach((element, index) => {
@@ -245,6 +245,30 @@ const requestScrollUpdate = () => {
   window.requestAnimationFrame(updateScrollDetails);
 };
 
+const giantWords = [...document.querySelectorAll(".giant-word")];
+
+const updateParallax = () => {
+  if (reduceMotion || !giantWords.length) return;
+  giantWords.forEach((word) => {
+    const rect = word.parentElement?.getBoundingClientRect();
+    if (!rect) return;
+    const mid = rect.top + rect.height / 2 - window.innerHeight / 2;
+    const shift = Math.max(-24, Math.min(24, mid * -0.04));
+    word.style.transform = `rotate(-8deg) translate3d(0, ${shift}px, 0)`;
+  });
+};
+
 updateScrollDetails();
-window.addEventListener("scroll", requestScrollUpdate, { passive: true });
-window.addEventListener("resize", requestScrollUpdate);
+updateParallax();
+window.addEventListener(
+  "scroll",
+  () => {
+    requestScrollUpdate();
+    updateParallax();
+  },
+  { passive: true }
+);
+window.addEventListener("resize", () => {
+  requestScrollUpdate();
+  updateParallax();
+});
