@@ -284,6 +284,13 @@ body.is-cursor-press .cursor-ring {
   font-size: 16px;
   font-weight: 800;
   text-decoration: none;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.rail-brand:hover,
+.rail-brand:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(10, 10, 10, 0.18);
 }
 
 .rail-nav {
