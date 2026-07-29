@@ -544,9 +544,10 @@ body.is-ready .display-title .word {
   content: "";
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.role-card.is-visible::before,
 .role-card:hover::before,
 .role-card:focus-within::before {
   transform: scaleY(1);
@@ -572,14 +573,9 @@ body.is-ready .display-title .word {
 }
 
 .role-graphic {
-  margin-top: 28px;
-  max-width: 280px;
-  padding: 14px 12px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background:
-    linear-gradient(160deg, rgba(200, 241, 53, 0.08), transparent 55%),
-    rgba(255, 255, 255, 0.02);
-  color: rgba(255, 255, 255, 0.72);
+  margin-top: 24px;
+  max-width: 250px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .mark-graphic {
@@ -594,13 +590,6 @@ body.is-ready .display-title .word {
 
 .mark-graphic .mark-fill {
   fill: var(--accent);
-  opacity: 0.9;
-}
-
-.role-card:hover .role-graphic,
-.role-card:focus-within .role-graphic {
-  border-color: rgba(200, 241, 53, 0.35);
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .role-body h3 {
