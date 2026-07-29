@@ -572,9 +572,14 @@ body.is-ready .display-title .word {
 }
 
 .role-graphic {
-  margin-top: 26px;
-  max-width: 260px;
-  color: rgba(255, 255, 255, 0.62);
+  margin-top: 28px;
+  max-width: 280px;
+  padding: 14px 12px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(160deg, rgba(200, 241, 53, 0.08), transparent 55%),
+    rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .mark-graphic {
@@ -587,9 +592,15 @@ body.is-ready .display-title .word {
   color: var(--accent);
 }
 
+.mark-graphic .mark-fill {
+  fill: var(--accent);
+  opacity: 0.9;
+}
+
 .role-card:hover .role-graphic,
 .role-card:focus-within .role-graphic {
-  color: rgba(255, 255, 255, 0.82);
+  border-color: rgba(200, 241, 53, 0.35);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .role-body h3 {
