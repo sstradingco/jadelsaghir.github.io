@@ -132,25 +132,43 @@ const initCursor = () => {
   });
 };
 
+const getMobileHeaderOffset = () => {
+  const header = document.querySelector(".mobile-header");
+  if (!header || window.getComputedStyle(header).display === "none") return 16;
+  return header.getBoundingClientRect().height + 12;
+};
+
 const closeMenu = () => {
   if (!menuToggle || !mobileNav) return;
   menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.textContent = "Menu";
   mobileNav.hidden = true;
+  document.body.classList.remove("menu-open");
 };
 
 menuToggle?.addEventListener("click", () => {
   const open = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!open));
+  menuToggle.textContent = open ? "Menu" : "Close";
   mobileNav.hidden = open;
+  document.body.classList.toggle("menu-open", !open);
 });
 
 mobileNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu();
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 980) closeMenu();
+});
 
 const scrollToHash = (hash) => {
   const id = hash.replace("#", "");
   const target = document.getElementById(id);
   if (!target) return;
-  const top = target.getBoundingClientRect().top + window.scrollY - 16;
+  const top = target.getBoundingClientRect().top + window.scrollY - getMobileHeaderOffset();
   window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
 };
 
