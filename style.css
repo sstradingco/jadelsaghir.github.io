@@ -581,6 +581,89 @@ body.is-ready .display-title .word {
   font-size: 13px;
 }
 
+.role-graphic {
+  margin-top: 22px;
+  max-width: 240px;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.graphic-line {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.graphic-line .g-accent {
+  color: var(--accent);
+}
+
+.graphic-line .g-label {
+  fill: rgba(255, 255, 255, 0.42);
+  font-family: "Syne", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.graphic-line .g-pulse {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: graphic-pulse 2.4s ease-in-out infinite;
+}
+
+.graphic-line .g-drift {
+  animation: graphic-drift 3.6s ease-in-out infinite;
+}
+
+.graphic-line .g-bars {
+  stroke: var(--accent);
+  stroke-linecap: square;
+  animation: graphic-bars 2.8s ease-in-out infinite;
+}
+
+@keyframes graphic-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes graphic-drift {
+  0%,
+  100% {
+    transform: translateX(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateX(18px);
+    opacity: 1;
+  }
+}
+
+@keyframes graphic-bars {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graphic-line .g-pulse,
+  .graphic-line .g-drift,
+  .graphic-line .g-bars {
+    animation: none;
+  }
+}
+
 .role-body h3 {
   margin-bottom: 8px;
   font-size: clamp(24px, 3vw, 34px);
