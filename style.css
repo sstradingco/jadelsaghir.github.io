@@ -918,9 +918,14 @@ body.is-ready .display-title .word {
 }
 
 .interest-block {
-  margin-top: 36px;
-  padding-top: 24px;
+  margin-top: 24px;
+  padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.interest-block h3 {
+  margin-bottom: 10px;
+  font-size: clamp(22px, 3vw, 32px);
 }
 
 .interest-flow {
@@ -930,35 +935,34 @@ body.is-ready .display-title .word {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 920px;
+  max-width: 760px;
   font-family: "Syne", sans-serif;
-  font-size: clamp(22px, 3.8vw, 38px);
+  font-size: clamp(14px, 1.6vw, 18px);
   font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.28;
+  letter-spacing: -0.03em;
+  line-height: 1.55;
 }
 
 .interest-flow li {
   position: relative;
   display: inline-flex;
   align-items: baseline;
-  color: rgba(250, 249, 246, 0.38);
-  transition: color 220ms ease, transform 220ms ease;
+  color: rgba(250, 249, 246, 0.42);
+  transition: color 220ms ease;
 }
 
 .interest-flow li:not(:last-child)::after {
-  margin: 0 0.42em;
+  margin: 0 0.35em;
   color: var(--accent);
   content: "/";
   font-weight: 600;
   opacity: 0.85;
-  transition: opacity 220ms ease, transform 220ms ease;
+  transition: opacity 220ms ease;
 }
 
 .interest-flow li:hover,
 .interest-flow li:focus-visible {
   color: var(--white);
-  transform: translateY(-2px);
 }
 
 .interest-flow li:hover::after,
@@ -1377,18 +1381,17 @@ body.is-ready .char {
   }
 
   .interest-block {
-    margin-top: 28px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 16px;
+  }
+
+  .interest-block h3 {
+    font-size: clamp(20px, 5.5vw, 28px);
   }
 
   .interest-flow {
-    font-size: clamp(20px, 6.2vw, 30px);
-    line-height: 1.32;
-  }
-
-  .interest-flow li:hover,
-  .interest-flow li:focus-visible {
-    transform: none;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   footer {
@@ -1479,9 +1482,6 @@ body.is-ready .char {
     font-size: 14.5px;
   }
 
-  .interest-flow {
-    font-size: clamp(18px, 6.8vw, 24px);
-  }
 }
 
 @media (hover: none), (pointer: coarse) {
