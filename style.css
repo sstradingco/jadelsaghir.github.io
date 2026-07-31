@@ -851,9 +851,23 @@ body.is-ready .display-title .word {
   letter-spacing: -0.06em;
 }
 
-.project-feature > p {
+.project-feature > p,
+.project-feature > ul {
   max-width: 720px;
   color: #b8b8b2;
+}
+
+.project-feature > ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.project-feature > ul li + li {
+  margin-top: 8px;
+}
+
+.project-feature > ul li::marker {
+  color: var(--accent);
 }
 
 .project-inquiry {
