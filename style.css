@@ -923,24 +923,47 @@ body.is-ready .display-title .word {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
 }
 
-.interest-cloud {
+.interest-flow {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 920px;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(22px, 3.8vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.28;
 }
 
-.interest-cloud span {
-  padding: 10px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  font-size: 13px;
-  transition: border-color 200ms ease, background 200ms ease, color 200ms ease, transform 200ms ease;
+.interest-flow li {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  color: rgba(250, 249, 246, 0.38);
+  transition: color 220ms ease, transform 220ms ease;
 }
 
-.interest-cloud span:hover {
-  border-color: var(--accent);
-  background: rgba(200, 241, 53, 0.12);
+.interest-flow li:not(:last-child)::after {
+  margin: 0 0.42em;
+  color: var(--accent);
+  content: "/";
+  font-weight: 600;
+  opacity: 0.85;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.interest-flow li:hover,
+.interest-flow li:focus-visible {
   color: var(--white);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+
+.interest-flow li:hover::after,
+.interest-flow li:focus-visible::after {
+  opacity: 1;
 }
 
 footer {
@@ -1358,13 +1381,14 @@ body.is-ready .char {
     padding-top: 20px;
   }
 
-  .interest-cloud {
-    gap: 8px;
+  .interest-flow {
+    font-size: clamp(20px, 6.2vw, 30px);
+    line-height: 1.32;
   }
 
-  .interest-cloud span {
-    padding: 9px 12px;
-    font-size: 12.5px;
+  .interest-flow li:hover,
+  .interest-flow li:focus-visible {
+    transform: none;
   }
 
   footer {
@@ -1455,9 +1479,8 @@ body.is-ready .char {
     font-size: 14.5px;
   }
 
-  .interest-cloud span {
-    padding: 8px 10px;
-    font-size: 12px;
+  .interest-flow {
+    font-size: clamp(18px, 6.8vw, 24px);
   }
 }
 
@@ -1489,9 +1512,7 @@ body.is-ready .char {
     box-shadow: none;
   }
 
-  .interest-cloud span:active {
-    border-color: var(--accent);
-    background: rgba(200, 241, 53, 0.12);
+  .interest-flow li:active {
     color: var(--white);
   }
 }
