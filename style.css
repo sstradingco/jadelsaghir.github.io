@@ -844,11 +844,14 @@ body.is-ready .display-title .word {
   text-transform: uppercase;
 }
 
-.project-feature h3,
-.interest-block h3 {
+.project-feature h3 {
   margin-bottom: 16px;
   font-size: clamp(36px, 6vw, 64px);
   letter-spacing: -0.06em;
+}
+
+.interest-block h3 {
+  letter-spacing: -0.05em;
 }
 
 .project-feature > p,
@@ -1352,8 +1355,7 @@ body.is-ready .char {
     line-height: 1.55;
   }
 
-  .project-feature h3,
-  .interest-block h3 {
+  .project-feature h3 {
     font-size: clamp(30px, 9vw, 48px);
   }
 
