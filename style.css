@@ -363,7 +363,6 @@ body.is-cursor-press .cursor-ring {
   background: var(--accent);
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 120ms linear;
 }
 
 .rail-meta {
@@ -576,6 +575,8 @@ body.is-ready .display-title .word {
   display: flex;
   height: 100%;
   will-change: transform;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .h-slide {
@@ -1017,7 +1018,10 @@ body.is-ready .display-title .word {
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), background 280ms ease, color 280ms ease;
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 320ms ease,
+    color 320ms ease;
 }
 
 .course-card.is-open .course-toggle,
@@ -1033,8 +1037,8 @@ body.is-ready .display-title .word {
   height: 0;
   opacity: 0;
   transition:
-    height 420ms cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 280ms ease;
+    height 560ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 380ms ease;
 }
 
 details:not(.js-smooth)[open] > .course-panel,

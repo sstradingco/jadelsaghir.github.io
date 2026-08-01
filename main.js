@@ -176,7 +176,8 @@ const scrollToHash = (hash) => {
     lenis.scrollTo(target, {
       offset,
       immediate: reduceMotion,
-      duration: 1.15,
+      duration: 1.55,
+      easing: (t) => 1 - Math.pow(1 - t, 5),
     });
     return;
   }
@@ -231,7 +232,6 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
   revealTargets.forEach((element) => revealObserver.observe(element));
 }
 
-let frameRequested = false;
 const driftItems = [...document.querySelectorAll("[data-drift]")];
 const scrubSections = [...document.querySelectorAll("[data-scrub]")];
 const horizontalChapter = document.querySelector("[data-h-chapter]");
@@ -239,12 +239,31 @@ const horizontalTrack = document.querySelector("[data-h-track]");
 const horizontalProgress = document.querySelector("[data-h-progress]");
 let horizontalTravel = 0;
 
+const motionState = {
+  read: 0,
+  readTarget: 0,
+  horizontal: 0,
+  horizontalTarget: 0,
+  drifts: driftItems.map(() => 0),
+  driftTargets: driftItems.map(() => 0),
+  scrubs: scrubSections.map(() => 0),
+  scrubTargets: scrubSections.map(() => 0),
+};
+
+const clamp01 = (value) => Math.max(0, Math.min(1, value));
+const damp = (current, target, delta, speed) => {
+  const factor = 1 - Math.exp(-speed * delta);
+  return current + (target - current) * factor;
+};
+
 const measureHorizontalChapter = () => {
   if (!horizontalChapter || !horizontalTrack) return;
   if (horizontalChapter.classList.contains("is-static")) {
     horizontalChapter.style.height = "";
     horizontalTrack.style.transform = "";
     horizontalTravel = 0;
+    motionState.horizontal = 0;
+    motionState.horizontalTarget = 0;
     return;
   }
 
@@ -252,19 +271,97 @@ const measureHorizontalChapter = () => {
   horizontalChapter.style.height = `${window.innerHeight + horizontalTravel}px`;
 };
 
-const updateHorizontalChapter = () => {
-  if (!horizontalChapter || !horizontalTrack || horizontalChapter.classList.contains("is-static")) {
-    return;
-  }
+const sampleScrollTargets = () => {
+  const scrollY = lenis ? lenis.scroll : window.scrollY || window.pageYOffset || 0;
+  const scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+  motionState.readTarget = clamp01(scrollY / scrollable);
 
-  const rect = horizontalChapter.getBoundingClientRect();
-  const maxScroll = Math.max(horizontalChapter.offsetHeight - window.innerHeight, 1);
-  const scrolled = Math.min(Math.max(-rect.top, 0), maxScroll);
-  const progress = scrolled / maxScroll;
-  horizontalTrack.style.transform = `translate3d(${(-progress * horizontalTravel).toFixed(2)}px, 0, 0)`;
-  horizontalProgress?.style.setProperty("transform", `scaleX(${progress})`);
-  horizontalChapter.classList.toggle("is-pinning", progress > 0 && progress < 1);
-  horizontalChapter.classList.toggle("has-started", progress > 0.02);
+  let activeSection = sections[0];
+  const activationLine = window.innerHeight * 0.35;
+  sections.forEach((section) => {
+    if (section.getBoundingClientRect().top <= activationLine) activeSection = section;
+  });
+  railLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${activeSection?.id}`;
+    link.classList.toggle("is-active", isActive);
+  });
+
+  if (reduceMotion) return;
+
+  const vh = window.innerHeight || 1;
+
+  driftItems.forEach((element, index) => {
+    if (element.classList.contains("motion-item") && !element.classList.contains("is-visible")) {
+      motionState.driftTargets[index] = 0;
+      return;
+    }
+    const speed = Number(element.dataset.drift) || 0.12;
+    const rect = element.getBoundingClientRect();
+    const progress = (rect.top + rect.height * 0.5 - vh * 0.5) / vh;
+    motionState.driftTargets[index] = progress * speed * -100;
+  });
+
+  scrubSections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    const start = vh * 0.9;
+    const end = vh * 0.28;
+    const raw = (start - rect.top) / (start - end);
+    motionState.scrubTargets[index] = clamp01(raw);
+  });
+
+  if (horizontalChapter && horizontalTrack && !horizontalChapter.classList.contains("is-static")) {
+    const rect = horizontalChapter.getBoundingClientRect();
+    const maxScroll = Math.max(horizontalChapter.offsetHeight - window.innerHeight, 1);
+    const scrolled = Math.min(Math.max(-rect.top, 0), maxScroll);
+    motionState.horizontalTarget = scrolled / maxScroll;
+  }
+};
+
+const renderMotion = (delta) => {
+  motionState.read = damp(motionState.read, motionState.readTarget, delta, 14);
+  progress?.style.setProperty("transform", `scaleX(${motionState.read})`);
+  railProgress?.style.setProperty("transform", `scaleY(${motionState.read})`);
+
+  if (reduceMotion) return;
+
+  driftItems.forEach((element, index) => {
+    if (element.classList.contains("motion-item") && !element.classList.contains("is-visible")) {
+      return;
+    }
+    motionState.drifts[index] = damp(
+      motionState.drifts[index],
+      motionState.driftTargets[index],
+      delta,
+      11
+    );
+    element.style.transform = `translate3d(0, ${motionState.drifts[index].toFixed(2)}px, 0)`;
+  });
+
+  scrubSections.forEach((section, index) => {
+    motionState.scrubs[index] = damp(
+      motionState.scrubs[index],
+      motionState.scrubTargets[index],
+      delta,
+      10
+    );
+    const scrub = motionState.scrubs[index];
+    section.style.setProperty("--scrub", scrub.toFixed(3));
+    section.classList.toggle("is-scrub-active", scrub > 0.5);
+  });
+
+  if (horizontalChapter && horizontalTrack && !horizontalChapter.classList.contains("is-static")) {
+    motionState.horizontal = damp(
+      motionState.horizontal,
+      motionState.horizontalTarget,
+      delta,
+      13
+    );
+    const progressValue = motionState.horizontal;
+    horizontalTrack.style.transform = `translate3d(${(-progressValue * horizontalTravel).toFixed(2)}px, 0, 0)`;
+    horizontalProgress?.style.setProperty("transform", `scaleX(${progressValue})`);
+    horizontalChapter.classList.toggle("is-pinning", progressValue > 0.01 && progressValue < 0.99);
+    horizontalChapter.classList.toggle("has-started", progressValue > 0.02);
+  }
 };
 
 const initHorizontalChapter = () => {
@@ -276,101 +373,55 @@ const initHorizontalChapter = () => {
   }
 
   measureHorizontalChapter();
-  updateHorizontalChapter();
-};
-
-const updateScrollMotion = () => {
-  if (reduceMotion) return;
-
-  const vh = window.innerHeight || 1;
-
-  driftItems.forEach((element) => {
-    if (element.classList.contains("motion-item") && !element.classList.contains("is-visible")) {
-      return;
-    }
-    const speed = Number(element.dataset.drift) || 0.12;
-    const rect = element.getBoundingClientRect();
-    const progress = (rect.top + rect.height * 0.5 - vh * 0.5) / vh;
-    const shift = progress * speed * -100;
-    element.style.transform = `translate3d(0, ${shift.toFixed(2)}px, 0)`;
-  });
-
-  scrubSections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
-    const start = vh * 0.9;
-    const end = vh * 0.28;
-    const raw = (start - rect.top) / (start - end);
-    const scrub = Math.max(0, Math.min(1, raw));
-    section.style.setProperty("--scrub", scrub.toFixed(3));
-    section.classList.toggle("is-scrub-active", scrub > 0.5);
-  });
-
-  updateHorizontalChapter();
-};
-
-const updateScrollDetails = () => {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const progressValue = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
-  progress?.style.setProperty("transform", `scaleX(${progressValue})`);
-  railProgress?.style.setProperty("transform", `scaleY(${progressValue})`);
-
-  let activeSection = sections[0];
-  const activationLine = window.innerHeight * 0.35;
-  sections.forEach((section) => {
-    if (section.getBoundingClientRect().top <= activationLine) activeSection = section;
-  });
-
-  railLinks.forEach((link) => {
-    const isActive = link.getAttribute("href") === `#${activeSection?.id}`;
-    link.classList.toggle("is-active", isActive);
-  });
-
-  updateScrollMotion();
-  frameRequested = false;
-};
-
-const requestScrollUpdate = () => {
-  if (frameRequested) return;
-  frameRequested = true;
-  window.requestAnimationFrame(updateScrollDetails);
+  sampleScrollTargets();
+  renderMotion(1);
 };
 
 const initLenis = () => {
   if (reduceMotion || typeof Lenis !== "function") return null;
 
   const instance = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    lerp: 0.072,
+    duration: 1.5,
+    easing: (t) => 1 - Math.pow(1 - t, 5),
     smoothWheel: true,
-    touchMultiplier: 1.15,
+    wheelMultiplier: 0.82,
+    touchMultiplier: 1.1,
+    syncTouch: true,
+    syncTouchLerp: 0.075,
   });
 
   if (document.body.classList.contains("is-introducing")) {
     instance.stop();
   }
 
-  instance.on("scroll", requestScrollUpdate);
-
-  const raf = (time) => {
-    instance.raf(time);
-    window.requestAnimationFrame(raf);
-  };
-  window.requestAnimationFrame(raf);
+  instance.on("scroll", sampleScrollTargets);
   return instance;
 };
 
 lenis = initLenis();
-
 initHorizontalChapter();
-updateScrollDetails();
-window.addEventListener("scroll", requestScrollUpdate, { passive: true });
+sampleScrollTargets();
+renderMotion(1);
+
+let lastFrame = performance.now();
+const motionLoop = (time) => {
+  const delta = Math.min((time - lastFrame) / 1000, 0.05);
+  lastFrame = time;
+  lenis?.raf(time);
+  renderMotion(delta);
+  window.requestAnimationFrame(motionLoop);
+};
+window.requestAnimationFrame(motionLoop);
+
+window.addEventListener("scroll", sampleScrollTargets, { passive: true });
 window.addEventListener("resize", () => {
   measureHorizontalChapter();
-  requestScrollUpdate();
+  sampleScrollTargets();
 });
 window.addEventListener("load", () => {
   measureHorizontalChapter();
-  requestScrollUpdate();
+  sampleScrollTargets();
 });
 
 const initSmoothDetails = () => {
