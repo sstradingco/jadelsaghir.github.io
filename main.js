@@ -409,6 +409,7 @@ const motionLoop = (time) => {
   const delta = Math.min((time - lastFrame) / 1000, 0.05);
   lastFrame = time;
   lenis?.raf(time);
+  sampleScrollTargets();
   renderMotion(delta);
   window.requestAnimationFrame(motionLoop);
 };
@@ -468,7 +469,7 @@ const initSmoothDetails = () => {
         callback();
       };
       panel.addEventListener("transitionend", finish);
-      endTimer = window.setTimeout(() => finish(), 500);
+      endTimer = window.setTimeout(() => finish(), 650);
     };
 
     const openDetails = () => {
