@@ -31,6 +31,19 @@ html {
   text-size-adjust: 100%;
 }
 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
 body {
   margin: 0;
   background:
@@ -377,6 +390,22 @@ body.is-cursor-press .cursor-ring {
   position: relative;
   padding: clamp(36px, 5vw, 64px) 0;
   scroll-margin-top: 16px;
+}
+
+[data-drift] {
+  will-change: transform;
+  transition: none;
+}
+
+[data-scrub] {
+  --scrub: 0;
+  will-change: transform, opacity;
+  transform: translate3d(0, calc((1 - var(--scrub)) * 18px), 0);
+  opacity: calc(0.78 + (var(--scrub) * 0.22));
+}
+
+[data-scrub].is-scrub-active {
+  opacity: 1;
 }
 
 .hero {
@@ -1556,6 +1585,13 @@ body.is-ready .char {
     transition: none !important;
   }
 
+  [data-drift],
+  [data-scrub] {
+    transform: none !important;
+    opacity: 1 !important;
+    will-change: auto;
+  }
+
   .site-intro,
   .cursor-dot,
   .cursor-ring,
@@ -1582,5 +1618,11 @@ body.is-ready .char {
   body.has-custom-cursor button,
   body.has-custom-cursor summary {
     cursor: auto;
+  }
+}
+
+@media (max-width: 980px) {
+  [data-scrub] {
+    transform: translate3d(0, calc((1 - var(--scrub)) * 16px), 0);
   }
 }

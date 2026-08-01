@@ -32,9 +32,12 @@ window.addEventListener("pageshow", (event) => {
   if (event.persisted) scrollToTop();
 });
 
+let lenis = null;
+
 const finishIntro = () => {
   document.body.classList.remove("is-introducing");
   document.body.classList.add("is-ready");
+  lenis?.start();
   if (!intro) return;
   intro.classList.add("is-exit");
   window.setTimeout(() => intro.remove(), 950);
@@ -168,7 +171,16 @@ const scrollToHash = (hash) => {
   const id = hash.replace("#", "");
   const target = document.getElementById(id);
   if (!target) return;
-  const top = target.getBoundingClientRect().top + window.scrollY - getMobileHeaderOffset();
+  const offset = -getMobileHeaderOffset();
+  if (lenis) {
+    lenis.scrollTo(target, {
+      offset,
+      immediate: reduceMotion,
+      duration: 1.15,
+    });
+    return;
+  }
+  const top = target.getBoundingClientRect().top + window.scrollY + offset;
   window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
 };
 
@@ -220,6 +232,35 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 }
 
 let frameRequested = false;
+const driftItems = [...document.querySelectorAll("[data-drift]")];
+const scrubSections = [...document.querySelectorAll("[data-scrub]")];
+
+const updateScrollMotion = () => {
+  if (reduceMotion) return;
+
+  const vh = window.innerHeight || 1;
+
+  driftItems.forEach((element) => {
+    if (element.classList.contains("motion-item") && !element.classList.contains("is-visible")) {
+      return;
+    }
+    const speed = Number(element.dataset.drift) || 0.12;
+    const rect = element.getBoundingClientRect();
+    const progress = (rect.top + rect.height * 0.5 - vh * 0.5) / vh;
+    const shift = progress * speed * -100;
+    element.style.transform = `translate3d(0, ${shift.toFixed(2)}px, 0)`;
+  });
+
+  scrubSections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    const start = vh * 0.9;
+    const end = vh * 0.28;
+    const raw = (start - rect.top) / (start - end);
+    const scrub = Math.max(0, Math.min(1, raw));
+    section.style.setProperty("--scrub", scrub.toFixed(3));
+    section.classList.toggle("is-scrub-active", scrub > 0.5);
+  });
+};
 
 const updateScrollDetails = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -238,6 +279,7 @@ const updateScrollDetails = () => {
     link.classList.toggle("is-active", isActive);
   });
 
+  updateScrollMotion();
   frameRequested = false;
 };
 
@@ -246,6 +288,32 @@ const requestScrollUpdate = () => {
   frameRequested = true;
   window.requestAnimationFrame(updateScrollDetails);
 };
+
+const initLenis = () => {
+  if (reduceMotion || typeof Lenis !== "function") return null;
+
+  const instance = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+    touchMultiplier: 1.15,
+  });
+
+  if (document.body.classList.contains("is-introducing")) {
+    instance.stop();
+  }
+
+  instance.on("scroll", requestScrollUpdate);
+
+  const raf = (time) => {
+    instance.raf(time);
+    window.requestAnimationFrame(raf);
+  };
+  window.requestAnimationFrame(raf);
+  return instance;
+};
+
+lenis = initLenis();
 
 updateScrollDetails();
 window.addEventListener("scroll", requestScrollUpdate, { passive: true });
