@@ -199,10 +199,6 @@ body.is-ready .site-shell {
   transform-origin: left;
 }
 
-.noise {
-  display: none;
-}
-
 .cursor-dot,
 .cursor-ring {
   position: fixed;
@@ -1561,8 +1557,7 @@ body.is-ready .char {
 
   .site-intro,
   .cursor-dot,
-  .cursor-ring,
-  .noise {
+  .cursor-ring {
     display: none;
   }
 
