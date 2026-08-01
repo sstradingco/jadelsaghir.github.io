@@ -168,13 +168,11 @@ body.is-introducing {
 
 .site-shell {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 700ms ease, transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition: opacity 700ms ease;
 }
 
 body.is-ready .site-shell {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .reading-progress {
@@ -268,11 +266,15 @@ body.is-cursor-press .cursor-ring {
   width: var(--rail);
   padding: 28px 18px;
   border-right: 1px solid var(--line);
-  background: var(--paper);
+  background: rgba(242, 239, 232, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 28px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .rail-brand {
@@ -780,10 +782,12 @@ body.is-ready .display-title .word {
   padding-left: 6px;
 }
 
+.course-card.is-open summary,
 .course-card[open] summary {
   color: var(--ink);
 }
 
+.course-card.is-open .course-code,
 .course-card[open] .course-code {
   color: var(--ink);
 }
@@ -813,16 +817,48 @@ body.is-ready .display-title .word {
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
-  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), background 280ms ease, color 280ms ease;
 }
 
+.course-card.is-open .course-toggle,
 .course-card[open] .course-toggle {
   background: var(--black);
   color: var(--accent);
   transform: rotate(45deg);
 }
 
-.course-card p {
+.course-panel,
+.details-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 360ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 260ms ease;
+}
+
+details[open] > .course-panel,
+details[open] > .details-panel,
+details.is-open > .course-panel,
+details.is-open > .details-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+details.js-smooth[open]:not(.is-open) > .course-panel,
+details.js-smooth[open]:not(.is-open) > .details-panel {
+  grid-template-rows: 0fr;
+  opacity: 0;
+}
+
+.course-panel > *,
+.details-panel > * {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.course-card p,
+.course-panel > p {
   max-width: 850px;
   margin: 0;
   padding: 0 52px 22px 108px;
@@ -1522,6 +1558,11 @@ body.is-ready .char {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .course-panel,
+  .details-panel {
+    transition: none;
   }
 
   .site-intro,

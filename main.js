@@ -250,3 +250,63 @@ const requestScrollUpdate = () => {
 updateScrollDetails();
 window.addEventListener("scroll", requestScrollUpdate, { passive: true });
 window.addEventListener("resize", requestScrollUpdate);
+
+const initSmoothDetails = () => {
+  document.querySelectorAll("details").forEach((details) => {
+    const summary = details.querySelector("summary");
+    if (!summary) return;
+
+    let panel = details.querySelector(":scope > .course-panel, :scope > .details-panel");
+    if (!panel) {
+      panel = document.createElement("div");
+      panel.className = "details-panel";
+      const leftovers = [];
+      let node = summary.nextSibling;
+      while (node) {
+        const next = node.nextSibling;
+        leftovers.push(node);
+        node = next;
+      }
+      leftovers.forEach((item) => panel.appendChild(item));
+      details.appendChild(panel);
+    }
+
+    details.classList.add("js-smooth");
+    if (details.open) details.classList.add("is-open");
+
+    summary.addEventListener("click", (event) => {
+      if (reduceMotion) return;
+
+      event.preventDefault();
+
+      if (details.classList.contains("is-open")) {
+        details.classList.remove("is-open");
+        let closed = false;
+        const finishClose = () => {
+          if (closed) return;
+          closed = true;
+          details.open = false;
+        };
+        const onEnd = (endEvent) => {
+          if (endEvent.target !== panel) return;
+          if (endEvent.propertyName !== "grid-template-rows" && endEvent.propertyName !== "opacity") return;
+          panel.removeEventListener("transitionend", onEnd);
+          finishClose();
+        };
+        panel.addEventListener("transitionend", onEnd);
+        window.setTimeout(finishClose, 420);
+        return;
+      }
+
+      details.open = true;
+      details.classList.remove("is-open");
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          details.classList.add("is-open");
+        });
+      });
+    });
+  });
+};
+
+initSmoothDetails();
