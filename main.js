@@ -272,39 +272,87 @@ const initSmoothDetails = () => {
     }
 
     details.classList.add("js-smooth");
-    if (details.open) details.classList.add("is-open");
+    let animating = false;
+
+    const clearHeight = () => {
+      panel.style.height = "";
+    };
+
+    const setExpandedHeight = () => {
+      panel.style.height = "auto";
+      const fullHeight = panel.scrollHeight;
+      panel.style.height = `${fullHeight}px`;
+      return fullHeight;
+    };
+
+    const openDetails = () => {
+      if (animating || details.classList.contains("is-open")) return;
+      animating = true;
+      details.open = true;
+      details.classList.add("is-open");
+      panel.style.height = "0px";
+      panel.style.opacity = "0";
+      panel.getBoundingClientRect();
+      const fullHeight = (() => {
+        panel.style.height = "auto";
+        const height = panel.scrollHeight;
+        panel.style.height = "0px";
+        panel.getBoundingClientRect();
+        return height;
+      })();
+
+      window.requestAnimationFrame(() => {
+        panel.style.opacity = "1";
+        panel.style.height = `${fullHeight}px`;
+      });
+
+      const finish = (event) => {
+        if (event && event.target !== panel) return;
+        if (event && event.propertyName && event.propertyName !== "height") return;
+        panel.removeEventListener("transitionend", finish);
+        panel.style.height = "auto";
+        animating = false;
+      };
+      panel.addEventListener("transitionend", finish);
+      window.setTimeout(() => finish(), 480);
+    };
+
+    const closeDetails = () => {
+      if (animating || !details.classList.contains("is-open")) return;
+      animating = true;
+      const fullHeight = setExpandedHeight();
+      panel.getBoundingClientRect();
+      details.classList.remove("is-open");
+      panel.style.opacity = "0";
+      panel.style.height = `${fullHeight}px`;
+      panel.getBoundingClientRect();
+      window.requestAnimationFrame(() => {
+        panel.style.height = "0px";
+      });
+
+      const finish = (event) => {
+        if (event && event.target !== panel) return;
+        if (event && event.propertyName && event.propertyName !== "height") return;
+        panel.removeEventListener("transitionend", finish);
+        details.open = false;
+        clearHeight();
+        animating = false;
+      };
+      panel.addEventListener("transitionend", finish);
+      window.setTimeout(() => finish(), 480);
+    };
+
+    if (details.open) {
+      details.classList.add("is-open");
+      panel.style.height = "auto";
+      panel.style.opacity = "1";
+    }
 
     summary.addEventListener("click", (event) => {
       if (reduceMotion) return;
-
       event.preventDefault();
-
-      if (details.classList.contains("is-open")) {
-        details.classList.remove("is-open");
-        let closed = false;
-        const finishClose = () => {
-          if (closed) return;
-          closed = true;
-          details.open = false;
-        };
-        const onEnd = (endEvent) => {
-          if (endEvent.target !== panel) return;
-          if (endEvent.propertyName !== "grid-template-rows" && endEvent.propertyName !== "opacity") return;
-          panel.removeEventListener("transitionend", onEnd);
-          finishClose();
-        };
-        panel.addEventListener("transitionend", onEnd);
-        window.setTimeout(finishClose, 420);
-        return;
-      }
-
-      details.open = true;
-      details.classList.remove("is-open");
-      window.requestAnimationFrame(() => {
-        window.requestAnimationFrame(() => {
-          details.classList.add("is-open");
-        });
-      });
+      if (details.classList.contains("is-open")) closeDetails();
+      else openDetails();
     });
   });
 };

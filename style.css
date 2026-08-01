@@ -829,32 +829,23 @@ body.is-ready .display-title .word {
 
 .course-panel,
 .details-panel {
-  display: grid;
-  grid-template-rows: 0fr;
+  overflow: hidden;
+  height: 0;
   opacity: 0;
   transition:
-    grid-template-rows 360ms cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 260ms ease;
+    height 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 280ms ease;
 }
 
-details[open] > .course-panel,
-details[open] > .details-panel,
-details.is-open > .course-panel,
-details.is-open > .details-panel {
-  grid-template-rows: 1fr;
+details:not(.js-smooth)[open] > .course-panel,
+details:not(.js-smooth)[open] > .details-panel {
+  height: auto;
   opacity: 1;
 }
 
-details.js-smooth[open]:not(.is-open) > .course-panel,
-details.js-smooth[open]:not(.is-open) > .details-panel {
-  grid-template-rows: 0fr;
-  opacity: 0;
-}
-
-.course-panel > *,
-.details-panel > * {
-  overflow: hidden;
-  min-height: 0;
+details.is-open > .course-panel,
+details.is-open > .details-panel {
+  opacity: 1;
 }
 
 .course-card p,
@@ -1562,7 +1553,7 @@ body.is-ready .char {
 
   .course-panel,
   .details-panel {
-    transition: none;
+    transition: none !important;
   }
 
   .site-intro,
