@@ -220,23 +220,37 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 }
 
 let frameRequested = false;
+let sectionTops = [];
+let scrollable = 1;
+let activeSectionId = sections[0]?.id || "";
+
+const cacheLayout = () => {
+  const y = window.scrollY || window.pageYOffset || 0;
+  scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+  sectionTops = sections.map((section) => ({
+    id: section.id,
+    top: section.getBoundingClientRect().top + y,
+  }));
+};
 
 const updateScrollDetails = () => {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const progressValue = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+  const y = window.scrollY || window.pageYOffset || 0;
+  const progressValue = Math.min(y / scrollable, 1);
   progress?.style.setProperty("transform", `scaleX(${progressValue})`);
   railProgress?.style.setProperty("transform", `scaleY(${progressValue})`);
 
-  let activeSection = sections[0];
-  const activationLine = window.innerHeight * 0.35;
-  sections.forEach((section) => {
-    if (section.getBoundingClientRect().top <= activationLine) activeSection = section;
-  });
+  const activationY = y + window.innerHeight * 0.35;
+  let nextId = sectionTops[0]?.id || "";
+  for (let i = 0; i < sectionTops.length; i += 1) {
+    if (sectionTops[i].top <= activationY) nextId = sectionTops[i].id;
+  }
 
-  railLinks.forEach((link) => {
-    const isActive = link.getAttribute("href") === `#${activeSection?.id}`;
-    link.classList.toggle("is-active", isActive);
-  });
+  if (nextId !== activeSectionId) {
+    activeSectionId = nextId;
+    railLinks.forEach((link) => {
+      link.classList.toggle("is-active", link.getAttribute("href") === `#${activeSectionId}`);
+    });
+  }
 
   frameRequested = false;
 };
@@ -247,9 +261,21 @@ const requestScrollUpdate = () => {
   window.requestAnimationFrame(updateScrollDetails);
 };
 
+cacheLayout();
 updateScrollDetails();
 window.addEventListener("scroll", requestScrollUpdate, { passive: true });
-window.addEventListener("resize", requestScrollUpdate);
+window.addEventListener(
+  "resize",
+  () => {
+    cacheLayout();
+    requestScrollUpdate();
+  },
+  { passive: true }
+);
+window.addEventListener("load", () => {
+  cacheLayout();
+  requestScrollUpdate();
+});
 
 const initSmoothDetails = () => {
   document.querySelectorAll("details").forEach((details) => {
@@ -295,7 +321,7 @@ const initSmoothDetails = () => {
         callback();
       };
       panel.addEventListener("transitionend", finish);
-      endTimer = window.setTimeout(() => finish(), 500);
+      endTimer = window.setTimeout(() => finish(), 480);
     };
 
     const openDetails = () => {
