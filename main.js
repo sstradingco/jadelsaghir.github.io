@@ -273,16 +273,29 @@ const initSmoothDetails = () => {
 
     details.classList.add("js-smooth");
     let animating = false;
+    let endTimer = 0;
 
-    const clearHeight = () => {
-      panel.style.height = "";
+    const measureHeight = () => {
+      const previous = panel.style.height;
+      panel.style.height = "auto";
+      const height = panel.scrollHeight;
+      panel.style.height = previous;
+      return height;
     };
 
-    const setExpandedHeight = () => {
-      panel.style.height = "auto";
-      const fullHeight = panel.scrollHeight;
-      panel.style.height = `${fullHeight}px`;
-      return fullHeight;
+    const afterHeightTransition = (callback) => {
+      let done = false;
+      const finish = (event) => {
+        if (event && event.target !== panel) return;
+        if (event && event.propertyName && event.propertyName !== "height") return;
+        if (done) return;
+        done = true;
+        panel.removeEventListener("transitionend", finish);
+        window.clearTimeout(endTimer);
+        callback();
+      };
+      panel.addEventListener("transitionend", finish);
+      endTimer = window.setTimeout(() => finish(), 500);
     };
 
     const openDetails = () => {
@@ -291,61 +304,36 @@ const initSmoothDetails = () => {
       details.open = true;
       details.classList.add("is-open");
       panel.style.height = "0px";
-      panel.style.opacity = "0";
+      const fullHeight = measureHeight();
       panel.getBoundingClientRect();
-      const fullHeight = (() => {
-        panel.style.height = "auto";
-        const height = panel.scrollHeight;
-        panel.style.height = "0px";
-        panel.getBoundingClientRect();
-        return height;
-      })();
-
       window.requestAnimationFrame(() => {
-        panel.style.opacity = "1";
         panel.style.height = `${fullHeight}px`;
       });
-
-      const finish = (event) => {
-        if (event && event.target !== panel) return;
-        if (event && event.propertyName && event.propertyName !== "height") return;
-        panel.removeEventListener("transitionend", finish);
+      afterHeightTransition(() => {
         panel.style.height = "auto";
         animating = false;
-      };
-      panel.addEventListener("transitionend", finish);
-      window.setTimeout(() => finish(), 480);
+      });
     };
 
     const closeDetails = () => {
       if (animating || !details.classList.contains("is-open")) return;
       animating = true;
-      const fullHeight = setExpandedHeight();
+      panel.style.height = `${measureHeight()}px`;
       panel.getBoundingClientRect();
       details.classList.remove("is-open");
-      panel.style.opacity = "0";
-      panel.style.height = `${fullHeight}px`;
-      panel.getBoundingClientRect();
       window.requestAnimationFrame(() => {
         panel.style.height = "0px";
       });
-
-      const finish = (event) => {
-        if (event && event.target !== panel) return;
-        if (event && event.propertyName && event.propertyName !== "height") return;
-        panel.removeEventListener("transitionend", finish);
+      afterHeightTransition(() => {
         details.open = false;
-        clearHeight();
+        panel.style.height = "";
         animating = false;
-      };
-      panel.addEventListener("transitionend", finish);
-      window.setTimeout(() => finish(), 480);
+      });
     };
 
     if (details.open) {
       details.classList.add("is-open");
       panel.style.height = "auto";
-      panel.style.opacity = "1";
     }
 
     summary.addEventListener("click", (event) => {
