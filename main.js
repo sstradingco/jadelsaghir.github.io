@@ -234,6 +234,49 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
 let frameRequested = false;
 const driftItems = [...document.querySelectorAll("[data-drift]")];
 const scrubSections = [...document.querySelectorAll("[data-scrub]")];
+const horizontalChapter = document.querySelector("[data-h-chapter]");
+const horizontalTrack = document.querySelector("[data-h-track]");
+const horizontalProgress = document.querySelector("[data-h-progress]");
+let horizontalTravel = 0;
+
+const measureHorizontalChapter = () => {
+  if (!horizontalChapter || !horizontalTrack) return;
+  if (horizontalChapter.classList.contains("is-static")) {
+    horizontalChapter.style.height = "";
+    horizontalTrack.style.transform = "";
+    horizontalTravel = 0;
+    return;
+  }
+
+  horizontalTravel = Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
+  horizontalChapter.style.height = `${window.innerHeight + horizontalTravel}px`;
+};
+
+const updateHorizontalChapter = () => {
+  if (!horizontalChapter || !horizontalTrack || horizontalChapter.classList.contains("is-static")) {
+    return;
+  }
+
+  const rect = horizontalChapter.getBoundingClientRect();
+  const maxScroll = Math.max(horizontalChapter.offsetHeight - window.innerHeight, 1);
+  const scrolled = Math.min(Math.max(-rect.top, 0), maxScroll);
+  const progress = scrolled / maxScroll;
+  horizontalTrack.style.transform = `translate3d(${(-progress * horizontalTravel).toFixed(2)}px, 0, 0)`;
+  horizontalProgress?.style.setProperty("transform", `scaleX(${progress})`);
+  horizontalChapter.classList.toggle("is-pinning", progress > 0 && progress < 1);
+};
+
+const initHorizontalChapter = () => {
+  if (!horizontalChapter || !horizontalTrack) return;
+
+  if (reduceMotion) {
+    horizontalChapter.classList.add("is-static");
+    return;
+  }
+
+  measureHorizontalChapter();
+  updateHorizontalChapter();
+};
 
 const updateScrollMotion = () => {
   if (reduceMotion) return;
@@ -260,6 +303,8 @@ const updateScrollMotion = () => {
     section.style.setProperty("--scrub", scrub.toFixed(3));
     section.classList.toggle("is-scrub-active", scrub > 0.5);
   });
+
+  updateHorizontalChapter();
 };
 
 const updateScrollDetails = () => {
@@ -315,9 +360,17 @@ const initLenis = () => {
 
 lenis = initLenis();
 
+initHorizontalChapter();
 updateScrollDetails();
 window.addEventListener("scroll", requestScrollUpdate, { passive: true });
-window.addEventListener("resize", requestScrollUpdate);
+window.addEventListener("resize", () => {
+  measureHorizontalChapter();
+  requestScrollUpdate();
+});
+window.addEventListener("load", () => {
+  measureHorizontalChapter();
+  requestScrollUpdate();
+});
 
 const initSmoothDetails = () => {
   document.querySelectorAll("details").forEach((details) => {
