@@ -32,12 +32,9 @@ window.addEventListener("pageshow", (event) => {
   if (event.persisted) scrollToTop();
 });
 
-let lenis = null;
-
 const finishIntro = () => {
   document.body.classList.remove("is-introducing");
   document.body.classList.add("is-ready");
-  lenis?.start();
   if (!intro) return;
   intro.classList.add("is-exit");
   window.setTimeout(() => intro.remove(), 950);
@@ -171,16 +168,7 @@ const scrollToHash = (hash) => {
   const id = hash.replace("#", "");
   const target = document.getElementById(id);
   if (!target) return;
-  const offset = -getMobileHeaderOffset();
-  if (lenis) {
-    lenis.scrollTo(target, {
-      offset,
-      immediate: reduceMotion,
-      duration: 1.2,
-    });
-    return;
-  }
-  const top = target.getBoundingClientRect().top + window.scrollY + offset;
+  const top = target.getBoundingClientRect().top + window.scrollY - getMobileHeaderOffset();
   window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
 };
 
@@ -231,124 +219,37 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
   revealTargets.forEach((element) => revealObserver.observe(element));
 }
 
-const horizontalChapter = document.querySelector("[data-h-chapter]");
-const horizontalTrack = document.querySelector("[data-h-track]");
-const horizontalProgress = document.querySelector("[data-h-progress]");
+let frameRequested = false;
 
-const layoutCache = {
-  horizontalTravel: 0,
-  chapterTop: 0,
-  chapterHeight: 0,
-  sectionTops: [],
-  scrollable: 1,
-};
-
-const clamp01 = (value) => Math.max(0, Math.min(1, value));
-
-const getScrollY = () => (lenis ? lenis.scroll : window.scrollY || window.pageYOffset || 0);
-
-const cacheScrollLayout = () => {
-  layoutCache.scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-  layoutCache.sectionTops = sections.map((section) => {
-    const top = section.getBoundingClientRect().top + getScrollY();
-    return { id: section.id, top };
-  });
-
-  if (!horizontalChapter || !horizontalTrack || horizontalChapter.classList.contains("is-static")) {
-    layoutCache.horizontalTravel = 0;
-    layoutCache.chapterTop = 0;
-    layoutCache.chapterHeight = 0;
-    return;
-  }
-
-  layoutCache.horizontalTravel = Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
-  horizontalChapter.style.height = `${window.innerHeight + layoutCache.horizontalTravel}px`;
-  layoutCache.chapterTop = horizontalChapter.getBoundingClientRect().top + getScrollY();
-  layoutCache.chapterHeight = horizontalChapter.offsetHeight;
-  layoutCache.scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-};
-
-const updateScrollUI = () => {
-  const scrollY = getScrollY();
-  const progressValue = clamp01(scrollY / layoutCache.scrollable);
+const updateScrollDetails = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progressValue = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
   progress?.style.setProperty("transform", `scaleX(${progressValue})`);
   railProgress?.style.setProperty("transform", `scaleY(${progressValue})`);
 
-  const activationY = scrollY + window.innerHeight * 0.35;
-  let activeId = layoutCache.sectionTops[0]?.id;
-  layoutCache.sectionTops.forEach((entry) => {
-    if (entry.top <= activationY) activeId = entry.id;
+  let activeSection = sections[0];
+  const activationLine = window.innerHeight * 0.35;
+  sections.forEach((section) => {
+    if (section.getBoundingClientRect().top <= activationLine) activeSection = section;
   });
+
   railLinks.forEach((link) => {
-    link.classList.toggle("is-active", link.getAttribute("href") === `#${activeId}`);
+    const isActive = link.getAttribute("href") === `#${activeSection?.id}`;
+    link.classList.toggle("is-active", isActive);
   });
 
-  if (
-    !reduceMotion &&
-    horizontalChapter &&
-    horizontalTrack &&
-    !horizontalChapter.classList.contains("is-static") &&
-    layoutCache.horizontalTravel > 0
-  ) {
-    const maxScroll = Math.max(layoutCache.chapterHeight - window.innerHeight, 1);
-    const progressHorizontal = clamp01((scrollY - layoutCache.chapterTop) / maxScroll);
-    horizontalTrack.style.transform = `translate3d(${(-progressHorizontal * layoutCache.horizontalTravel).toFixed(2)}px, 0, 0)`;
-    horizontalProgress?.style.setProperty("transform", `scaleX(${progressHorizontal})`);
-    horizontalChapter.classList.toggle("has-started", progressHorizontal > 0.02);
-  }
+  frameRequested = false;
 };
 
-const initHorizontalChapter = () => {
-  if (!horizontalChapter || !horizontalTrack) return;
-  if (reduceMotion) {
-    horizontalChapter.classList.add("is-static");
-    return;
-  }
-  cacheScrollLayout();
-  updateScrollUI();
+const requestScrollUpdate = () => {
+  if (frameRequested) return;
+  frameRequested = true;
+  window.requestAnimationFrame(updateScrollDetails);
 };
 
-const initLenis = () => {
-  if (reduceMotion || typeof Lenis !== "function") return null;
-
-  const instance = new Lenis({
-    lerp: 0.12,
-    smoothWheel: true,
-    wheelMultiplier: 1,
-    touchMultiplier: 1.4,
-  });
-
-  if (document.body.classList.contains("is-introducing")) {
-    instance.stop();
-  }
-
-  instance.on("scroll", updateScrollUI);
-
-  const raf = (time) => {
-    instance.raf(time);
-    window.requestAnimationFrame(raf);
-  };
-  window.requestAnimationFrame(raf);
-  return instance;
-};
-
-lenis = initLenis();
-initHorizontalChapter();
-cacheScrollLayout();
-updateScrollUI();
-
-if (!lenis) {
-  window.addEventListener("scroll", updateScrollUI, { passive: true });
-}
-
-window.addEventListener("resize", () => {
-  cacheScrollLayout();
-  updateScrollUI();
-});
-window.addEventListener("load", () => {
-  cacheScrollLayout();
-  updateScrollUI();
-});
+updateScrollDetails();
+window.addEventListener("scroll", requestScrollUpdate, { passive: true });
+window.addEventListener("resize", requestScrollUpdate);
 
 const initSmoothDetails = () => {
   document.querySelectorAll("details").forEach((details) => {
@@ -394,7 +295,7 @@ const initSmoothDetails = () => {
         callback();
       };
       panel.addEventListener("transitionend", finish);
-      endTimer = window.setTimeout(() => finish(), 650);
+      endTimer = window.setTimeout(() => finish(), 500);
     };
 
     const openDetails = () => {
