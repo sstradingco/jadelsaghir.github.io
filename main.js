@@ -176,8 +176,7 @@ const scrollToHash = (hash) => {
     lenis.scrollTo(target, {
       offset,
       immediate: reduceMotion,
-      duration: 1.55,
-      easing: (t) => 1 - Math.pow(1 - t, 5),
+      duration: 1.2,
     });
     return;
   }
