@@ -667,9 +667,8 @@ body.is-ready .display-title .word {
   bottom: 28px;
   left: calc(var(--rail) + 36px);
   height: 2px;
-  background: rgba(10, 10, 10, 0.14);
+  background: rgba(127, 127, 122, 0.35);
   overflow: hidden;
-  mix-blend-mode: difference;
 }
 
 .h-chapter__bar span {
@@ -679,7 +678,6 @@ body.is-ready .display-title .word {
   background: var(--accent);
   transform: scaleX(0);
   transform-origin: left;
-  mix-blend-mode: normal;
 }
 
 .h-chapter__hint {
@@ -694,6 +692,11 @@ body.is-ready .display-title .word {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   pointer-events: none;
+  transition: opacity 220ms ease;
+}
+
+.h-chapter.has-started .h-chapter__hint {
+  opacity: 0;
 }
 
 .h-chapter.is-static {

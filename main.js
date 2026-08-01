@@ -264,6 +264,7 @@ const updateHorizontalChapter = () => {
   horizontalTrack.style.transform = `translate3d(${(-progress * horizontalTravel).toFixed(2)}px, 0, 0)`;
   horizontalProgress?.style.setProperty("transform", `scaleX(${progress})`);
   horizontalChapter.classList.toggle("is-pinning", progress > 0 && progress < 1);
+  horizontalChapter.classList.toggle("has-started", progress > 0.02);
 };
 
 const initHorizontalChapter = () => {
