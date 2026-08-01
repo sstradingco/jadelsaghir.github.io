@@ -232,197 +232,123 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
   revealTargets.forEach((element) => revealObserver.observe(element));
 }
 
-const driftItems = [...document.querySelectorAll("[data-drift]")];
-const scrubSections = [...document.querySelectorAll("[data-scrub]")];
 const horizontalChapter = document.querySelector("[data-h-chapter]");
 const horizontalTrack = document.querySelector("[data-h-track]");
 const horizontalProgress = document.querySelector("[data-h-progress]");
-let horizontalTravel = 0;
 
-const motionState = {
-  read: 0,
-  readTarget: 0,
-  horizontal: 0,
-  horizontalTarget: 0,
-  drifts: driftItems.map(() => 0),
-  driftTargets: driftItems.map(() => 0),
-  scrubs: scrubSections.map(() => 0),
-  scrubTargets: scrubSections.map(() => 0),
+const layoutCache = {
+  horizontalTravel: 0,
+  chapterTop: 0,
+  chapterHeight: 0,
+  sectionTops: [],
+  scrollable: 1,
 };
 
 const clamp01 = (value) => Math.max(0, Math.min(1, value));
-const damp = (current, target, delta, speed) => {
-  const factor = 1 - Math.exp(-speed * delta);
-  return current + (target - current) * factor;
-};
 
-const measureHorizontalChapter = () => {
-  if (!horizontalChapter || !horizontalTrack) return;
-  if (horizontalChapter.classList.contains("is-static")) {
-    horizontalChapter.style.height = "";
-    horizontalTrack.style.transform = "";
-    horizontalTravel = 0;
-    motionState.horizontal = 0;
-    motionState.horizontalTarget = 0;
+const getScrollY = () => (lenis ? lenis.scroll : window.scrollY || window.pageYOffset || 0);
+
+const cacheScrollLayout = () => {
+  layoutCache.scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+  layoutCache.sectionTops = sections.map((section) => {
+    const top = section.getBoundingClientRect().top + getScrollY();
+    return { id: section.id, top };
+  });
+
+  if (!horizontalChapter || !horizontalTrack || horizontalChapter.classList.contains("is-static")) {
+    layoutCache.horizontalTravel = 0;
+    layoutCache.chapterTop = 0;
+    layoutCache.chapterHeight = 0;
     return;
   }
 
-  horizontalTravel = Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
-  horizontalChapter.style.height = `${window.innerHeight + horizontalTravel}px`;
+  layoutCache.horizontalTravel = Math.max(horizontalTrack.scrollWidth - window.innerWidth, 0);
+  horizontalChapter.style.height = `${window.innerHeight + layoutCache.horizontalTravel}px`;
+  layoutCache.chapterTop = horizontalChapter.getBoundingClientRect().top + getScrollY();
+  layoutCache.chapterHeight = horizontalChapter.offsetHeight;
+  layoutCache.scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
 };
 
-const sampleScrollTargets = () => {
-  const scrollY = lenis ? lenis.scroll : window.scrollY || window.pageYOffset || 0;
-  const scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-  motionState.readTarget = clamp01(scrollY / scrollable);
+const updateScrollUI = () => {
+  const scrollY = getScrollY();
+  const progressValue = clamp01(scrollY / layoutCache.scrollable);
+  progress?.style.setProperty("transform", `scaleX(${progressValue})`);
+  railProgress?.style.setProperty("transform", `scaleY(${progressValue})`);
 
-  let activeSection = sections[0];
-  const activationLine = window.innerHeight * 0.35;
-  sections.forEach((section) => {
-    if (section.getBoundingClientRect().top <= activationLine) activeSection = section;
+  const activationY = scrollY + window.innerHeight * 0.35;
+  let activeId = layoutCache.sectionTops[0]?.id;
+  layoutCache.sectionTops.forEach((entry) => {
+    if (entry.top <= activationY) activeId = entry.id;
   });
   railLinks.forEach((link) => {
-    const isActive = link.getAttribute("href") === `#${activeSection?.id}`;
-    link.classList.toggle("is-active", isActive);
+    link.classList.toggle("is-active", link.getAttribute("href") === `#${activeId}`);
   });
 
-  if (reduceMotion) return;
-
-  const vh = window.innerHeight || 1;
-
-  driftItems.forEach((element, index) => {
-    if (element.classList.contains("motion-item") && !element.classList.contains("is-visible")) {
-      motionState.driftTargets[index] = 0;
-      return;
-    }
-    const speed = Number(element.dataset.drift) || 0.12;
-    const rect = element.getBoundingClientRect();
-    const progress = (rect.top + rect.height * 0.5 - vh * 0.5) / vh;
-    motionState.driftTargets[index] = progress * speed * -100;
-  });
-
-  scrubSections.forEach((section, index) => {
-    const rect = section.getBoundingClientRect();
-    const start = vh * 0.9;
-    const end = vh * 0.28;
-    const raw = (start - rect.top) / (start - end);
-    motionState.scrubTargets[index] = clamp01(raw);
-  });
-
-  if (horizontalChapter && horizontalTrack && !horizontalChapter.classList.contains("is-static")) {
-    const rect = horizontalChapter.getBoundingClientRect();
-    const maxScroll = Math.max(horizontalChapter.offsetHeight - window.innerHeight, 1);
-    const scrolled = Math.min(Math.max(-rect.top, 0), maxScroll);
-    motionState.horizontalTarget = scrolled / maxScroll;
-  }
-};
-
-const renderMotion = (delta) => {
-  motionState.read = damp(motionState.read, motionState.readTarget, delta, 14);
-  progress?.style.setProperty("transform", `scaleX(${motionState.read})`);
-  railProgress?.style.setProperty("transform", `scaleY(${motionState.read})`);
-
-  if (reduceMotion) return;
-
-  driftItems.forEach((element, index) => {
-    if (element.classList.contains("motion-item") && !element.classList.contains("is-visible")) {
-      return;
-    }
-    motionState.drifts[index] = damp(
-      motionState.drifts[index],
-      motionState.driftTargets[index],
-      delta,
-      11
-    );
-    element.style.transform = `translate3d(0, ${motionState.drifts[index].toFixed(2)}px, 0)`;
-  });
-
-  scrubSections.forEach((section, index) => {
-    motionState.scrubs[index] = damp(
-      motionState.scrubs[index],
-      motionState.scrubTargets[index],
-      delta,
-      10
-    );
-    const scrub = motionState.scrubs[index];
-    section.style.setProperty("--scrub", scrub.toFixed(3));
-    section.classList.toggle("is-scrub-active", scrub > 0.5);
-  });
-
-  if (horizontalChapter && horizontalTrack && !horizontalChapter.classList.contains("is-static")) {
-    motionState.horizontal = damp(
-      motionState.horizontal,
-      motionState.horizontalTarget,
-      delta,
-      13
-    );
-    const progressValue = motionState.horizontal;
-    horizontalTrack.style.transform = `translate3d(${(-progressValue * horizontalTravel).toFixed(2)}px, 0, 0)`;
-    horizontalProgress?.style.setProperty("transform", `scaleX(${progressValue})`);
-    horizontalChapter.classList.toggle("is-pinning", progressValue > 0.01 && progressValue < 0.99);
-    horizontalChapter.classList.toggle("has-started", progressValue > 0.02);
+  if (
+    !reduceMotion &&
+    horizontalChapter &&
+    horizontalTrack &&
+    !horizontalChapter.classList.contains("is-static") &&
+    layoutCache.horizontalTravel > 0
+  ) {
+    const maxScroll = Math.max(layoutCache.chapterHeight - window.innerHeight, 1);
+    const progressHorizontal = clamp01((scrollY - layoutCache.chapterTop) / maxScroll);
+    horizontalTrack.style.transform = `translate3d(${(-progressHorizontal * layoutCache.horizontalTravel).toFixed(2)}px, 0, 0)`;
+    horizontalProgress?.style.setProperty("transform", `scaleX(${progressHorizontal})`);
+    horizontalChapter.classList.toggle("has-started", progressHorizontal > 0.02);
   }
 };
 
 const initHorizontalChapter = () => {
   if (!horizontalChapter || !horizontalTrack) return;
-
   if (reduceMotion) {
     horizontalChapter.classList.add("is-static");
     return;
   }
-
-  measureHorizontalChapter();
-  sampleScrollTargets();
-  renderMotion(1);
+  cacheScrollLayout();
+  updateScrollUI();
 };
 
 const initLenis = () => {
   if (reduceMotion || typeof Lenis !== "function") return null;
 
   const instance = new Lenis({
-    lerp: 0.072,
-    duration: 1.5,
-    easing: (t) => 1 - Math.pow(1 - t, 5),
+    lerp: 0.12,
     smoothWheel: true,
-    wheelMultiplier: 0.82,
-    touchMultiplier: 1.1,
-    syncTouch: true,
-    syncTouchLerp: 0.075,
+    wheelMultiplier: 1,
+    touchMultiplier: 1.4,
   });
 
   if (document.body.classList.contains("is-introducing")) {
     instance.stop();
   }
 
-  instance.on("scroll", sampleScrollTargets);
+  instance.on("scroll", updateScrollUI);
+
+  const raf = (time) => {
+    instance.raf(time);
+    window.requestAnimationFrame(raf);
+  };
+  window.requestAnimationFrame(raf);
   return instance;
 };
 
 lenis = initLenis();
 initHorizontalChapter();
-sampleScrollTargets();
-renderMotion(1);
+cacheScrollLayout();
+updateScrollUI();
 
-let lastFrame = performance.now();
-const motionLoop = (time) => {
-  const delta = Math.min((time - lastFrame) / 1000, 0.05);
-  lastFrame = time;
-  lenis?.raf(time);
-  sampleScrollTargets();
-  renderMotion(delta);
-  window.requestAnimationFrame(motionLoop);
-};
-window.requestAnimationFrame(motionLoop);
+if (!lenis) {
+  window.addEventListener("scroll", updateScrollUI, { passive: true });
+}
 
-window.addEventListener("scroll", sampleScrollTargets, { passive: true });
 window.addEventListener("resize", () => {
-  measureHorizontalChapter();
-  sampleScrollTargets();
+  cacheScrollLayout();
+  updateScrollUI();
 });
 window.addEventListener("load", () => {
-  measureHorizontalChapter();
-  sampleScrollTargets();
+  cacheScrollLayout();
+  updateScrollUI();
 });
 
 const initSmoothDetails = () => {
